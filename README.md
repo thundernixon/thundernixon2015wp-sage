@@ -2,6 +2,8 @@
 
 In this project, I'm experimenting to learn new technologies, with the end goal of creating a new personal website and portfolio. If I don't use this project to create a finished portfolio, it will be because I've ended up learning some good lessons from the experiment, and have started over with a new project.
 
+The root directory for this WordPress site is currently in a GitHub repo, thundernixon2015wp.
+
 ##Sage
 
 For this project, I am basing the website off of WordPress, using the Sage starter theme:
