@@ -1,0 +1,17 @@
+// body {
+// 	display: flex;
+// }
+
+html, body {
+	height: 100%;
+	background-color: $background-gray;
+}
+
+a {
+	color: $orange;
+
+	&:hover {
+		color: $navy;
+		transition: 0.25s ease;
+	}
+}

@@ -1,0 +1,25 @@
+// Glyphicons font path
+$icon-font-path:        "../fonts/";
+
+// Grid settings
+$main-sm-columns:       12;
+$sidebar-sm-columns:    4;
+
+// Colors
+$brand-primary:         #27ae60;
+// Stephen's additions
+$green: 				#00ef00;
+$white:					#ffffff;
+$light-gray:			#D2D2D2;
+$background-gray:		#F9F9F9;
+$body-text:				#666;
+$orange:				#FF8F5E;   //previously #ff5000
+$navy:					#414061;
+
+
+//Media Queries
+
+$phone:					"only screen and (max-width : 320px)";
+$tablet:				"only screen and (max-width : 600px)";
+$laptop:				"only screen and (max-width : 1200px)";
+$large-window:			"only screen and (max-width : 1500px)";

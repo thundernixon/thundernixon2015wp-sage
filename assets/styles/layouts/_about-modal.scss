@@ -1,0 +1,29 @@
+.about-modal {
+	height: 100%;
+	width: 100%;
+
+	.modal {
+		height: 100%;
+		width: 100%;
+		
+		.modal-dialog {
+			height: 80%;
+			width: 80%;
+			@media #{$tablet} {
+				height: 90%;
+				width: 95%;
+				margin: 5% auto;
+			}
+
+				.modal-content {
+					background-color: $white;
+					padding: 20px;
+					border: none;
+					border-radius: 0;
+					box-shadow: none;
+					height: 100%;
+					width: 100%;
+				}
+		}
+	}
+}

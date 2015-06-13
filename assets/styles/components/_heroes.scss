@@ -1,0 +1,39 @@
+.main-hero {
+
+	display: flex;
+	min-height:400px;
+	height: 92%;
+	width:100%;
+	background-color: $white;
+	
+	.main-hero-message {
+		height: auto;
+		width: auto;
+		margin: auto; 
+		text-align: center;
+		// background-color: red;
+	}
+
+	h1 {
+		font-size:300px;
+		font-weight: 600;
+		color: $orange;
+		text-rendering: optimizeLegibility;
+	}
+
+	p {
+		color: $navy;
+
+
+		//put the text over top of the "Yo"
+		  width: 200px;
+		  margin: 0 auto;
+		  text-align: left;
+		  font-weight: 600;
+
+		  font-size: 1.5em;
+		  position: relative;
+		  top: -218px;
+		  left: -10px;
+	}
+}
