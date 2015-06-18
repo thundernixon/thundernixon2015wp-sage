@@ -71,7 +71,7 @@ use Roots\Sage\Wrapper;
                 var feed = new Instafeed({
                   get: 'user',
                   clientId: 'f1ac464b95de40a9b203a6c8edf827a8',
-                  resolution: 'low_resolution',
+                  resolution: 'standard_resolution',
                   limit: '9',
                   userId: 209250343,
                   accessToken: '209250343.467ede5.17e3f6e6946a4758b7de4d1809135877',
@@ -83,5 +83,12 @@ use Roots\Sage\Wrapper;
 
                 });
                 feed.run();
+    </script>
+
+    <script>
+      smoothScroll.init({
+        speed: 250, // Integer. How fast to complete the scroll in milliseconds
+        easing: 'easeInOutCubic', // Easing pattern to use
+      });
     </script>
 </html>

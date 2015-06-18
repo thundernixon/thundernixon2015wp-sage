@@ -11,18 +11,22 @@
 @import "components/_forms";
 @import "components/_grid";
 @import "components/_wp-classes";
+
 // Added by Stephen
 @import "components/_heroes"; 
 @import "components/_navbar"; 
 // Added by Stephen END
+
 @import "layouts/_header";
 @import "layouts/_sidebar";
 @import "layouts/_footer";
 @import "layouts/_pages";
 @import "layouts/_posts";
+
 // Added by Stephen
 @import "layouts/_instafeed";
 @import "layouts/_frontpagecontent";
 @import "layouts/_about-modal";
+@import "layouts/_blogsinglepost";
 // Added by Stephen END
 

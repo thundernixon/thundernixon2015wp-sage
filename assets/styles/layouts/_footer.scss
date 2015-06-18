@@ -1,10 +1,12 @@
 footer {
 	background-color: $body-text;
-	color: $white;
+	color: $off-white;
 	height: 10%;
+	min-height: 80px;
 	// padding: 60px;
 
 	.contact {
 		float: right;
 	}
 }
+

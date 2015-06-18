@@ -10,16 +10,39 @@ $brand-primary:         #27ae60;
 // Stephen's additions
 $green: 				#00ef00;
 $white:					#ffffff;
+$off-white:				#ededed;
 $light-gray:			#D2D2D2;
-$background-gray:		#F9F9F9;
-$body-text:				#666;
-$orange:				#FF8F5E;   //previously #ff5000
+$background-gray:		#F5F5F5;	//previously #f9f9f9
+$body-text:				#45454F;	//previously #666
+$orange:				#FF8F5E;  	//previously #ff5000
+$active-orange:			#FF7825;
 $navy:					#414061;
+
 
 
 //Media Queries
 
-$phone:					"only screen and (max-width : 320px)";
-$tablet:				"only screen and (max-width : 600px)";
-$laptop:				"only screen and (max-width : 1200px)";
-$large-window:			"only screen and (max-width : 1500px)";
+// $phone:					"only screen and (max-width : 320px)";
+// $tablet:				"only screen and (max-width : 600px)";
+// $laptop:				"only screen and (max-width : 1200px)";
+// $large-window:			"only screen and (max-width : 1500px)";
+
+
+@mixin breakpoint($point) {
+
+  @if $point == huge-window {
+    @media (min-width: 1600px) { @content; }
+  }
+  @if $point == large-window {
+    @media (max-width: 1600px) { @content; }
+  }
+  @else if $point == laptop {
+    @media (max-width: 1250px) { @content; }
+  }
+  @else if $point == phone {
+    @media (max-width: 650px)  { @content; }
+  }
+  @else if $point == tiny-window {
+    @media (max-width: 330px)  { @content; }
+  }
+}

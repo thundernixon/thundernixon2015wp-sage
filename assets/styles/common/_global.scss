@@ -2,16 +2,49 @@
 // 	display: flex;
 // }
 
+@font-face {
+	font-family: 'Warehouse Gothic';
+	src:  url('../fonts/WarehouseGothic1.1.3-Rg.woff') format('woff');
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Warehouse Gothic';
+	src:  url('../fonts/WarehouseGothic1.1.3-Bd.woff') format('woff');
+	font-weight: 600;
+}
+
+
 html, body {
 	height: 100%;
 	background-color: $background-gray;
+
+	//@media $laptop{
+		font-family:'Warehouse Gothic', Helvetica Neue, sans-serif;
+		text-rendering: optimizeLegibility;
+	//}
 }
 
 a {
-	color: $orange;
+	color: $navy;
 
 	&:hover {
-		color: $navy;
+		color: $orange;
 		transition: 0.25s ease;
 	}
+}
+
+p {
+
+	a {
+		text-decoration: underline;
+	}
+}
+
+h1, h2 {
+	font-weight: 600;
+}
+
+h1 {
+	color: $orange;
 }

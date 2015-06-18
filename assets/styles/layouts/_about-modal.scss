@@ -9,7 +9,8 @@
 		.modal-dialog {
 			height: 80%;
 			width: 80%;
-			@media #{$tablet} {
+     	
+     	@include breakpoint(tablet) {
 				height: 90%;
 				width: 95%;
 				margin: 5% auto;

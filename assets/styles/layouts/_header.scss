@@ -1,16 +1,18 @@
 header {
 	background-color: $white;
-	height: 4%;
+	height: 40px;
 	display: flex;
   	align-items: center;
 
 	a {
-		color: $orange;
+		//color: $orange; //more minimalist approach
+		color: $navy; //more minimalist approach
 		font-weight: 600;
 
 		&:hover {
-			text-decoration: underline;
-			color: $body-text;
+			//text-decoration: underline;
+			//color: $body-text; //more minimalist approach
+			color: $orange; //more minimalist approach
 		} 
 	}
 

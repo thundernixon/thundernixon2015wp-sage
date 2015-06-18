@@ -2,8 +2,8 @@
 	display: flex;
 	align-items: stretch;
 	flex-wrap: wrap;
-	justify-content: center;
-	margin-bottom: 20px;
+	justify-content: space-between; //previously center
+	margin: 0 -20px 20px;
 
 	a {
 		// flex-basis: 280px;
@@ -14,10 +14,13 @@
 		flex-basis: 300px;
 		color: $body-text;
 		font-size: .8em;
+		box-shadow: 0px 0px $orange;
 
 		&:hover {
 			background-color: $white;
 			text-decoration: none;
+			box-shadow: 2px 2px $orange;
+			transition: .5s ease;
 		}
 
 		img {

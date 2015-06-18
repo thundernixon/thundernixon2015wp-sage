@@ -1,6 +1,8 @@
 <header class="banner" role="banner">
   <div class="container">
-    <a class="brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
+    <a class="brand" href="<?= esc_url(home_url('/')); ?>">Stephen Thunder Nixon</a>
+    <!-- <a class="brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a> -->
+
     <a class="about-modal-link" type="button" data-toggle="modal" data-target="#myModal" href=#>About</a>
 
     <?php

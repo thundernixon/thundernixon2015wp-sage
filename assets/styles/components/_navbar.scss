@@ -1,6 +1,8 @@
 .main-nav {
-	background-color: $orange;
-	height: 4%;
+	//background-color: $orange; //more minimalist approach
+	background-color: $white; //more minimalist approach
+	border-top: 2px solid $navy; //more minimalist approach
+	height: 40px;
 	display: flex;
 	align-items: center;
 
@@ -8,29 +10,36 @@
 		list-style: none;
 		text-align: center;
 		display: flex;
-		width: 100%;	
+		// width: 100%;	
   		align-items: center;
   		justify-content: space-between;
-  		padding-left: 0;
+  		padding: 0;
   		margin-bottom: 0;
   		height: 100%;
 
   		a {
-			color: $white;
+			//color: $white; //more minimalist approach
+			color: $navy; //more minimalist approach
 			font-weight: 600;
 			height: 100%;
 			// width: 100%;
 			// margin: auto;
-			background-color: $orange;
+			//background-color: $orange; //more minimalist approach
+			background-color: $white; //more minimalist approach
 			transition: 0.25s ease;
+			text-decoration: none;
+			border-bottom: solid 0px $background-gray;
+			padding:0 15px;
 
 			&:hover {
 				text-decoration: none;
-				color: $white;
+				//color: $white; //more minimalist approach
+				color: $orange; //more minimalist approach
 				// background-color: #ff5000;
-				border-bottom: solid 5px $navy;
-
+				border-bottom: solid 5px $background-gray;
+				transition: 0.25s ease;
 			}		
+
 
 			li {
 				// flex-grow: 1;
@@ -42,28 +51,41 @@
 					margin: auto;
 					}
 			}
-			
+
+
 
 		}
+
+		.active-tab {
+			flex-grow:4;
+			transition: 0.25s ease;
+			//background-color: $active-orange !important; //more minimalist approach
+			background-color: $background-gray !important; //more minimalist approach
+
+			&:hover {
+				border-bottom: 0;
+				transition: 0.25s ease;
+			}
+		}
+
+		.inactive-tab {
+			flex-grow:1;
+			transition: 0.25s ease;
+		}
+
+		& a:first-child span {
+			margin-left:0;
+		}
+
+
+		& a:last-child span {
+			margin-right:0;
+		}
+
 	}
 }
 
-#front-page-tabs {
-	background-color: $white;
-	display: flex;
-	flex-direction: column;
-	overflow: hidden;
-	width: 100%;
-	// height: 1000px;
-	flex-wrap: nowrap;
 
-	section {
-		width: 100%;
-		// height: 1000px;
-		// overflow: auto;
-	}
-	
-}
 
 .hide {
 	// display:none;
@@ -80,13 +102,3 @@
 	transition: 0.5s ease;
 }
 
-.active-tab {
-	flex-grow:4;
-	transition: 0.25s ease;
-	background-color: $navy !important;
-}
-
-.inactive-tab {
-	flex-grow:1;
-	transition: 0.25s ease;
-}

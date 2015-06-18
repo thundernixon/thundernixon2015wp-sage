@@ -3,30 +3,18 @@
  * Template Name: Front Page */
 ?>
 
-
-
-
-<?php// get_template_part('templates/hero', 'hero'); ?>
-    
-    <?php
-      //do_action('get_header');
-      //get_template_part('templates/header');
-    ?> 
-
-<?php // get_template_part('templates/custom', 'header'); ?>
-
-
 <div id="front-page-tabs" class="tabs">
-
 
 	<div class="content">
 
 		<!-- Portfolio Section -->
 			<section id="section-1" class="show">
 
-			<h3>
-				Contents:
-			</h3>
+			<h1>
+				I collaborate to make things.
+			</h1>
+
+			
 
 				<?php 
 				if ( get_query_var('paged') ) $paged = get_query_var('paged');  
@@ -43,11 +31,13 @@
 						</div> -->
 
 			  			<!-- same formatting as blog section -->
-			  			<?php get_template_part('templates/content', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
+			  			<?php get_template_part('templates/content-portfolio', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
 
-						<?php the_posts_navigation(); ?>
+						
 					<?php endwhile; wp_reset_postdata(); ?>
+			
 
+			<?php the_posts_navigation(); ?>
 
 
 
@@ -71,9 +61,12 @@
 
 		<section id="section-2" class="hide">
 
-			<h3>
-				The following are selected posts from <a href="http://www.instagram.com/thundernixon" target="_blank">my Instagram feed</a>:
-			</h3>
+			<h1>
+				I draw letters & words. 
+			</h1>
+			<p> 
+				The following are lettering posts from <a href="http://www.instagram.com/thundernixon" target="_blank">my Instagram feed</a>:
+			</p>
 
 		    <div id="instafeed">
 		       
@@ -88,22 +81,23 @@
 		<section id="section-3" class="hide">
 
 			<h1>
-				Here are some of my thoughts, from my brain.
+				Sometimes, I write things.
 			</h1>
 
+			
+				<?php if (!have_posts()) : ?>
+				  <!-- <div class="alert alert-warning"> -->
+				    <?php _e('Sorry, no results were found.', 'sage'); ?>
+				<!--   </div> -->
+				  <?php get_search_form(); ?>
+				<?php endif; ?>
 
-			<?php if (!have_posts()) : ?>
-			  <!-- <div class="alert alert-warning"> -->
-			    <?php _e('Sorry, no results were found.', 'sage'); ?>
-			<!--   </div> -->
-			  <?php get_search_form(); ?>
-			<?php endif; ?>
+				<?php while (have_posts()) : the_post(); ?>
+				  <?php get_template_part('templates/content', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
+				<?php endwhile; ?>
 
-			<?php while (have_posts()) : the_post(); ?>
-			  <?php get_template_part('templates/content', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
-			<?php endwhile; ?>
-
-			<?php the_posts_navigation(); ?>
+				<?php the_posts_navigation(); ?>
+			
 		</section>
 
 
