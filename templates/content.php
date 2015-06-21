@@ -1,7 +1,7 @@
-<article class="container blog-list" <?php post_class(); ?>> <!-- Added "container" class to make a central column -->
+<article class="blog-list" <?php post_class(); ?>> <!-- Added "container" class to make a central column -->
   
   <a href="<?php the_permalink(); ?>">
-    <div class="portfolio-list-img-container">
+    <div class="">
       <?php
       	if ( ('portfolio' == get_post_type()) && has_post_thumbnail() ) {
     	the_post_thumbnail();

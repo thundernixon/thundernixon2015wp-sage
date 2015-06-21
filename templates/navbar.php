@@ -23,17 +23,17 @@
 	<nav class="main-nav">
 
 			<ul class="container">
-				<a data-scroll="work"   href="<?php echo esc_url( home_url( '/' ) ); ?>#section-1" onclick="showSection1();growTab1()" class="" id="tab-1">
+				<a data="work"   href="<?php echo esc_url( home_url( '/' ) ); ?>#section-1" onclick="showSection1();growTab1()" class="" id="tab-1">
 					<li>
 						<span>Work</span>
 					</li>
 				</a>
-				<a data-scroll="instagram"  href="<?php bloginfo('url'); ?>/#section-2" onclick="showSection2();growTab2()" class="" id="tab-2">
+				<a data="instagram"  href="<?php bloginfo('url'); ?>/#section-2" onclick="showSection2();growTab2()" class="" id="tab-2">
 					<li>
 						<span>#typefloundry</span>
 					</li>
 				</a>
-				<a data-scroll="blog"  href="<?php bloginfo('url'); ?>/#section-3" onclick="showSection3();growTab3()" class="" id="tab-3">
+				<a data="blog"  href="<?php bloginfo('url'); ?>/#section-3" onclick="showSection3();growTab3()" class="" id="tab-3">
 					<li>
 						<span>Blog</span>
 					</li>

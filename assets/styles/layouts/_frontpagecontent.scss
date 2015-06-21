@@ -8,7 +8,7 @@
 }
 
 #front-page-tabs {
-	background-color: $white;
+	background-color: $background-gray;
 	display: flex;
 	flex-direction: column;
 	overflow: hidden;
@@ -22,12 +22,21 @@
 		// overflow: auto;
 	}
 
-	h1:before {
+	#section-1, #section-2 {
+		//padding: 0 17px
+	}
+
+	h1{
+		color: $light-gray;
+		font-size: 2em;
+
+		&:before {
 		  display: block; 
 		  content: " "; 
 		  margin-top: -100px; 
 		  height: 100px; 
 		  visibility: hidden; 
+		}
 	}
 	
 }

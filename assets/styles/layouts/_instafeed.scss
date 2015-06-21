@@ -9,7 +9,7 @@
 		// flex-basis: 280px;
 		flex-grow: 1;
 		// margin: 20px;
-		padding: 20px;
+		padding: 15px;
 		max-width: 380px;
 		flex-basis: 300px;
 		color: $body-text;
@@ -26,8 +26,13 @@
 		img {
 			margin-bottom: 10px;
 			width: 100%;
+			filter: grayscale(1);
 			// box-shadow: 2px 2px 0px 0px $orange;
 			// border: 2px solid $white;
+		}
+
+		&:hover img {
+			filter: grayscale(0);
 		}
 	}
 

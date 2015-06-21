@@ -15,10 +15,10 @@ article {
 
   //apply following only to front page list
 
-
 }
 
-//#section-1 {
+
+#section-1 {
 
   .portfolio-list {
     margin-bottom: 40px;
@@ -31,8 +31,8 @@ article {
       &:nth-child(odd) {
         padding-left:20px;
       }
-
-    }
+  }
+  
 
   article {
     height: 200px;
@@ -121,16 +121,27 @@ article {
         }
       }
     }
-  }
+
+}
+}
 //}
 
 #section-2 {
 
-  .blog-list {
-    margin-bottom: 40px;
 
-    header {
-      font-size: 1rem;
+ }
+
+ #section-3 {
+
+    article {
+      height: 2em;
     }
-  }
+
+    .blog-list {
+      margin-bottom: 40px;
+
+      header {
+        font-size: 1rem;
+      }
+    }
  }

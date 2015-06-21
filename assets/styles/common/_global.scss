@@ -18,6 +18,9 @@
 html, body {
 	height: 100%;
 	background-color: $background-gray;
+	font-size: 16px;
+	line-height: 1.5em;
+	color: $body-text;
 
 	//@media $laptop{
 		font-family:'Warehouse Gothic', Helvetica Neue, sans-serif;

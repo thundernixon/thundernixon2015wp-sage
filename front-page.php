@@ -5,13 +5,13 @@
 
 <div id="front-page-tabs" class="tabs">
 
-	<div class="content">
+	<div class="content container wrap">
 
 		<!-- Portfolio Section -->
 			<section id="section-1" class="show">
 
 			<h1>
-				I collaborate to make things.
+				<!-- Work -->
 			</h1>
 
 			
@@ -62,7 +62,7 @@
 		<section id="section-2" class="hide">
 
 			<h1>
-				I draw letters & words. 
+				<!-- Play  -->
 			</h1>
 			<p> 
 				The following are lettering posts from <a href="http://www.instagram.com/thundernixon" target="_blank">my Instagram feed</a>:
@@ -81,7 +81,7 @@
 		<section id="section-3" class="hide">
 
 			<h1>
-				Sometimes, I write things.
+				<!-- Blog -->
 			</h1>
 
 			

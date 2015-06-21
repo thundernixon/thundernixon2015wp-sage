@@ -43,7 +43,7 @@ use Roots\Sage\Wrapper;
       get_template_part('templates/navbar');
     ?>
 
-    <div class="wrap container" role="document"> <!-- removed "container" class too make full-width page elements -->
+    <div class="" role="document"> <!-- removed "wrap container" class to make full-width page elements -->
       <div class="content row">
         <main class="main" role="main">
           <?php include Wrapper\template_path(); ?>
@@ -72,7 +72,7 @@ use Roots\Sage\Wrapper;
                   get: 'user',
                   clientId: 'f1ac464b95de40a9b203a6c8edf827a8',
                   resolution: 'standard_resolution',
-                  limit: '9',
+                  limit: '6',
                   userId: 209250343,
                   accessToken: '209250343.467ede5.17e3f6e6946a4758b7de4d1809135877',
                   template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /><p>{{caption}}</p></a>',
