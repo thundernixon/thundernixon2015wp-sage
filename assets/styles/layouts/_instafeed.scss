@@ -33,6 +33,7 @@
 
 		&:hover img {
 			filter: grayscale(0);
+			transition: .5s ease;
 		}
 	}
 

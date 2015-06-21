@@ -52,7 +52,7 @@ article {
       overflow: hidden;
       opacity: 0;
       z-index: -1;
-      transition: opacity box-shadow .25s ease;
+      transition: opacity .5s ease;
       box-shadow: 0px 0px $orange;
       padding:15px;
       background-color: $white;
@@ -85,6 +85,10 @@ article {
         transition: .25s ease;
       }
 
+      p {
+        z-index: 100;
+      }
+
       .entry-summary {
         text-align: right;
         float: right;
@@ -99,7 +103,7 @@ article {
       
         .portfolio-list-img-container {
           opacity: 1;
-          transition: opacity box-shadow .25s ease;
+          transition: opacity .5s ease;
           box-shadow: 2px 2px $orange;
 
         }
@@ -137,11 +141,27 @@ article {
       height: 2em;
     }
 
-    .blog-list {
-      margin-bottom: 40px;
+    article.blog-list {
+      margin: 3em 0 6em;
+      border-top: 2px solid $white;
 
-      header {
-        font-size: 1rem;
+      a {
+        transition: .25s ease;
+
+        h2 {
+          font-size: 1em;
+        }
+      }
+
+      a:hover {
+        text-decoration: none;
+        
+        header {
+          color: $orange;
+          transition: .25s ease;
+          padding-left: 15px;
+          background-color: $white;
+        }
       }
     }
  }

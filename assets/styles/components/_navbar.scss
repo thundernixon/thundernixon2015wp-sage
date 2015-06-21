@@ -1,7 +1,9 @@
 .main-nav {
 	//background-color: $orange; //more minimalist approach
-	background-color: $white; //more minimalist approach
-	border-top: 2px solid $navy; //more minimalist approach
+	//background-color: $white; //more minimalist approach
+	//border-top: 2px solid $navy; //more minimalist approach
+	border-top: 2px solid $orange; //slightly more orange approach
+	background-color: $background-gray; //slightly more orange approach
 	height: 40px;
 	display: flex;
 	align-items: center;
@@ -13,19 +15,22 @@
 		// width: 100%;	
   		align-items: center;
   		justify-content: space-between;
-  		padding: 0;
+  		//padding: 0;
   		margin-bottom: 0;
   		height: 100%;
 
   		a {
 			//color: $white; //more minimalist approach
-			color: $navy; //more minimalist approach
+			//color: $navy; //more minimalist approach
+			color: $orange; //slightly more orange approach
 			font-weight: 600;
 			height: 100%;
-			// width: 100%;
+			flex-grow:1;
+			//width: 100%;
 			// margin: auto;
 			//background-color: $orange; //more minimalist approach
-			background-color: $white; //more minimalist approach
+			//background-color: $white; //more minimalist approach
+			background-color: $background-gray; //slightly more orange approach
 			transition: 0.25s ease;
 			text-decoration: none;
 			border-bottom: solid 0px $background-gray;
@@ -35,8 +40,10 @@
 				text-decoration: none;
 				//color: $white; //more minimalist approach
 				color: $orange; //more minimalist approach
+				color: $navy; //slightly more orange approach
 				// background-color: #ff5000;
-				border-bottom: solid 2px $orange;
+				//border-bottom: solid 2px $orange;
+				border-bottom: solid 2px $navy;//slightly more orange approach
 				transition: 0.25s ease;
 			}		
 
@@ -58,19 +65,26 @@
 
 		.active-tab {
 			flex-grow:4;
+			//width: auto;
 			transition: 0.25s ease;
 			//background-color: $active-orange !important; //more minimalist approach
-			background-color: $background-gray !important; //more minimalist approach
+			//background-color: $background-gray !important; //more minimalist approach
+			background-color: $orange !important; //slightly more orange approach
+			color: $white; //slightly more orange approach
+			padding: 0 15px;
 
 			&:hover {
 				border-bottom: 0;
 				transition: 0.25s ease;
+				color: $white; //slightly more orange approach
 			}
 		}
 
 		.inactive-tab {
 			flex-grow:1;
+			//width: auto;
 			transition: 0.25s ease;
+			padding: 0;
 		}
 
 		& a:first-child span {

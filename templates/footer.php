@@ -3,15 +3,18 @@
     <?php dynamic_sidebar('sidebar-footer'); ?>
 
 
-      <p>footer test</p>
+      <h1>Go make something.</h1>
 
   <div class="contact">
   	<p>
-  		Find me on twitter: @thundernixon
+  		Twitter: <a href="http://www.twitter.com/thundernixon" target="_blank">@thundernixon</a>
   	</p>
   	<p>
-  		Other contact info, etc
+  		Instagram: <a href="http://www.instagram.com/thundernixon" target="_blank">@thundernixon</a>
   	</p>
+    <p>
+      Email: <a href="mailto:stephen@thundernixon.com" target="_top">stephen@thundernixon.com</a>
+    </p>
   	
   </div>
 

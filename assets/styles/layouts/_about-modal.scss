@@ -38,17 +38,39 @@
 					width: 60px;
 					height: 60px;
 					position: fixed;
-					top: 20px;
-					right: 22px;
-					border: 2px solid $orange;
+					// top: 20px;
+					// right: 22px;
+					// border: 2px solid $orange;
+					//color: $orange;
+					top: 2px;
+					right: -80px;
+					border: 2px solid #fff;
+					color: $white;
 					opacity: 1;
-					color: $orange;
-				
+					text-shadow: none;
+
 					&:hover {
 						opacity: 1;
-						color: $white;
+						// color: $white;
+						color: $orange;
+						background-color: $white;
 						text-shadow: none;
 					}
+
+					@include breakpoint(tablet) {
+						top: 20px;
+						right: 22px;
+						border: 2px solid $orange;
+						color: $orange;
+						z-index: 2;
+
+						&:hover {
+							color: $white;
+							background-color: $orange;
+						}
+					}
+				
+
 				}
 			}
 
@@ -60,6 +82,10 @@
 			section {
 				margin-bottom: 2em;
 			}
+
+			p {
+				font-family: 'PT Serif', serif;
+			}
 		}
 		
 
@@ -67,15 +93,15 @@
 
 		
 		.modal-dialog {
-			height: 70vh;
+			height: 80vh;
 			width: 50vw;
-			margin: 15vh auto;
+			margin: 10vh auto;
      	
-     	@include breakpoint(tablet) {
-				height: 90%;
-				width: 95%;
-				margin: 5% auto;
-			}
+	     	@include breakpoint(tablet) {
+					height: 95vh;
+					width: 95vw;
+					margin: 2.5vh auto;
+				}
 
 				.modal-content {
 					background-color: $white;

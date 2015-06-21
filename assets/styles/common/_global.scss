@@ -14,6 +14,7 @@
 	font-weight: 600;
 }
 
+@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic);
 
 html, body {
 	height: 100%;
@@ -26,6 +27,10 @@ html, body {
 		font-family:'Warehouse Gothic', Helvetica Neue, sans-serif;
 		text-rendering: optimizeLegibility;
 	//}
+}
+
+.serif {
+	font-family: 'PT Serif', serif;
 }
 
 a {

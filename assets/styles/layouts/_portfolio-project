@@ -1,10 +1,22 @@
 div.portfolio-project {
 
-	background-color: $navy;
+	background-color: $body-text;
 	color: $background-gray;
 
 	header {
 		background-color: transparent;
+		text-align: center;
+	
+		h1 {
+			width: 100%;
+			text-align: center;
+		}
+
+		h2 {
+			width: 100%;
+			font-size: 1.5em;
+		}
+
 	}
 
 	.description {

@@ -8,7 +8,7 @@
 
         <img src="<?php the_field('hero_image'); ?>" />
         
-        <header>
+        <header class="container wrap">
 		      <h1 class="entry-title"><?php the_title(); ?></h1>
 		      <h2 class="one-liner"><?php the_field('one_liner'); ?>
 		    </header>
@@ -17,7 +17,7 @@
   			    <?php get_template_part('templates/entry-meta'); ?>
   			</p> -->
 
-        <div class="project-meta-info">
+        <div class="project-meta-info container wrap">
  
 <!--           <p>
             <?php the_field('project_type'); ?>
@@ -40,7 +40,7 @@
 
           
 
-          <p><?php the_content(); ?></p>
+          <div class="container wrap"><?php the_content(); ?></div>
 
           <!-- TEST TEST TEST that this page is really coming up -->
           <!-- <p>test</p> -->

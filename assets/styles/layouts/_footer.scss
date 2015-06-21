@@ -7,9 +7,16 @@ footer {
 
 	// padding: 60px;
 
-	p {
+	h1 {
+		font-size: 1em;
 		float: left;
+
 	}
+
+	a {
+		color: $off-white;
+	}
+
 
 	.contact {
 		float: right;
