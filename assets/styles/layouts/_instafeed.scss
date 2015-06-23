@@ -20,7 +20,7 @@
 			background-color: $white;
 			text-decoration: none;
 			box-shadow: 2px 2px $orange;
-			transition: .5s ease;
+			transition: .75s ease-out;
 		}
 
 		img {
@@ -33,7 +33,7 @@
 
 		&:hover img {
 			filter: grayscale(0);
-			transition: .5s ease;
+			transition: .75s ease-out;
 		}
 	}
 
