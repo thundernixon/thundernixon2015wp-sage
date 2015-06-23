@@ -8,6 +8,11 @@
     	} 
       ?>
     </div>
+
+    <div class="animated-hr">
+      <hr/>
+      <hr/>
+    </div>
     
     <header>
       <h2 class="entry-title"><?php the_title(); ?></h2>

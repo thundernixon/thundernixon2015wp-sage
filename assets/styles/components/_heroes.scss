@@ -19,9 +19,9 @@
 	}
 
 	h1 {
-		font-size:300px;
+		font-size:400px;
 		font-weight: 600;
-		color: $orange;
+		color: $background-gray;
 		text-rendering: optimizeLegibility;
 	}
 
@@ -30,14 +30,14 @@
 
 
 		//put the text over top of the "Yo"
-		  width: 200px;
+		  width: 250px;
 		  margin: 0 auto;
 		  text-align: left;
 		  font-weight: 600;
-
-		  font-size: 1.5em;
+		  font-size: 2em;
+		  line-height: 1em;
 		  position: relative;
-		  top: -218px;
+		  top: -9em;
 		  left: -10px;
 	}
 }

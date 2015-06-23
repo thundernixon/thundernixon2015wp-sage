@@ -4,7 +4,7 @@
 	display: flex;
 
 	.fade {
-		background-color: rgba( $active-orange, .8 );
+		background-color: rgba( $active-orange, .9 );
 	}
 
 
@@ -84,7 +84,12 @@
 			}
 
 			p {
-				font-family: 'PT Serif', serif;
+				//font-family: 'PT Serif', serif;
+			}
+
+			a {
+				color: $white;
+				font-weight: 400;
 			}
 		}
 		
@@ -93,18 +98,22 @@
 
 		
 		.modal-dialog {
-			height: 80vh;
+			height: 100vh;
 			width: 50vw;
-			margin: 10vh auto;
+			margin: 10vh auto 0;
      	
 	     	@include breakpoint(tablet) {
-					height: 95vh;
+					height: 100vh;
 					width: 95vw;
-					margin: 2.5vh auto;
+					margin: 2.5vh auto 0;
 				}
 
 				.modal-content {
-					background-color: $white;
+					//background-color: $white;
+					background-color: transparent;
+					color: $white;
+					font-size: 1.25em;
+					line-height: 1.5em;
 					padding: 20px;
 					border: none;
 					border-radius: 0;

@@ -2,11 +2,18 @@
   
   <a href="<?php the_permalink(); ?>">
     <div class="portfolio-list-img-container">
-      <?php
-      	if ( ('portfolio' == get_post_type()) && has_post_thumbnail() ) {
-    	the_post_thumbnail();
-    	} 
-      ?>
+      <div>
+        <?php
+        	if ( ('portfolio' == get_post_type()) && has_post_thumbnail() ) {
+      	the_post_thumbnail();
+      	} 
+        ?>
+      </div>
+    </div>
+
+    <div class="animated-hr">
+      <hr/>
+      <hr/>
     </div>
     
     <header>

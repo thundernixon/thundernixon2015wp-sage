@@ -40,6 +40,10 @@ a {
 		color: $orange;
 		transition: 0.25s ease;
 	}
+
+	&:focus {
+		color: $orange;
+	}
 }
 
 p {
