@@ -1,0 +1,85 @@
+div.portfolio-project {
+
+	background-color: $body-text;
+	color: $background-gray;
+
+	article {
+		//padding: 3em 0;
+
+		.header-container {
+			background-color: $background-gray;
+			padding: 3em 0;
+			
+			
+	
+
+			header {
+				background-color: transparent;
+				//text-align: center;
+				flex-wrap: wrap;
+				height: auto;
+				//color: $white;
+				color: $body-text;
+				display: flex;
+				justify-content: space-between;
+				align-items: flex-start;
+			
+				.project-title {
+					flex-basis: 500px;
+					padding-right: 10%;
+					flex-grow: 3;
+
+					h1 {
+						width: 100%;
+						
+						//color: $white;
+						color: $body-text;
+
+						&:after {
+						  content: " ";
+						  display: block;
+						  background-color: $white;
+						  height: 5px;
+						  width: 60px;
+						  margin: 1em 0;
+						  top: 1em;
+						}
+					}
+
+					h2 {
+						width: 100%;
+						font-size: 1.5em;
+						font-weight: normal;
+					}
+				}
+
+				.project-meta-info {
+				  display: flex;
+				  border: 2px solid $white;
+				  justify-content: start;
+				  margin: 1em 0;
+				  flex-basis: 400px;
+				  flex-direction: column;
+				  font-weight: bold;
+				  //font-size: .8em;
+				  line-height: 1.25em;
+				  padding: 1em;
+				  flex-grow: 1;
+
+				  p {
+				  	margin: .25em;
+				  }
+				}
+
+			}
+
+		}
+
+		.description {
+			max-width: 600px;
+			margin: 2em auto;
+			font-size: 1.25em;
+			line-height: 1.5em;
+		}
+	}
+}

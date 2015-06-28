@@ -3,7 +3,7 @@
     <?php dynamic_sidebar('sidebar-footer'); ?>
 
 
-      <h1>Go make something.</h1>
+      <h1>Go create something.</h1>
 
   <div class="contact">
   	<p>

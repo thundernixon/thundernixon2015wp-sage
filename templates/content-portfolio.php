@@ -1,9 +1,19 @@
 <article class="container wrap col-md-6 portfolio-list" <?php post_class(); ?>> <!-- Added "container" class to make a central column -->
   
   <a href="<?php the_permalink(); ?>">
-    <div class="portfolio-list-img-container">
-      <div>
+    <div class="portfolio-list-img-container" style="
+
+      background-image: url('
         <?php
+          // if ( ('portfolio' == get_post_type()) && has_post_thumbnail() ) {
+          // the_post_thumbnail();
+          // } 
+          ?>
+          ');
+
+    ">
+      <div>
+<?php
         	if ( ('portfolio' == get_post_type()) && has_post_thumbnail() ) {
       	the_post_thumbnail();
       	} 

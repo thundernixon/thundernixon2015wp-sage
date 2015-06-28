@@ -1,5 +1,28 @@
 //@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic);
 
-.serif {
-	font-family: 'PT Serif', serif;
+
+.blog-single-post {
+
+	padding: 3em 15px;
+
+	header {
+		height: auto;
+
+		.entry-title {
+			//text-align: center;
+			font-size: 6em;
+		}
+
+	}
+
+	a {
+		text-decoration: underline;
+		color: $orange;
+	}
+
+	li,p {
+		margin-bottom: 1em;
+	}
+
 }
+

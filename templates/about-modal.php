@@ -37,15 +37,20 @@
               </section>
               <section>
 
-                <h4>FAQ</h4>
+                <h4 class="small-caps">FAQ</h4>
                 <p>“Is your middle name really ‘Thunder’?”</p>
                 <p>
                   Nope. Back in high school, at one of the many points in life I decided to double-down on being weird, I decided that my nick name would be "Thunder," because it was the first badass, funny thing that came to mind. Shortly thereafter, I was signing up for Twitter, Email, domain names, and more, so it became an easy way to be found online. Really, try Googling "Stephen Thunder Nixon." It works too well to drop!
                 </p>
               </section>
               <section>
-                <h4>Site Colophon:</h4>
-                <p>Body and Headers: <a href="http://www.fourthfloorfoundry.com/warehouse.html" target="_blank">Warehouse Gothic</a></p>
+                <h4 class="small-caps">Site Colophon:</h4>
+                <p>Body text and headers: <a href="http://www.fourthfloorfoundry.com/warehouse.html" target="_blank">Warehouse Gothic</a></p>
+                <p>Body text in blog: <a href="https://www.google.com/fonts/specimen/PT+Serif" target="_blank">PT Serif</a></p>
+              </section>
+              <section>
+                <h4 class="small-caps">Want to see my code?</h4>
+                <p><a href="https://github.com/thundernixon/thundernixon2015wp-sage" target="_blank">View this project on GitHub</a></p>
               </section>
               
               

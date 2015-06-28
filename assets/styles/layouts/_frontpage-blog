@@ -1,0 +1,32 @@
+ #section-3 {
+ 	//padding:2em 0;
+
+    article {
+      height: 2em;
+    }
+
+    article.blog-list {
+      margin: 3em 0 6em;
+      //border-top: 2px solid $white;
+
+      a {
+        transition: .25s ease;
+
+        h2 {
+          font-size: 1em;
+          margin: 20px 0 22px;
+        }
+      }
+
+      a:hover {
+        text-decoration: none;
+        
+        // header {
+        //   color: $orange;
+        //   transition: .25s ease;
+        //   padding-left: 15px;
+        //   background-color: $white;
+        // }
+      }
+    }
+ }

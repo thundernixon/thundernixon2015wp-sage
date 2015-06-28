@@ -36,4 +36,22 @@ add_theme_support( 'post-thumbnails' );
 
 add_post_type_support( 'portfolio', 'thumbnail' );
 
+
+
+
+//TRYING TO GET THE POST THUMBNAIL TO WORK AS A BACKGROUND IMAGE, TO ALLOW CSS BLEND MODE
+
+// add_filter( 'post_thumbnail_html', 'remove_width_attribute', 10 );
+// add_filter( 'image_send_to_editor', 'remove_width_attribute', 10 );
+
+// function remove_width_attribute( $html ) {
+//    $html = preg_replace( '/(width|height)="\d*"\s/', "", $html );
+//    return $html;
+// }
+
+// function the_post_thumbnail_src($post_id, $size) {
+//     $thumb = wp_get_attachment_image_src(get_post_thumbnail_id($post_id), $size);
+//     echo $thumb['0'];
+// }
+
 ?>

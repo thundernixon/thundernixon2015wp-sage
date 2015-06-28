@@ -5,6 +5,7 @@ article {
 	header {
   		background-color: transparent;
   		color: $body-text;
+      transition: .25s ease-in;
 
   		a {
   			
@@ -35,6 +36,7 @@ a {
         border-top: $orange 2px solid;
         width: 0%;
         float: left;
+        transition: .25s ease-in;
       }
 
     }
@@ -55,178 +57,6 @@ a {
 
 }
 
-//for animated header text
-
-a {
-  color: $body-text;
-
-  .entry-title {
-    font-size: 1em;
-    z-index: 100;
-    margin-left: 0px;
-    margin-top: 7px;
-    // transition: .25s ease;
-    flex-grow: 1;
-  }
-
-  p {
-    z-index: 100;
-  }
-
-  .entry-summary {
-    text-align: right;
-    float: right;
-
-    p {
-      transition: .25s ease;
-    }
-  }
-
-  .portfolio-list-img-container {
-    outline: 15px solid #fff;
-    outline-offset: -15px;
-  }
-
-  &:hover{
-  
-    .portfolio-list-img-container {
-      opacity: 1;
-      //box-shadow: 2px 2px $orange;
-      filter: grayscale(0);
-      
-      outline: 0px solid #fff;
-      outline-offset: 0px;
-      transition: .5s ease-out;
-
-    }
-
-    header {
-      margin-left: 15px;
-      color: $orange;
-      transition: 0.5s ease-out;
-    }
-
-    .entry-summary {
-
-      p {
-        margin: 10px 10px;
-        transition: .25s ease-out;
-      }
-    }
-  }
-}
-
-
-#section-1 {
-
-  .portfolio-list {
-    margin-bottom: 5em;
-    padding: 0px;
-
-      &:nth-child(even) {
-        padding-right:15px;
-          @include breakpoint(tablet) { 
-            padding: 0px;
-          }        
-      }
-
-      &:nth-child(odd) {
-        padding-left:15px;
-          @include breakpoint(tablet) { 
-            padding: 0px;
-          }
-      }
-
-
-  }
-  
-
-  article {
-    //height: 200px;
-    padding: 0;
-    margin-bottom: 20px;
-    // overflow: auto;
-
-
-
-    .portfolio-list-img-container {
-      height:200px;
-      //margin-bottom: -46px;
-      //border-bottom: 40px solid $white;  
-      overflow: hidden;
-      //opacity: 0;
-      filter: grayscale(1);
-      z-index: -1;
-      transition: opacity .5s ease;
-      //box-shadow: 0px 0px $orange; //for the animated hr
-      //padding:15px;
-      background-color: $white;
-
-      img.attachment-post-thumbnail.wp-post-image {
-        width: 100%;
-        height: auto;
-      }
-    }
-
-    header {
-      float: left;
-      display: flex;
-      //position: absolute; //apply only to front page list
-      //bottom: 0px; //apply only to front page list
-    }
-
-    .col-md-6{
-
-
-
-      @include breakpoint(tablet) {
-        padding:0;
-      }
-    }
-    
-
-
-
-}
-}
-//}
-
-#section-2 {
-
-
- }
-
- #section-3 {
-
-    article {
-      height: 2em;
-    }
-
-    article.blog-list {
-      margin: 3em 0 6em;
-      //border-top: 2px solid $white;
-
-      a {
-        transition: .25s ease;
-
-        h2 {
-          font-size: 1em;
-          margin: 20px 0 22px;
-        }
-      }
-
-      a:hover {
-        text-decoration: none;
-        
-        // header {
-        //   color: $orange;
-        //   transition: .25s ease;
-        //   padding-left: 15px;
-        //   background-color: $white;
-        // }
-      }
-    }
- }
 
 
  //for grayscale to full color photos

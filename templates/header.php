@@ -3,7 +3,7 @@
     <a class="brand" href="<?= esc_url(home_url('/')); ?>">Stephen Thunder Nixon</a>
     <!-- <a class="brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a> -->
 
-    <a class="about-modal-link" type="button" data-toggle="modal" data-target="#myModal" href=#>About</a>
+    <a class="about-modal-link small-caps" type="button" data-toggle="modal" data-target="#myModal" href=#>About</a>
 
     <?php
       get_template_part('templates/about-modal');
