@@ -49,6 +49,7 @@ div.portfolio-project {
 					h2 {
 						width: 100%;
 						font-size: 1.5em;
+						line-height: 1.5em;
 						font-weight: normal;
 					}
 				}
@@ -59,27 +60,85 @@ div.portfolio-project {
 				  justify-content: start;
 				  margin: 1em 0;
 				  flex-basis: 400px;
-				  flex-direction: column;
+				  flex-direction: row;
 				  font-weight: bold;
 				  //font-size: .8em;
 				  line-height: 1.25em;
 				  padding: 1em;
 				  flex-grow: 1;
+				  flex-wrap: wrap;
+
+				  .small-caps {
+				  	//color: $orange;
+				  	font-weight: normal;
+				  }
+
+				  div {
+					flex-basis: 150px;
+					flex-grow: 1;
+					margin-bottom: .5em;
+
+					&:first-child {
+						border-bottom: 2px solid #fff;
+						color: rgb(61, 61, 61);
+						/* background-color: white; */
+						width: 100%;
+						height: 2em;
+						margin: -17px -17px 10px;
+						padding: 0 15px;
+						flex-basis: 1000px;
+					}
+
+					&:last-child{
+						flex-basis: 300px;
+						flex-grow: 2;
+						margin-bottom: 0;
+					}
+
+					
+				  }
 
 				  p {
 				  	margin: .25em;
+				  }
+
+				  ul {
+				  	padding-left: 1.25em;
 				  }
 				}
 
 			}
 
+
+
 		}
 
-		.description {
-			max-width: 600px;
-			margin: 2em auto;
-			font-size: 1.25em;
-			line-height: 1.5em;
+		img {
+			filter: grayscale(1);
+			outline: 0px solid rgba($white, 0);
+			transition: .5s ease-in;
+			margin: .5em 0;
+
+			&:hover {
+				filter: grayscale(0);
+				outline: 5px solid rgba($white, 1);
+				transition: .5s ease-out;
+			}
+		}
+
+		.one-paragraph-description {
+			//border-left: 4px solid $background-gray;
+			margin: 4em auto;
+
+			.description {
+
+				@extend .serif;
+
+				max-width: 600px;
+				margin: 0em auto;
+				font-size: 1.25em;
+				line-height: 1.5em;
+			}
 		}
 	}
 }

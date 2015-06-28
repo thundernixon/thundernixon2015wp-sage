@@ -1,5 +1,6 @@
 <header class="banner" role="banner">
   <div class="container">
+    <img id="site-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/logo.svg">
     <a class="brand" href="<?= esc_url(home_url('/')); ?>">Stephen Thunder Nixon</a>
     <!-- <a class="brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a> -->
 

@@ -55,6 +55,10 @@ p {
 	}
 }
 
+::selection {
+  background: rgba($active-orange, 0.4);
+}
+
 h1, h2 {
 	font-weight: 600;
 }
@@ -62,6 +66,19 @@ h1, h2 {
 h1 {
 	color: $orange;
 }
+
+li {
+	list-style: none;
+
+	&:before {
+		font-family: Warehouse Gothic, sans-serif;
+		font-weight: bold;
+		content: "\2192";
+		margin: 0 3px 0 -15px;
+	}
+}
+
+
 
 .small-caps {
 	text-transform: lowercase;

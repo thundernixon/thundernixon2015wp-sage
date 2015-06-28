@@ -4,12 +4,25 @@ header {
 	display: flex;
   	align-items: center;
 
+  	#site-logo {
+  		width: 3em;
+		height: 3em;
+		position: fixed;
+		top: 1em;
+		right: 1em;
+		z-index: 5000;
+		background-color: white;
+		padding: 5px;
+		border: 2px solid #FF7825;
+  	}
+
 	a {
 		//color: $orange; //more minimalist approach
 		color: $navy; //more minimalist approach
 		font-weight: 600;
 
 		&:hover {
+			text-decoration: none;
 			//text-decoration: underline;
 			//color: $body-text; //more minimalist approach
 			color: $orange; //more minimalist approach

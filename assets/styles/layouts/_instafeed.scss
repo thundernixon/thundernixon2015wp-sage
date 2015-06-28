@@ -20,7 +20,7 @@
 		&:hover {
 			background-color: $white;
 			text-decoration: none;
-			box-shadow: 2px 2px $orange;
+			box-shadow: 2px 2px $background-gray, 4px 4px $orange;
 			transition: .75s ease-out;
 		}
 

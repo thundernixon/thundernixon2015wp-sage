@@ -33,17 +33,17 @@
 			background-color: $background-gray; //slightly more orange approach
 			transition: 0.25s ease;
 			text-decoration: none;
-			border-bottom: solid 0px $background-gray;
+			border-top: solid 0px $background-gray;
 			//padding:0 15px;
 
 			&:hover {
 				text-decoration: none;
 				//color: $white; //more minimalist approach
-				color: $orange; //more minimalist approach
+				//color: $orange; //more minimalist approach
 				color: $navy; //slightly more orange approach
 				// background-color: #ff5000;
 				//border-bottom: solid 2px $orange;
-				border-bottom: solid 2px $navy;//slightly more orange approach
+				border-top: solid 2px $orange;//slightly more orange approach
 				transition: 0.25s ease;
 			}		
 
@@ -56,7 +56,11 @@
 
 				span {
 					margin: auto;
-					}
+				}
+
+				&:before {
+					content: none;
+				}
 			}
 
 
@@ -74,7 +78,7 @@
 			padding: 0 15px;
 
 			&:hover {
-				border-bottom: 0;
+				border-top: 0;
 				transition: 0.25s ease;
 				color: $white; //slightly more orange approach
 			}

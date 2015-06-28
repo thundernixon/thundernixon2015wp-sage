@@ -1,7 +1,7 @@
 <?php // get_template_part('templates/content-single', get_post_type()); ?>
 
 
-    <div class="portfolio-project">
+    <div data="work" onload="growTab1()" class="portfolio-project">
       <div role="main">
 
 
@@ -25,57 +25,72 @@
                 <!--           <p>
                 <?php the_field('project_type'); ?>
               </p> -->
-              <p>
-                <?php the_field('client'); ?>
-              </p>
 
-                          <p>
-                <?php the_field('date'); ?>
-              </p>
+              <div>
+                <p  class="small-caps">Project Details</p>
+              </div>
 
-
-              <?php if( have_rows('collaborators') ): ?>
-
+              <div>
                 <p>
-                <span  class="small-caps">Collaborators</span>
-                
-
-
-                  <ul class="collaborators">
-
-                  <?php while( have_rows('collaborators') ): the_row(); 
-
-                    //vars
-                    $role = get_sub_field('role');
-                    $name = get_sub_field('name');
-                    $location = get_sub_field('location');
-
-                    ?>
-
-                    <li class="">
-
-                      <?php if( $role ): ?>
-                        <?php echo $role, ": " ?>
-                      <?php endif; ?>
-
-                      <?php if( $name ): ?>
-                        <?php echo  $name ?>
-                      <?php endif; ?>
-
-                      <?php if( $location ): ?>
-                        <?php echo "{", $location, "}" ?>
-                      <?php endif; ?>
-
-                    </li>
-
-                  <?php endwhile; ?>
-
-                  </ul>
-
+                  <span  class="small-caps">Done for</span>
                 </p>
+                <p>
+                  <?php the_field('client'); ?>
+                </p>
+              </div>
+              <div>
+                <p>
+                <span  class="small-caps">Approx. Time</span>
+                </p>
+                <p>
+                  <?php the_field('date'); ?>
+                </p>
+              </div>
 
-              <?php endif; ?>
 
+              <div>
+                <?php if( have_rows('collaborators') ): ?>
+
+                  <p>
+                  <span  class="small-caps">Collaborators</span>
+                  
+
+
+                    <ul class="collaborators">
+
+                    <?php while( have_rows('collaborators') ): the_row(); 
+
+                      //vars
+                      $role = get_sub_field('role');
+                      $name = get_sub_field('name');
+                      $location = get_sub_field('location');
+
+                      ?>
+
+                      <li class="">
+
+                        <?php if( $role ): ?>
+                          <?php echo $role, ": " ?>
+                        <?php endif; ?>
+
+                        <?php if( $name ): ?>
+                          <?php echo  $name ?>
+                        <?php endif; ?>
+
+                        <?php if( $location ): ?>
+                          <?php echo "{", $location, "}" ?>
+                        <?php endif; ?>
+
+                      </li>
+
+                    <?php endwhile; ?>
+
+                    </ul>
+
+                  </p>
+
+                <?php endif; ?>
+              </div>
 
 
 
@@ -89,16 +104,17 @@
   			    <?php get_template_part('templates/entry-meta'); ?>
   			</p> -->
 
-
-
-      			<p class="one-paragraph-description description">
-      				<?php the_field('one_paragraph_description'); ?>
-      			</p>
-
+        <section>
+          <div class="container wrap one-paragraph-description">
+        			<p class="description">
+        				<?php the_field('one_paragraph_description'); ?>
+        			</p>
+          </div> 
               
 
             <div class="container wrap"><?php the_content(); ?></div>
-          
+        
+        </section>
         </article>
           <!-- TEST TEST TEST that this page is really coming up -->
           <!-- <p>test</p> -->

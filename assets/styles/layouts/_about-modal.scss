@@ -7,6 +7,10 @@
 	width: 100%; //comment again
 	display: flex;
 
+	::selection {
+		background: rgba($red, 0.3);
+	}
+
 	.fade {
 		background-color: rgba( $active-orange, .9 );
 	}
