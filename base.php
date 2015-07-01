@@ -16,7 +16,7 @@ use Roots\Sage\Wrapper;
 
 <!-- <body onload="hideSections()" onscroll="tabSize()" <?php body_class(); ?> > -->
 
-  <body onload="hideSections(); tabSize()" <?php body_class(); ?> >
+  <body onload="hideSections(); navRight()" onscroll="tabSize();" <?php body_class(); ?> >
 
 
 
