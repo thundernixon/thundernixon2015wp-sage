@@ -36,6 +36,12 @@
 			border-top: solid 0px $background-gray;
 			//padding:0 15px;
 
+
+			//the following three styles make the tab "inactive" by default
+			flex-grow:1; 
+			transition: 0.25s ease;
+			padding: 0;
+
 			&:hover {
 				text-decoration: none;
 				//color: $white; //more minimalist approach
@@ -84,11 +90,10 @@
 			}
 		}
 
-		.inactive-tab {
-			flex-grow:1;
-			//width: auto;
-			transition: 0.25s ease;
-			padding: 0;
+		.inactive-tab { //moved to regular tab anchor styling above
+			// flex-grow:1; 
+			// transition: 0.25s ease;
+			// padding: 0;
 		}
 
 		& a:first-child span {
@@ -113,10 +118,12 @@
 	transition: 0.5s ease;
 }
 
-.show {
-	display: flex;
-	width: 100%;
-	opacity: 1;
-	transition: 0.5s ease;
-}
+
+
+	//  #front-page-tabs .reveal section {
+	// 	display: flex;
+	// 	width: 100%;
+	// 	opacity: 1;
+	// 	transition: 0.5s ease;
+	// }
 

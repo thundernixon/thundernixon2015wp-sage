@@ -20,7 +20,63 @@
 
 	</nav>
  -->
+
+
+  <?php 
+      if (is_front_page()) : ?>
+ 
+ 		
+		<nav class="main-nav">
+
+			<ul class="container">
+				<a data-tab="work"   href="#section-1"  class="" id="tab-1">
+					<li>
+						<span>Work</span>
+					</li>
+				</a>
+				<a data-tab="instagram"  href="#section-2" class="" id="tab-2">
+					<li>
+						<span>#typefloundry</span>
+					</li>
+				</a>
+				<a data-tab="blog"  href="#section-3"  class="" id="tab-3">
+					<li>
+						<span>Blog</span>
+					</li>
+				</a>
+			</ul>
+
+		</nav>
+<?php else: ?>
 	<nav class="main-nav">
+
+			<ul class="container">
+				<a data-tab="work"   href="<?php bloginfo('url'); ?>#section-1"  class="" id="tab-1">
+					<li>
+						<span>Work</span>
+					</li>
+				</a>
+				<a data-tab="instagram"  href="<?php bloginfo('url'); ?>/#section-2" class="" id="tab-2">
+					<li>
+						<span>#typefloundry</span>
+					</li>
+				</a>
+				<a data-tab="blog"  href="<?php bloginfo('url'); ?>/#section-3"  class="" id="tab-3">
+					<li>
+						<span>Blog</span>
+					</li>
+				</a>
+			</ul>
+
+	</nav>
+
+
+<?php endif; ?>
+
+
+<!--=====the following is pre-jQuery tabbing code from http://toddmotto.com/simple-html5-data-attribute-jquery-tabs-markup-free-and-relative-to-their-container-for-ultimate-reuse/
+
+		<nav class="main-nav">
 
 			<ul class="container">
 				<a data-tab="work"   href="<?php bloginfo('url'); ?>#section-1" onclick="showSection1();growTab1()" class="" id="tab-1">
@@ -40,7 +96,7 @@
 				</a>
 			</ul>
 
-	</nav>
+	</nav> -->
 
 
 

@@ -16,7 +16,9 @@ use Roots\Sage\Wrapper;
 
 <!-- <body onload="hideSections()" onscroll="tabSize()" <?php body_class(); ?> > -->
 
-  <body onload="hideSections(); navRight()" onscroll="tabSize();" <?php body_class(); ?> >
+  <body  onscroll="" <?php body_class(); ?> >
+
+  <!-- onload="hideSections(); navRight(); tabSize();" -->
 
 
 
@@ -65,30 +67,37 @@ use Roots\Sage\Wrapper;
       ?>
     </footer>
 
+
   </body>
 
       <script type="text/javascript">
-                var feed = new Instafeed({
-                  get: 'user',
-                  clientId: 'f1ac464b95de40a9b203a6c8edf827a8',
-                  resolution: 'standard_resolution',
-                  limit: '6',
-                  userId: 209250343,
-                  accessToken: '209250343.467ede5.17e3f6e6946a4758b7de4d1809135877',
-                  template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /><p>{{caption}}</p></a>',
-                  filter: function(image) {
-                    return image.tags.indexOf('typefloundry') >= 0;
-                  }
+                // var feed = new Instafeed({
+                //   // get: 'user',
+                //   // clientId: 'f1ac464b95de40a9b203a6c8edf827a8',
+                //   // resolution: 'standard_resolution',
+                //   //limit: '60',
+                //   // userId: 209250343,
+                //   // accessToken: '209250343.467ede5.17e3f6e6946a4758b7de4d1809135877',
+                //   // template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /><p>{{caption}}</p></a>',
+                //   // filter: function(image) {
+                //   //   return image.tags.indexOf('typefloundry') >= 0;
+                //   // }
 
 
-                });
-                feed.run();
+                // });
+                // feed.run();
     </script>
 
     <script>
-      smoothScroll.init({
-        speed: 250, // Integer. How fast to complete the scroll in milliseconds
-        easing: 'easeInOutCubic', // Easing pattern to use
-      });
+      // smoothScroll.init({
+      //   speed: 250, // Integer. How fast to complete the scroll in milliseconds
+      //   easing: 'easeInOutCubic', // Easing pattern to use
+      // });
     </script>
+<!--
+     <script src="<?php bloginfo('template_directory'); ?>/stephen-js/jquery.lazylinepainter-1.5.1.min.js"></script>
+-->
+
+
+
 </html>

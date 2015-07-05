@@ -5,6 +5,10 @@
         "scripts/main.js",
         "scripts/stephen.js"
       ],
+      "vendor": [
+        "assets/vendor/jquery.lazylinepainter-1.5.1.min.js",
+        "assets/vendor/instafeed.min.js"
+      ],
       "main": true
     },
     "main.css": {

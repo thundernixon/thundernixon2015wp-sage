@@ -5,7 +5,10 @@
 	height: 100%;
 	width:100%;
 	margin-bottom: -80px;
-	background-color: $white;
+	background-color: $white; 
+	align-items: center;
+  	justify-content: center;
+  	flex-direction: column;
 	
 	.main-hero-message {
 		//height: 80vh;
@@ -16,28 +19,46 @@
 		//background-image: url(../images/bitmap-thundernixon2015wp-01.svg) repeat;
 
 		// background-color: red;
+		display: flex;
+		align-items: center;
+  		justify-content: center;
+	}
+
+	#yo-hero {
+		position: relative;
+		top: 3vh;
+		max-width: 90vw;
+		max-height: 80vh;
+
+		svg {
+			max-width: 90vw;
+			max-height: 80vh;
+		}
 	}
 
 	h1 {
 		font-size:400px;
 		font-weight: 600;
-		color: $background-gray;
+		color: $background-gray; 
 		text-rendering: optimizeLegibility;
 	}
 
 	p {
-		color: $navy;
+		color: $body-text; //was $navy //$orange
+		//text-shadow: 2px 2px 0 $white;
 
 
 		//put the text over top of the "Yo"
-		  width: 250px;
-		  margin: 0 auto;
-		  text-align: left;
-		  font-weight: 600;
-		  font-size: 2em;
-		  line-height: 1em;
-		  position: relative;
-		  top: -9em;
-		  left: -10px;
+		width: 300px;
+		margin: 0 auto;
+		text-align: left;
+		font-weight: 600;
+		font-size: 2em;
+		line-height: 1em;
+		position: relative;
+  		top: -45vh;
+		// position: relative;
+		// top: -9em;
+		// left: -10px;
 	}
 }

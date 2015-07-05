@@ -7,7 +7,8 @@
 
   <?php wp_head(); ?>
 
+<!--
   <script src="<?php bloginfo('template_directory'); ?>/stephen-js/instafeed.min.js"></script>
   <script src="<?php bloginfo('template_directory'); ?>/stephen-js/smooth-scroll.min.js"></script>
-  
+  -->
 </head>

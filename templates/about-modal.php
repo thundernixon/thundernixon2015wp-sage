@@ -12,20 +12,20 @@
             <div class="modal-body">
               <section>
                 <p>
-                  I like to think, draw, create, and learn.
+                  I like to collaborate, draw letters, code, explore, and learn.
                 </p>
                 <p>
                   I live in <a href="https://en.wikipedia.org/wiki/New_York_City" target="_blank">the most interesting city in the world</a>.
                 </p>
           
                 <p>
-                  I'm a visual designer at <a href="http://www.ibm.com" target="_blank">IBM</a>, which means that I spend most of my time thinking hard about user exeperience, and much of the rest of it working with developers to create web apps to make the complex more usable and beautiful.
+                  I'm a visual designer at <a href="http://www.ibm.com" target="_blank">IBM</a>, which means that I spend most of my time thinking about what makes great user exeperience, and much of the rest of it communicating with developers to make complex web apps usable and beautiful.
                 </p>
                 <p>
                   I love type design, lettering, and brand identities.
                 </p>
                 <p>
-                  I'm obsessed with podcasts. If we talk at a party, it probably won't be too long before I ask you if you listen to podcasts, and then tell you about the latest episode of 99% Invisible, Radiolab, Reply All, Dan Carlin's Hardcore History, The Tim Ferris Show... You get the idea.
+                  I'm obsessed with podcasts. Read about my favorites on my blog.
                 </p>
                 <p>
                   Connect with me on <a href="http://www.twitter.com/thundernixon" target="_blank">Twitter</a> and <a href="http://www.instagram.com/thundernixon" target="_blank">Instagram</a>.
@@ -40,13 +40,13 @@
                 <h4 class="small-caps">FAQ</h4>
                 <p>“Is your middle name really ‘Thunder’?”</p>
                 <p>
-                  Nope. Back in high school, at one of the many points in life I decided to double-down on being weird, I decided that my nick name would be "Thunder," because it was the first badass, funny thing that came to mind. Shortly thereafter, I was signing up for Twitter, Email, domain names, and more, so it became an easy way to be found online. Really, try Googling "Stephen Thunder Nixon." It works too well to drop!
+                  Nope. Back in high school, at one of the many points in life I decided to double-down on being weird, I decided that my nick name would be "Thunder," because it was the first melodramatic, funny thing that came to mind. Shortly thereafter, I was signing up for Twitter, Email, domain names, and more, so it became an easy way to be found online. Really, try Googling "Stephen Thunder Nixon." It works too well to drop!
                 </p>
               </section>
               <section>
                 <h4 class="small-caps">Site Colophon:</h4>
-                <p>Body text and headers: <a href="http://www.fourthfloorfoundry.com/warehouse.html" target="_blank">Warehouse Gothic</a></p>
-                <p>Body text in blog: <a href="https://www.google.com/fonts/specimen/PT+Serif" target="_blank">PT Serif</a></p>
+                <p>Body text and headers: <a href="http://www.fourthfloorfoundry.com/warehouse.html" target="_blank">Warehouse Gothic</a></p> (I made this typeface)
+                <p>Body text in blog: <a href="https://www.google.com/fonts/specimen/PT+Serif" target="_blank">PT Serif</a></p> (Until I can make Warehouse Serif)
               </section>
               <section>
                 <h4 class="small-caps">Want to see my code?</h4>
