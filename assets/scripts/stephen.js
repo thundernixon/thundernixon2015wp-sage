@@ -27,21 +27,36 @@ function growTab3() {
 }
 
 function showSection1(){
-  document.getElementById("section-1").className = "reveal";
+  //document.getElementById("section-1").className = "reveal";
+  $('#section-1').fadeIn('slow');
   document.getElementById("section-2").className = "conceal";
   document.getElementById("section-3").className = "conceal";
+  //$('#section-2').fadeOut('fast');
+  //$('#section-3').fadeOut('fast');
+  $('#section-2').removeAttr( 'style' ).addClass('conceal');
+  $('#section-3').removeAttr( 'style' ).addClass('conceal');
 }
 
 function showSection2(){
-  document.getElementById("section-2").className = "reveal";
+  //document.getElementById("section-2").className = "reveal";
+  $('#section-2').fadeIn('slow');
   document.getElementById("section-1").className = "conceal";
   document.getElementById("section-3").className = "conceal";
+  //$('#section-1').fadeOut('fast');
+  //$('#section-3').fadeOut('fast');
+  $('#section-1').removeAttr( 'style' ).addClass('conceal');
+  $('#section-3').removeAttr( 'style' ).addClass('conceal');
 }
 
 function showSection3(){
-  document.getElementById("section-3").className = "reveal";
+  //document.getElementById("section-3").className = "reveal";
+  $('#section-3').fadeIn('slow');
   document.getElementById("section-1").className = "conceal";
   document.getElementById("section-2").className = "conceal";
+  //$('#section-1').fadeOut('fast');
+  //$('#section-2').fadeOut('fast');
+  $('#section-1').removeAttr( 'style' ).addClass('conceal');
+  $('#section-2').removeAttr( 'style' ).addClass('conceal');
 }
 
 // ============ reveals section according to click
