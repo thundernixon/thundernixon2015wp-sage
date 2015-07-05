@@ -27,69 +27,83 @@ function growTab3() {
 }
 
 function showSection1(){
-  //document.getElementById("section-1").className = "reveal";
-  $('#section-1').fadeIn('slow');
-  document.getElementById("section-2").className = "conceal";
-  document.getElementById("section-3").className = "conceal";
-  //$('#section-2').fadeOut('fast');
-  //$('#section-3').fadeOut('fast');
-  $('#section-2').removeAttr( 'style' ).addClass('conceal');
-  $('#section-3').removeAttr( 'style' ).addClass('conceal');
+  //document.getElementById("work").className = "reveal";
+  $('#work').fadeIn('slow');
+
+  document.getElementById("typefloundry").className = "conceal";
+  document.getElementById("blog").className = "conceal";
+  //$('#typefloundry').fadeOut('fast');
+  //$('#blog').fadeOut('fast');
+  $('#typefloundry').removeAttr( 'style' ).addClass('conceal');
+  $('#blog').removeAttr( 'style' ).addClass('conceal');
 }
 
 function showSection2(){
-  //document.getElementById("section-2").className = "reveal";
-  $('#section-2').fadeIn('slow');
-  document.getElementById("section-1").className = "conceal";
-  document.getElementById("section-3").className = "conceal";
-  //$('#section-1').fadeOut('fast');
-  //$('#section-3').fadeOut('fast');
-  $('#section-1').removeAttr( 'style' ).addClass('conceal');
-  $('#section-3').removeAttr( 'style' ).addClass('conceal');
+  //document.getElementById("typefloundry").className = "reveal";
+  $('#typefloundry').fadeIn('slow');
+  document.getElementById("work").className = "conceal";
+  document.getElementById("blog").className = "conceal";
+  //$('#work').fadeOut('fast');
+  //$('#blog').fadeOut('fast');
+  $('#work').removeAttr( 'style' ).addClass('conceal');
+  $('#blog').removeAttr( 'style' ).addClass('conceal');
 }
 
 function showSection3(){
-  //document.getElementById("section-3").className = "reveal";
-  $('#section-3').fadeIn('slow');
-  document.getElementById("section-1").className = "conceal";
-  document.getElementById("section-2").className = "conceal";
-  //$('#section-1').fadeOut('fast');
-  //$('#section-2').fadeOut('fast');
-  $('#section-1').removeAttr( 'style' ).addClass('conceal');
-  $('#section-2').removeAttr( 'style' ).addClass('conceal');
+  //document.getElementById("blog").className = "reveal";
+  $('#blog').fadeIn('slow');
+  document.getElementById("work").className = "conceal";
+  document.getElementById("typefloundry").className = "conceal";
+  //$('#work').fadeOut('fast');
+  //$('#typefloundry').fadeOut('fast');
+  $('#work').removeAttr( 'style' ).addClass('conceal');
+  $('#typefloundry').removeAttr( 'style' ).addClass('conceal');
 }
 
 // ============ reveals section according to click
 
 document.getElementById("tab-1").addEventListener("click", function revealSection1(){
+  event.preventDefault();
   showSection1(); //show section
   growTab1();//make front tab active
+
+    $('html, body').animate({
+        scrollTop: $("#work").offset().top
+    }, 250);
 });
 
 document.getElementById("tab-2").addEventListener("click", function revealSection2(){  
+  event.preventDefault();
   showSection2(); //show section
   growTab2(); //make middle tab active
+      $('html, body').animate({
+        scrollTop: $("#typefloundry").offset().top
+    }, 250);
 });
 
 document.getElementById("tab-3").addEventListener("click", function revealSection2(){
+  event.preventDefault();
   showSection3(); //show section
   growTab3(); //make third tab active
+      $('html, body').animate({
+        scrollTop: $("#blog").offset().top
+    }, 250);
 });
 
 window.addEventListener("load", function scrollToSections() {
-  if (isUrl === "http://localhost/thundernixon2015wp/" || isUrl === "http://localhost/thundernixon2015wp/#section-1"){ //&& (isUrl.search("#section-2") === -1 && isUrl.search("#section-3") === -1)
+  if (isUrl === "http://localhost/thundernixon2015wp/" || isUrl === "http://localhost/thundernixon2015wp/#work"){ //&& (isUrl.search("#typefloundry") === -1 && isUrl.search("#blog") === -1)
     showSection1();
     growTab1();
   } 
   
     
-  else if (isUrl === "http://localhost/thundernixon2015wp/#section-2"){ // (isUrl.search("#section-2") >= 0)
+  else if (isUrl === "http://localhost/thundernixon2015wp/#typefloundry"){ // (isUrl.search("#typefloundry") >= 0)
     showSection2();
     growTab2();
   } 
   
     
-  else if (isUrl === "http://localhost/thundernixon2015wp/#section-3"){ //(isUrl.search("#section-3") >= 0)
+  else if (isUrl === "http://localhost/thundernixon2015wp/#blog"){ //(isUrl.search("#blog") >= 0)
     showSection3();
     growTab3();
   } 

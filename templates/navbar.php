@@ -1,17 +1,17 @@
 <!-- <nav class="main-nav">
 
 			<ul class="container">
-				<a data-scroll onclick="showSection1();growTab1()" href="<?php echo esc_url( home_url( '/' ) ); ?>#section-1" class="" id="tab-1">
+				<a data-scroll onclick="showSection1();growTab1()" href="<?php echo esc_url( home_url( '/' ) ); ?>#work" class="" id="tab-1">
 					<li>
 						<span>Work</span>
 					</li>
 				</a>
-				<a data-scroll onclick="showSection2();growTab2()" href="<?php bloginfo('url'); ?>/#section-2" class="" id="tab-2">
+				<a data-scroll onclick="showSection2();growTab2()" href="<?php bloginfo('url'); ?>/#typefloundry" class="" id="tab-2">
 					<li>
 						<span>#typefloundry</span>
 					</li>
 				</a>
-				<a data-scroll onclick="showSection3();growTab3()" href="<?php bloginfo('url'); ?>/#section-3" class="" id="tab-3">
+				<a data-scroll onclick="showSection3();growTab3()" href="<?php bloginfo('url'); ?>/#blog" class="" id="tab-3">
 					<li>
 						<span>Blog</span>
 					</li>
@@ -29,17 +29,17 @@
 		<nav class="main-nav">
 
 			<ul class="container">
-				<a data-tab="work"   href="#section-1"  class="" id="tab-1">
+				<a data-tab="work"   href="#work"  class="" id="tab-1">
 					<li>
 						<span>Work</span>
 					</li>
 				</a>
-				<a data-tab="instagram"  href="#section-2" class="" id="tab-2">
+				<a data-tab="instagram"  href="#typefloundry" class="" id="tab-2">
 					<li>
 						<span>#typefloundry</span>
 					</li>
 				</a>
-				<a data-tab="blog"  href="#section-3"  class="" id="tab-3">
+				<a data-tab="blog"  href="#blog"  class="" id="tab-3">
 					<li>
 						<span>Blog</span>
 					</li>
@@ -51,17 +51,17 @@
 	<nav class="main-nav">
 
 			<ul class="container">
-				<a data-tab="work"   href="<?php bloginfo('url'); ?>#section-1"  class="" id="tab-1">
+				<a data-tab="work"   href="<?php bloginfo('url'); ?>#work"  class="" id="tab-1">
 					<li>
 						<span>Work</span>
 					</li>
 				</a>
-				<a data-tab="instagram"  href="<?php bloginfo('url'); ?>/#section-2" class="" id="tab-2">
+				<a data-tab="instagram"  href="<?php bloginfo('url'); ?>/#typefloundry" class="" id="tab-2">
 					<li>
 						<span>#typefloundry</span>
 					</li>
 				</a>
-				<a data-tab="blog"  href="<?php bloginfo('url'); ?>/#section-3"  class="" id="tab-3">
+				<a data-tab="blog"  href="<?php bloginfo('url'); ?>/#blog"  class="" id="tab-3">
 					<li>
 						<span>Blog</span>
 					</li>
@@ -79,17 +79,17 @@
 		<nav class="main-nav">
 
 			<ul class="container">
-				<a data-tab="work"   href="<?php bloginfo('url'); ?>#section-1" onclick="showSection1();growTab1()" class="" id="tab-1">
+				<a data-tab="work"   href="<?php bloginfo('url'); ?>#work" onclick="showSection1();growTab1()" class="" id="tab-1">
 					<li>
 						<span>Work</span>
 					</li>
 				</a>
-				<a data-tab="instagram"  href="<?php bloginfo('url'); ?>/#section-2" onclick="showSection2();growTab2()" class="" id="tab-2">
+				<a data-tab="instagram"  href="<?php bloginfo('url'); ?>/#typefloundry" onclick="showSection2();growTab2()" class="" id="tab-2">
 					<li>
 						<span>#typefloundry</span>
 					</li>
 				</a>
-				<a data-tab="blog"  href="<?php bloginfo('url'); ?>/#section-3" onclick="showSection3();growTab3()" class="" id="tab-3">
+				<a data-tab="blog"  href="<?php bloginfo('url'); ?>/#blog" onclick="showSection3();growTab3()" class="" id="tab-3">
 					<li>
 						<span>Blog</span>
 					</li>
@@ -103,17 +103,17 @@
 <!--  	<nav class="main-nav">
 
 			<ul class="container">
-				<a    href="<?php bloginfo('url'); ?>#section-1" onclick="showSection1();growTab1()" class="" id="tab-1">
+				<a    href="<?php bloginfo('url'); ?>#work" onclick="showSection1();growTab1()" class="" id="tab-1">
 					<li>
 						<span>Work</span>
 					</li>
 				</a>
-				<a   href="<?php bloginfo('url'); ?>/#section-2" onclick="showSection2();growTab2()" class="" id="tab-2">
+				<a   href="<?php bloginfo('url'); ?>/#typefloundry" onclick="showSection2();growTab2()" class="" id="tab-2">
 					<li>
 						<span>#typefloundry</span>
 					</li>
 				</a>
-				<a   href="<?php bloginfo('url'); ?>/#section-3" onclick="showSection3();growTab3()" class="" id="tab-3">
+				<a   href="<?php bloginfo('url'); ?>/#blog" onclick="showSection3();growTab3()" class="" id="tab-3">
 					<li>
 						<span>Blog</span>
 					</li>

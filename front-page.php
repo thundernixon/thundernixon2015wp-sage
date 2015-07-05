@@ -8,7 +8,7 @@
 	<div class="content container wrap">
 
 		<!-- Portfolio Section -->
-			<section data-content="work" id="section-1" class="reveal"> <!-- show -->
+			<section data-content="work" id="work" class="reveal"> <!-- show -->
 
 			<h1>
 				<!-- Work -->
@@ -59,7 +59,7 @@
 
 		<!-- Instafeed Section -->
 
-		<section data-content="instagram" id="section-2" class=""><!--  class="conceal" -->
+		<section data-content="instagram" id="typefloundry" class=""><!--  class="conceal" -->
 
 			<h1>
 				<!-- Play  -->
@@ -78,7 +78,7 @@
 
 		<!-- Blog Section -->
   
-		<section data-content="blog" id="section-3" class=""> <!-- class="conceal" -->
+		<section data-content="blog" id="blog" class=""> <!-- class="conceal" -->
 
 			<h1>
 				<!-- Blog -->
