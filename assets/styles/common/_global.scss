@@ -18,6 +18,15 @@
 
 @import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic);
 
+	@keyframes bounce {
+		from { 
+			Transform: translateY(3em);
+		}
+		to { 
+			Transform: translateY(4em); 
+		}
+	}
+
 html, body {
 	height: 100%;
 	background-color: $background-gray;

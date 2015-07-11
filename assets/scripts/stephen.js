@@ -6,6 +6,28 @@
 
 var isUrl = window.location.href;
 
+function getRootUrl() {
+  return window.location.origin?window.location.origin+'/':window.location.protocol+'/'+window.location.host+'/';
+}
+
+function getBaseUrl() {
+  var re = new RegExp(/^.*\//);
+  return re.exec(window.location.href);
+}
+
+// function getBaseUrl() {
+//   var re = new RegExp(/^.*\//);
+//   return "(re.exec(window.location.href))".replace(/[\[\]']+/g,'');
+// }
+
+// function replaceBrackets() {
+//   return "[hey look no brackets]".replace(/[\[\]']+/g,'');
+// }
+
+function stripSquareBrackets() {
+  getBaseUrl().replace(/[\[\]']+/g,'');
+}
+
 
 // ============ allows nav bar to tab to shift size and color to indicate active section
 function growTab1() {
@@ -122,20 +144,24 @@ document.getElementById("tab-3").addEventListener("click", function revealSectio
     }, 250);
 });
 
+//Trying to set the tab behavioral via relative paths, rather than absolute
+
+
 window.addEventListener("load", function scrollToSections() {
-  if (isUrl === "http://localhost/thundernixon2015wp/" || isUrl === "http://localhost/thundernixon2015wp/#work"){ //&& (isUrl.search("#typefloundry") === -1 && isUrl.search("#blog") === -1)
+  if (isUrl === getBaseUrl()+"" || isUrl === getBaseUrl()+"#work"){ //&& (isUrl.search("#typefloundry") === -1 && isUrl.search("#blog") === -1)
     showSection1();
     growTab1();
+    console.log("get base url is working");
   } 
   
     
-  else if (isUrl === "http://localhost/thundernixon2015wp/#typefloundry"){ // (isUrl.search("#typefloundry") >= 0)
+  else if (isUrl === getBaseUrl()+"#typefloundry"){ // (isUrl.search("#typefloundry") >= 0)
     showSection2();
     growTab2();
   } 
   
     
-  else if (isUrl === "http://localhost/thundernixon2015wp/#blog"){ //(isUrl.search("#blog") >= 0)
+  else if (isUrl === getBaseUrl()+"#blog"){ //(isUrl.search("#blog") >= 0)
     showSection3();
     growTab3();
   } 
@@ -143,6 +169,34 @@ window.addEventListener("load", function scrollToSections() {
     return false;
   }
 });
+
+//Trying to set the tab behavioral via relative paths, rather than absolute
+
+
+// window.addEventListener("load", function scrollToSections() {
+//   if (isUrl === "http://localhost/thundernixon2015wp/" || isUrl === "http://localhost/thundernixon2015wp/#work"){ //&& (isUrl.search("#typefloundry") === -1 && isUrl.search("#blog") === -1)
+//     showSection1();
+//     growTab1();
+//     //console.log("get root url is not working for me, right now");
+//     console.log(getRootUrl());
+//     console.log(isUrl === getRootUrl()+"thundernixon2015wp/");
+//   } 
+  
+    
+//   else if (isUrl === "http://localhost/thundernixon2015wp/#typefloundry"){ // (isUrl.search("#typefloundry") >= 0)
+//     showSection2();
+//     growTab2();
+//   } 
+  
+    
+//   else if (isUrl === "http://localhost/thundernixon2015wp/#blog"){ //(isUrl.search("#blog") >= 0)
+//     showSection3();
+//     growTab3();
+//   } 
+//     else {
+//     return false;
+//   }
+// });
 
 //Trying to set the tab behavioral via relative paths, rather than absolute
 
