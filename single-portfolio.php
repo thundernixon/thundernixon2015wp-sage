@@ -10,7 +10,7 @@
 
         <?php while ( have_posts() ) : the_post(); ?>
 
-       <!--  <img src="<?php the_field('hero_image'); ?>" /> -->
+       <!--  <img src="<?php //the_field('hero_image'); ?>" /> -->
 
        <div class="header-container">
         

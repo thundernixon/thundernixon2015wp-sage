@@ -28,7 +28,7 @@
     
     <header>
       <h2 class="entry-title"><?php the_title(); ?></h2>
-      <!-- <p><?php the_field('project_type'); ?></p> -->
+      <!-- <p><?php //the_field('project_type'); ?></p> -->
       <?php //get_template_part('templates/entry-meta'); ?>
     </header>
 <!--     <div class="entry-summary">
