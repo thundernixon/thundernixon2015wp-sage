@@ -45,8 +45,8 @@
               </section>
               <section>
                 <h4 class="small-caps">Site Colophon:</h4>
-                <p>Body text and headers: <a href="http://www.fourthfloorfoundry.com/warehouse.html" target="_blank">Warehouse Gothic</a></p> (I made this typeface)
-                <p>Body text in blog: <a href="https://www.google.com/fonts/specimen/PT+Serif" target="_blank">PT Serif</a></p> (Until I can make Warehouse Serif)
+                <p>Body text and headers: <a href="http://www.fourthfloorfoundry.com/warehouse.html" target="_blank">Warehouse Gothic</a> (made by me!)</p>
+                <p>Body text in blog: <a href="https://www.google.com/fonts/specimen/PT+Serif" target="_blank">PT Serif</a> (until I can create Warehouse Serif) </p>
               </section>
               <section>
                 <h4 class="small-caps">Want to see my code?</h4>

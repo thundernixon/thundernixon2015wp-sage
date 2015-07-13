@@ -50,6 +50,7 @@ a {
 
 	&:focus {
 		color: $orange;
+  		outline: thin dotted !important;
 	}
 }
 
@@ -86,9 +87,20 @@ li {
 
 
 .small-caps {
-	text-transform: lowercase;
-	font-feature-settings: "smcp";
-	//font-size: .8em;
-	letter-spacing: .08em;
+	text-transform: uppercase;
+	letter-spacing: .09em;
+	font-size: .85em;
+  	font-weight: bold;
+  	transform: translateY(.08em);
 }
 
+
+@supports(font-feature-settings: "smcp") {
+    .small-caps {
+        text-transform: lowercase;
+		font-feature-settings: "smcp";
+		font-size: 1em;
+		letter-spacing: .08em;
+		transform: translateY(0em);
+    }
+}
