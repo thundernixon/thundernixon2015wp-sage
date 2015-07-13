@@ -13,7 +13,10 @@
 			<h1>
 				<!-- Work -->
 			</h1>
-
+				
+			<!-- <p class="front-page-section-intro"> 
+				I love teamwork. Here are some collaborations I'm proud of:
+			</p> -->
 			
 
 				<?php 
@@ -64,7 +67,7 @@
 			<h1>
 				<!-- Play  -->
 			</h1>
-			<p> 
+			<p class="front-page-section-intro"> 
 				The following are lettering posts from <a href="http://www.instagram.com/thundernixon" target="_blank">my Instagram feed</a>:
 			</p>
 

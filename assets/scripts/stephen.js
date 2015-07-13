@@ -97,11 +97,11 @@ function showSection3(){
 var preventDefaultOnHome = function() {
     //window.addEventListener("load", function ifOnHome() {
     if ( (isUrl.search("#blog") >= 0) || (isUrl.search("#work") >= 0) ) {
-      event.preventDefault();
+      //event.preventDefault();
       console.log("We're either on ...#blog... or on ...#work...");
     } 
-    else if ((isUrl.search("portfolio") >= -1) && (isUrl.search("blog") >= -1)) {
-      event.preventDefault();
+    else if ( (isUrl.search("portfolio") >= -1) && (isUrl.search("blog")  >= -1) ) {
+      //event.preventDefault();
       console.log("We're not on ...portfolio... and not on ...blog...");
     }
     else {

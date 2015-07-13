@@ -42,6 +42,15 @@
 		  visibility: hidden; 
 		}
 	}
+
+	.front-page-section-intro {
+		text-align: center;
+		font-style: italic;
+		font-family: $serif;
+		font-size: 1.25em;
+		transform: translateY(-1.5em);
+		// color: $orange;
+	}
 	
 }
 
