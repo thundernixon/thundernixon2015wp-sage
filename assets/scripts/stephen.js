@@ -98,7 +98,7 @@ var preventDefaultOnHome = function() {
     //window.addEventListener("load", function ifOnHome() {
     if ( (isUrl.search("#blog") >= 0) || (isUrl.search("#work") >= 0) ) {
       //event.preventDefault();
-      console.log("We're either on ...#blog... or on ...#work...");
+      //console.log("We're either on ...#blog... or on ...#work...");
     } 
     else if ( (isUrl.search("portfolio") >= -1) && (isUrl.search("blog")  >= -1) ) {
       //event.preventDefault();
@@ -474,4 +474,5 @@ var pathObj = {
 
 window.addEventListener("load", function jsTest() {
   console.log("JS seems to be working.");
+  console.log("theme has been updated from remote");
 });
