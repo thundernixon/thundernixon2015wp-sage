@@ -474,5 +474,9 @@ var pathObj = {
 
 window.addEventListener("load", function jsTest() {
   console.log("JS seems to be working.");
-  console.log("theme has been updated from remote");
 });
+
+window.addEventListener("load", function updateTest() {
+  console.log("Theme has been updated from remote");
+});
+
