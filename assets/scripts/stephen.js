@@ -477,6 +477,6 @@ window.addEventListener("load", function jsTest() {
 });
 
 window.addEventListener("load", function updateTest() {
-  console.log("Theme has been updated from remote");
+  console.log("Theme has been updated from remote finallllly");
 });
 
