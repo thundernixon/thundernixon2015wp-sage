@@ -13,7 +13,7 @@
        <!--  <img src="<?php //the_field('hero_image'); ?>" /> -->
 
        <div class="header-container">
-        
+
           <header class="container wrap">
 
             <div class="project-title">
@@ -53,12 +53,12 @@
 
                   <p>
                   <span  class="small-caps">Collaborators</span>
-                  
+
 
 
                     <ul class="collaborators">
 
-                    <?php while( have_rows('collaborators') ): the_row(); 
+                    <?php while( have_rows('collaborators') ): the_row();
 
                       //vars
                       $role = get_sub_field('role');
@@ -91,29 +91,59 @@
 
                 <?php endif; ?>
               </div>
-
+              <div>
+                <!-- <p>
+                  <span  class="small-caps">View Project Live</span>
+                </p> -->
+                <p class="small-caps">
+                  <?php the_field('view_project_live'); ?>
+                </p>
+              </div>
 
 
             </div>
 
+            <div class="screenshot project-hero-image">
+              <?php
+
+              $image = get_field('project_hero_image');
+
+              if( !empty($image) ): ?>
+
+
+
+              	<img  src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" height="<?php echo $height; ?>" width="au<?php echo $width; ?>to" />
+
+              <?php endif; ?>
+            </div>
+
+
+
   		    </header>
 
+          <div class=" one-paragraph-description">
+            <div class="container wrap">
+
+
+              <p class="description one-paragraph-description">
+                <?php the_field('one_paragraph_description'); ?>
+              </p>
+            </div>
+          </div>
+
         </div>
-			
+
   			<!-- <p>
   			    <?php get_template_part('templates/entry-meta'); ?>
   			</p> -->
 
         <section>
-          <div class="container wrap one-paragraph-description">
-        			<p class="description">
-        				<?php the_field('one_paragraph_description'); ?>
-        			</p>
-          </div> 
-              
+
+
+
 
             <div class="container wrap"><?php the_content(); ?></div>
-        
+
         </section>
         </article>
           <!-- TEST TEST TEST that this page is really coming up -->

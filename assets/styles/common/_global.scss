@@ -22,7 +22,7 @@
 html, body {
 	height: 100%;
 	background-color: $background-gray;
-	font-size: 16px;
+	font-size: 16px; //16px
 	line-height: 1.5em;
 	color: $body-text;
 
@@ -73,17 +73,28 @@ h1 {
 	color: $orange;
 }
 
-li {
-	list-style: none;
+ul {
+	li {
+		list-style: none;
 
-	&:before {
-		font-family: Warehouse Gothic, sans-serif;
-		font-weight: bold;
-		content: "\2192";
-		margin: 0 3px 0 -15px;
+		&:before {
+			font-family: Warehouse Gothic, sans-serif;
+			font-weight: bold;
+			content: "\2192";
+			margin: 0 3px 0 -15px;
+		}
 	}
 }
 
+ol {
+	li{
+		font-variant-numeric: tabular-nums;
+  // -moz-font-feature-settings: "tnum";
+  // -ms-font-feature-settings: "tnum";
+  // -webkit-font-feature-settings: "tnum";
+  	font-feature-settings: "tnum";
+	}
+}
 
 
 .small-caps {

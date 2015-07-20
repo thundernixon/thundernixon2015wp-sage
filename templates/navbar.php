@@ -22,10 +22,10 @@
  -->
 
 
-  <?php 
+  <?php
       if (is_front_page()) : ?>
- 
- 		
+
+
 		<nav class="main-nav">
 
 			<ul class="container">
@@ -36,7 +36,7 @@
 				</a>
 				<a data-tab="instagram"  href="#typefloundry" class="" id="tab-2">
 					<li>
-						<span>#typefloundry</span>
+					 <span>Play</span> 	<!--#typefloundry -->
 					</li>
 				</a>
 				<a data-tab="blog"  href="#blog"  class="" id="tab-3">

@@ -4,6 +4,7 @@
 	flex-wrap: wrap;
 	justify-content: space-between; //previously center
 	margin: 0 -20px 20px;
+	font-weight: bold;
 
 	a {
 		// flex-basis: 280px;
@@ -30,6 +31,10 @@
 			filter: grayscale(1);
 			// box-shadow: 2px 2px 0px 0px $orange;
 			// border: 2px solid $white;
+
+			@include breakpoint(tablet) {
+				filter: grayscale(0);
+			};
 		}
 
 		&:hover img {

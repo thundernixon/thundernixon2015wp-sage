@@ -4,10 +4,13 @@
   .entry-title {
     font-size: 1em;
     z-index: 100;
-    margin-left: 0px;
+    margin-left: 15px;
     margin-top: 7px;
     // transition: .25s ease;
     flex-grow: 1;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+
   }
 
   p {
@@ -24,31 +27,31 @@
   }
 
   .portfolio-list-img-container {
-    outline: 15px solid #fff;
+    outline: 15px solid $white;
     outline-offset: -15px;
     transition: .5s ease-in;
   }
 
   &:hover{
-  
+
     .portfolio-list-img-container {
       opacity: 1;
       //box-shadow: 2px 2px $orange;
-      
-     
+
+
       outline: 0px solid #fff;
       outline-offset: 0px;
       transition: .5s ease-out;
       //box-shadow: 2px 2px $background-gray, 4px 4px $orange;
 
       //div img {
-        filter: grayscale(0); //brightness(1) 
+        filter: grayscale(0); //brightness(1)
         transition: .5s ease-out;
       //}
     }
 
     header {
-      margin-left: 15px;
+      margin-left: -15px;
       color: $orange;
       transition: 0.5s ease-out;
     }
@@ -72,21 +75,21 @@
 
       &:nth-child(even) {
         padding-right:15px;
-          @include breakpoint(tablet) { 
+          @include breakpoint(tablet) {
             padding: 0px;
-          }        
+          }
       }
 
       &:nth-child(odd) {
         padding-left:15px;
-          @include breakpoint(tablet) { 
+          @include breakpoint(tablet) {
             padding: 0px;
           }
       }
 
 
   }
-  
+
 
   article {
     //height: 200px;
@@ -99,10 +102,10 @@
     .portfolio-list-img-container {
       height:200px;
       //margin-bottom: -46px;
-      //border-bottom: 40px solid $white;  
+      //border-bottom: 40px solid $white;
       overflow: hidden;
       //opacity: 0;
-      
+
       z-index: -1;
       transition:  .5s ease; //opacity
       //box-shadow: 0px 0px $orange; //for the animated hr
@@ -113,6 +116,10 @@
         filter: grayscale(1); //brightness(.8)
         transition:  .5s ease;
       //}
+
+      @include breakpoint(tablet) {
+        filter: grayscale(0);
+      };
 
       img.attachment-post-thumbnail.wp-post-image {
         width: 100%;
@@ -135,7 +142,7 @@
         padding:0;
       }
     }
-    
+
 
 
 
