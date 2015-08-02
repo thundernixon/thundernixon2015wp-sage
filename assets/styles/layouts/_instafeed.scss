@@ -3,7 +3,7 @@
 	align-items: stretch;
 	flex-wrap: wrap;
 	justify-content: space-between; //previously center
-	margin: 0 -20px 20px;
+	margin: -49px -20px 20px;
 	font-weight: bold;
 
 	a {
@@ -17,6 +17,7 @@
 		font-size: .8em;
 		box-shadow: 0px 0px $orange;
 		transition: .5s ease-in;
+		margin-bottom: 1.5em;
 
 		&:hover {
 			background-color: $white;
@@ -46,11 +47,11 @@
 
 }
 
-#section-2 {
+#typefloundry {
 	align-items: stretch;
 	flex-wrap: wrap;
 	justify-content: center;
-	padding-bottom: 60px;
+	padding-bottom: 3em;
 
 	// button {
 	// 	width: 300px;

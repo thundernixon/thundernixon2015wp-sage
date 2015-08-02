@@ -58,7 +58,7 @@
 				</a>
 				<a data-tab="instagram"  href="<?php bloginfo('url'); ?>/#typefloundry" class="" id="tab-2">
 					<li>
-						<span>#typefloundry</span>
+						<span>Play</span>
 					</li>
 				</a>
 				<a data-tab="blog"  href="<?php bloginfo('url'); ?>/#blog"  class="" id="tab-3">

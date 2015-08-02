@@ -35,11 +35,11 @@
 		font-size: 2em;
 
 		&:before {
-		  display: block; 
-		  content: " "; 
-		  margin: -100px 0 2em; 
-		  height: 100px; 
-		  visibility: hidden; 
+		  display: block;
+		  content: " ";
+		  margin: -100px 0 2em;
+		  height: 100px;
+		  visibility: hidden;
 		}
 	}
 
@@ -48,10 +48,10 @@
 		font-style: italic;
 		font-family: $serif;
 		font-size: 1.25em;
-		transform: translateY(-1.5em);
+		transform: translateY(-3.5em);
 		// color: $orange;
 	}
-	
+
 }
 
 .conceal {
@@ -63,4 +63,13 @@
 	width: 100%;
 	opacity: 1;
 	transition: 0.5s ease;
+}
+
+article {
+	header {
+  		background-color: transparent;
+  		color: $body-text;
+      transition: .25s ease-in;
+	}
+  //apply following only to front page list
 }

@@ -27,6 +27,6 @@
     }
   },
   "config": {
-    "devUrl": "http://example.dev"
+    "devUrl": "http://localhost/thundernixon2015wp"
   }
 }

@@ -3,7 +3,7 @@
     <?php dynamic_sidebar('sidebar-footer'); ?>
 
 
-      <h1 class="serif">Create!</h1>
+      <h1>Create!</h1>
 
   <div class="contact">
   	<p>
@@ -15,10 +15,10 @@
     <p>
       Email: <a href="mailto:stephen@thundernixon.com" target="_top">stephen@thundernixon.com</a>
     </p>
-  	
+
   </div>
 
 
-  	
+
   </div>
 <!-- </footer> -->

@@ -12,7 +12,7 @@
 		list-style: none;
 		text-align: center;
 		display: flex;
-		// width: 100%;	
+		// width: 100%;
   		align-items: center;
   		justify-content: space-between;
   		//padding: 0;
@@ -38,7 +38,7 @@
 
 
 			//the following three styles make the tab "inactive" by default
-			flex-grow:1; 
+			flex-grow:1;
 			transition: 0.25s ease;
 			padding: 0;
 
@@ -51,7 +51,7 @@
 				//border-bottom: solid 2px $orange;
 				border-top: solid 2px $orange;//slightly more orange approach
 				transition: 0.25s ease;
-			}		
+			}
 
 
 			li {
@@ -74,7 +74,7 @@
 		}
 
 		.active-tab {
-			flex-grow:4;
+			flex-grow:2.5;
 			//width: auto;
 			transition: 0.25s ease;
 			//background-color: $active-orange !important; //more minimalist approach
@@ -91,7 +91,7 @@
 		}
 
 		.inactive-tab { //moved to regular tab anchor styling above
-			// flex-grow:1; 
+			// flex-grow:1;
 			// transition: 0.25s ease;
 			// padding: 0;
 		}
@@ -126,4 +126,3 @@
 	// 	opacity: 1;
 	// 	transition: 0.5s ease;
 	// }
-

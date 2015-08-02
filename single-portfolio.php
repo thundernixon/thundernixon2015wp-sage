@@ -40,7 +40,7 @@
               </div>
               <div>
                 <p>
-                <span  class="small-caps">Approx. Time</span>
+                <span  class="small-caps">Time</span>
                 </p>
                 <p>
                   <?php the_field('date'); ?>
@@ -102,34 +102,52 @@
 
 
             </div>
-
-            <div class="screenshot project-hero-image">
-              <?php
-
-              $image = get_field('project_hero_image');
-
-              if( !empty($image) ): ?>
-
-
-
-              	<img  src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" height="<?php echo $height; ?>" width="au<?php echo $width; ?>to" />
-
-              <?php endif; ?>
-            </div>
-
-
-
   		    </header>
+        </div>
 
-          <div class=" one-paragraph-description">
+          <div class="opening-description">
             <div class="container wrap">
 
+              <div class="hero-wrap">
+
+                <!--hero image--->
+                <?php if( get_field('is_this_a_web_screenshot') ) : ?>
+
+                    <div class="screenshot project-hero-image">
+
+
+
+                <?php else : ?>
+
+                  <div class="project-hero-image">
+
+                <?php endif; ?>
+
+                <?php
+                $image = get_field('project_hero_image');
+                if( !empty($image) ): ?>
+                  <img  src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" height="<?php echo $height; ?>" width="au<?php echo $width; ?>to" />
+                <?php endif; ?>
+
+                </div>
+
+                <!--END hero image--->
+
+                <p class="caption">
+                  <?php the_field('hero_image_caption'); ?>
+                </p>
+
+              </div>
+
+              <!-- <div class=" one-paragraph-description"> -->
 
               <p class="description one-paragraph-description">
                 <?php the_field('one_paragraph_description'); ?>
               </p>
+
+              <!-- </div> -->
             </div>
-          </div>
+          <!-- </div> -->
 
         </div>
 
@@ -144,8 +162,31 @@
 
             <div class="container wrap"><?php the_content(); ?></div>
 
-        </section>
-        </article>
+            </section>
+            </article>
+
+            <!---trying to link to last/next posts ------->
+                        <!-- <a>
+                          <?php
+                          //next_post_link();
+                          ?>
+                        </a>
+                        <a>
+                          <?php
+                          //next_post_link( '%link', 'Next post in taxonomy', TRUE, ' ', 'post_format' );
+                          ?>
+                        </a>
+
+
+                        <div class=""><a>
+                        <?php
+                        //posts_nav_link( '-', "Previous", "Next" );
+                        ?></a></div> -->
+            <!--- END trying to link to last/next posts ------->
+
+
+
+
           <!-- TEST TEST TEST that this page is really coming up -->
           <!-- <p>test</p> -->
 

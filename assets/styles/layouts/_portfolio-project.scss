@@ -1,16 +1,25 @@
 .portfolio-project {
-	//background-color: $white; //$body-text
-	background-color: $body-text;
-	//color: $body-text; //$background-gray
-	color: $background-gray;
+	background-color: $background-gray; // $white $body-text
+	// background-color: $body-text;
+	color: $body-text; //$background-gray
+	// color: $background-gray;
+
 
 	a{
-		color: $orange;
+		//color: $orange;
+
+		text-decoration: none;
+		border-bottom: 2px solid $white;
+		box-shadow: inset 0 -4px 0 $white;
+
+		&:hover {
+			background-color: $white;
+		}
 	}
 
 	article {
 		//padding: 3em 0;
-		font-size: 1.25em;
+		font-size: 1.2em;
 
 		p {
 			margin: 0;
@@ -19,8 +28,8 @@
 		.header-container {
 			font-size: 1rem;
 			background-color: $background-gray;
-			padding: 3em 0;
-			margin-bottom: 2em;
+			padding: 3em 0 5em;
+			//margin-bottom: 2em;
 
 			header {
 				background-color: transparent;
@@ -39,10 +48,11 @@
 					flex-grow: 3;
 
 					h1 {
+						font-size: 2.441em;
 						width: 100%;
 						color: $body-text;
 						text-transform: uppercase;
-						letter-spacing: .4em;
+						letter-spacing: .3em;
 						text-shadow: 2px 2px $background-gray, 4px 4px $white;
 
 						&:after {
@@ -59,9 +69,11 @@
 					h2 {
 						@extend .serif;
 						width: 100%;
-						font-size: 1.6em;//font-size: 1.5em;
-						line-height: 1.5em;
+						font-size: 1.8em;//font-size: 1.5em;
+						line-height: 1.25em;
 						font-weight: bold;//font-weight: normal;
+						border-bottom: none;
+						padding: 0;
 					}
 
 				}
@@ -119,6 +131,7 @@
 					ul {
 						padding-left: 1.25em;
 						margin: 0;
+						font-family:'Warehouse Gothic', Helvetica Neue, sans-serif;
 					}
 
 					a {
@@ -126,6 +139,7 @@
 						flex-basis: 300px;
 						text-decoration: none;
 						border: 2px solid $white;
+						box-shadow: none;
 						background-color: $background-gray;
 						padding: .25em .6em .45em;
 						transition: .35s ease;
@@ -170,12 +184,7 @@
 
 				}
 
-				.project-hero-image {
-					width: 55%;
-					float: left;
-					margin: .5em 0 -20em;;
 
-				}
 			}
 		}
 		img {
@@ -190,9 +199,120 @@
 			// 	transition: .5s ease-out;
 			// }
 		}
+
+		.opening-description {
+			background-color: $white; //previously $body-text
+
+			p {
+				color: $body-text; // $white $background-gray
+			}
+
+			.hero-wrap{
+				float:left;
+				width: 55%;
+
+				@include breakpoint(tablet) {
+					width: 100%;
+				}
+
+				.project-hero-image {
+					//width: 55%;
+					//float: left;
+					position: relative;
+					top: -4.5em;
+					margin-bottom: -4.75em;
+					//margin: .5em 0 -20em;
+
+					@include breakpoint(tablet) {
+						width: 100%;
+						top: 0;
+						margin-bottom: 0;
+					}
+
+					img {
+						max-width: 100%;
+					}
+
+					&::before {
+							height: 1em;
+
+							@include breakpoint(phone) {
+								height: .75em;
+							}
+					}
+				}
+
+				.project-hero-image.screenshot{
+					top: -5em;
+					margin-bottom: -2.65em;
+					border-radius: .25vw;
+				}
+				// .one-paragraph-description {
+				// 	//border-left: 4px solid $background-gray;
+				// 	//margin: 4em auto;
+				// 	//width: 100%;
+				// 	//margin: 1em;
+				// 	font-size: 1.05em;
+				// 	line-height: 1.5em;
+				//
+				// 	float: right;
+				//
+				// 	color: $white; // $background-gray
+				// 	font-family:'Warehouse Gothic', Helvetica Neue, sans-serif;
+
+				p.caption {
+					font-size: .8em;
+					color: $body-text; // $white
+					//float: left;
+	  			//width: 55%;
+					@include breakpoint(tablet) {
+						// width: 100%;
+						position: relative;
+						max-width: 600px;
+				    margin: 0em auto;
+				    margin-top: 0;
+				    float: none;
+	  				//top: .5em;
+					}
+				}
+			}
+
+				p.one-paragraph-description {
+
+					font-size: 1em; //1.05em
+					line-height: 1.5em;
+
+					float: right;
+
+					font-family:'Warehouse Gothic', Helvetica Neue, sans-serif;
+
+					width: 40%;
+					margin: 2em auto;
+
+					@include breakpoint(tablet) {
+						width: auto;
+				    max-width: 600px;
+				    margin: 1em auto;
+				    margin-top: 0;
+				    float: none;
+
+					}
+
+					a {
+						color: $body-text; // $white
+
+						&:hover{
+							color: $orange;
+						}
+					}
+				}
+			//}
+
+			// }
+		}
 		.screenshot {
 			overflow:hidden;
-			border-radius: .35vw;
+			border-radius: 5px;
 			box-shadow: 0px 10px 1.5vw 0px rgba(0,0,0,.35);
 			background-color:#ddd;
 			margin: 2.5em auto;
@@ -204,7 +324,7 @@
 				background-size: 100% 100%;
 				display: block;
 				width: auto;
-				height: 2.5vw;
+				height: 32px;
 			}
 			img {
 				max-width:100%;
@@ -214,48 +334,45 @@
 			}
 		}
 
-		.one-paragraph-description {
-			//border-left: 4px solid $background-gray;
-			//margin: 4em auto;
-			width: 100%;
-			//margin: 1em;
-			float: right;
-			background-color: $body-text;
-			color: $background-gray;
 
-			p {
-				width: 40%;
-				margin: 2em auto;
+
+		section{
+
+			.description, p {
+				@extend .serif;
+				font-size: 21px;
+				max-width: 600px;
+				margin: 1em auto;
+				line-height: 1.5em;
+			}
+			.caption {
+				font-family:'Warehouse Gothic', Helvetica Neue, sans-serif;
+				font-size: .8em;
+			}
+
+			// p{
+			// 	@extend .serif;
+			// 	max-width: 600px;
+			// 	margin: 0em auto;
+			// 	font-size: 1.25em;
+			// 	line-height: 1.5em;
+			// 	// color: $orange;
+			// }
+			//
+			// 	font-size: .8em;
+			// 	position: relative;
+			// 	top: -2.3em;
+			// 	margin: .5em 0;
+			// 	font-weight: bold;
+			// 	//border-top: 2px solid $body-text;
+			// }
+
+			ol, ul{
+				@extend .description;
 			}
 
 		}
 
-		.description {
-			//@extend .serif;
-			max-width: 600px;
-			margin: 1em auto;
-			line-height: 1.5em;
-		}
-		// p{
-		// 	@extend .serif;
-		// 	max-width: 600px;
-		// 	margin: 0em auto;
-		// 	font-size: 1.25em;
-		// 	line-height: 1.5em;
-		// 	// color: $orange;
-		// }
-		.caption {
-			font-size: .8em;
-			position: relative;
-			top: -2.3em;
-			margin: .5em 0;
-			font-weight: bold;
-			//border-top: 2px solid $body-text;
-		}
-
-		ol, ul{
-			@extend .description;
-		}
 
 	}
 }
