@@ -2,7 +2,31 @@ header {
 	background-color: $white;
 	height: 40px;
 	display: flex;
-  	align-items: center;
+  align-items: center;
+
+	#logo{
+		width: 114.75px;
+	 	overflow: hidden;
+	 	display: block;
+	 	position: relative;
+	 	top: 12px;
+
+		img {
+			// width: 247px;
+			// position: relative;
+			// right: 109px;
+			width: 368.05px;  //433px
+			position: relative;
+			right: 232.9px; //274px
+			animation: lightning 1s 5.25s steps(10) 2;
+
+
+			&:hover {
+				animation: lightning 1s steps(10) infinite;
+			}
+
+		}
+	}
 
   	#site-logo {
   		width: 3em;
@@ -26,13 +50,68 @@ header {
 			//text-decoration: underline;
 			//color: $body-text; //more minimalist approach
 			color: $orange; //more minimalist approach
-		} 
+		}
+
+
+
+	}
+
+	.brand {
+		@extend .small-caps;
+		//text-transform: uppercase;
+		//font-size: .8em;
+		font-weight: normal;
+		position: fixed;
+		letter-spacing: 0.4em;
+		top: 43.5%;;
+		right: -9em;
+		color: $orange;
+		z-index: 100;
+		transform: rotate(90deg);
+		transition: .5s ease-in;
+
+		&:hover {
+			color: $body-text;
+			transition: .5s ease-out;
+		}
+
+		@include breakpoint(phone) {
+			font-size: .8em;
+		};
 	}
 
 	.about-modal-link {
+		//font-weight: normal;
 		float: right;
+		position: relative;
+    top: -15px;
 		// text-transform: uppercase;
 		// font-size: .8em;
 		// letter-spacing: .08em;
 	}
 }
+
+// @keyframes lightning {
+// 		0% {
+// 			transform: translateX(-27.1px);
+// 		}
+// 		20% {
+// 			transform: translateX(-54.2px);
+// 		}
+// 		40% {
+// 			transform: translateX(-81.3px);
+// 		}
+// 		80% {
+// 			transform: translateX(-108.4px);
+// 		}
+// 		100% {
+// 			transform: translateX(0px);
+// 		}
+// 	}
+
+	@keyframes lightning {
+   from { transform: translateX(0px) }
+     to { transform: translateX(233.1125px) }
+}
+//137
+//274.25px

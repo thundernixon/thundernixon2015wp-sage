@@ -70,7 +70,7 @@
 						@extend .serif;
 						width: 100%;
 						font-size: 1.8em;//font-size: 1.5em;
-						line-height: 1.25em; 
+						line-height: 1.25em;
 						font-weight: bold;//font-weight: normal;
 						border-bottom: none;
 						padding: 0;
@@ -327,7 +327,7 @@
 				height: 32px;
 			}
 			img {
-				max-width:100%;
+				width:100%;
 				margin: 0;
 				//border-radius: 0px 0px 4px 4px;
 				// margin-bottom:-.5vw;
@@ -336,7 +336,19 @@
 
 
 
-		section{
+		.deeper-description{
+		  padding: 2em 15px 4em;
+
+			h2 {
+				margin: 2em auto 0;
+			}
+
+			h3 {
+				@extend .serif;
+				font-weight: bold;
+		    max-width: 600px;
+		    margin: 2em auto -.7em;
+			}
 
 			.description, p {
 				@extend .serif;
@@ -344,6 +356,30 @@
 				max-width: 600px;
 				margin: 1em auto;
 				line-height: 1.5em;
+			}
+
+			.screenshot {
+				margin: 2em 10%;
+
+				@include breakpoint(phone) {
+					border-radius: 3px;
+					margin: 2em 0;
+				}
+
+				&::before {
+						height: 1.75em;
+
+						@include breakpoint(tablet) {
+							height: 1.2em;
+						}
+
+						@include breakpoint(phone) {
+							height: .9em;
+						}
+						@media (max-width: 400px) {
+							height: .65em;
+						}
+				}
 			}
 			.caption {
 				font-family:'Warehouse Gothic', Helvetica Neue, sans-serif;

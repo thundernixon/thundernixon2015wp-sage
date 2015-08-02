@@ -175,3 +175,31 @@ picture {
 	font-weight: bold;
 	//border-top: 2px solid $body-text;
 }
+
+.full-width {
+	width: 100%;
+	overflow: auto;
+}
+
+.half-width{
+	width: 50%;
+  padding: 0 15px;
+  overflow: hidden;
+  float: left;
+	img, picture {
+		width: 100%;
+	}
+	@include breakpoint(phone) {
+		width: 80%;
+		float: none;
+		margin: 2em auto;
+	}
+}
+
+.text-width {
+	max-width: 600px;
+	margin: 1em auto;
+	img, picture {
+		width: 100%;
+	}
+}

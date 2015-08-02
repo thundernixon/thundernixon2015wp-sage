@@ -160,7 +160,7 @@
 
 
 
-            <div class="container wrap"><?php the_content(); ?></div>
+            <div class="container wrap deeper-description"><?php the_content(); ?></div>
 
             </section>
             </article>
