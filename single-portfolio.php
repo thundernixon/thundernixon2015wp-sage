@@ -52,7 +52,7 @@
                 <?php if( have_rows('collaborators') ): ?>
 
                   <p>
-                  <span  class="small-caps">Collaborators</span>
+                  <span  class="small-caps">Main Collaborators</span>
 
 
 
@@ -155,42 +155,28 @@
   			    <?php get_template_part('templates/entry-meta'); ?>
   			</p> -->
 
-        <section>
-
-
-
+          <section>
 
             <div class="container wrap deeper-description"><?php the_content(); ?></div>
 
-            </section>
-            </article>
+          </section>
+        </article>
 
-            <!---trying to link to last/next posts ------->
-                        <!-- <a>
-                          <?php
-                          //next_post_link();
-                          ?>
-                        </a>
-                        <a>
-                          <?php
-                          //next_post_link( '%link', 'Next post in taxonomy', TRUE, ' ', 'post_format' );
-                          ?>
-                        </a>
+        <!-- <section class="pagination">
+          <div class="next-post"><?php// next_post_link('%link') ?></div>
+          <div class="prev-post"><?php// previous_post_link('%link') ?></div>
+        </section> -->
 
+        <section class="pagination">
+          <?php next_post_link('%link') ?>
+          <?php previous_post_link('%link') ?>
+        </section>
 
-                        <div class=""><a>
-                        <?php
-                        //posts_nav_link( '-', "Previous", "Next" );
-                        ?></a></div> -->
-            <!--- END trying to link to last/next posts ------->
-
-
-
-
-          <!-- TEST TEST TEST that this page is really coming up -->
-          <!-- <p>test</p> -->
+          <?php
+          //next_post_link( '%link', 'Next post in category', TRUE ); ?>
 
         <?php endwhile; // end of the loop. ?>
 
       </div><!-- #content -->
+
     </div><!-- #primary -->

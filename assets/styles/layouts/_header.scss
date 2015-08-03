@@ -5,7 +5,7 @@ header {
   align-items: center;
 
 	#logo{
-		width: 114.75px;
+		width: 135px; //114.75px
 	 	overflow: hidden;
 	 	display: block;
 	 	position: relative;
@@ -15,9 +15,9 @@ header {
 			// width: 247px;
 			// position: relative;
 			// right: 109px;
-			width: 368.05px;  //433px
+			width: 433px;  // 368.05px
 			position: relative;
-			right: 232.9px; //274px
+			right: 274px; // 232.9px
 			animation: lightning 1s 5.25s steps(10) 2;
 
 
@@ -77,6 +77,11 @@ header {
 
 		@include breakpoint(phone) {
 			font-size: .8em;
+			right: -9.25em;
+		};
+		@include breakpoint(tiny-window) {
+			font-size: .8em;
+			right: -15.25em;
 		};
 	}
 
@@ -111,7 +116,7 @@ header {
 
 	@keyframes lightning {
    from { transform: translateX(0px) }
-     to { transform: translateX(233.1125px) }
+     to { transform: translateX(274.25px) }
 }
 //137
-//274.25px
+// 233.1125px

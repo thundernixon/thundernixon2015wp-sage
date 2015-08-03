@@ -12,12 +12,12 @@
             <div class="modal-body">
               <section>
                 <p>
-                  I like to collaborate, draw letters, code, explore, and learn.
+                  I love to collaborate, draw letters, code, explore, and learn.
                 </p>
                 <p>
                   I live in <a href="https://en.wikipedia.org/wiki/New_York_City" target="_blank">the most interesting city in the world</a>.
                 </p>
-          
+
                 <p>
                   I'm a visual designer at <a href="http://www.ibm.com" target="_blank">IBM</a>, which means that I spend most of my time thinking about what makes great user exeperience, and much of the rest of it communicating with developers to make complex web apps usable and beautiful.
                 </p>
@@ -52,8 +52,8 @@
                 <h4 class="small-caps">Want to see my code?</h4>
                 <p><a href="https://github.com/thundernixon/thundernixon2015wp-sage" target="_blank">View this project on GitHub</a></p>
               </section>
-              
-              
+
+
             </div>
       <!--       <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
