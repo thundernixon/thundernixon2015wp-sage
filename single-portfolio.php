@@ -126,10 +126,13 @@
                 <?php
                 $image = get_field('project_hero_image');
                 if( !empty($image) ): ?>
-                  <img  src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" height="<?php echo $height; ?>" width="au<?php echo $width; ?>to" />
+                  <!-- <img  src="<?php // echo $image['url']; ?>" alt="<?php // echo $image['alt']; ?>" height="<?php // echo $height; ?>" width="au<?php // echo $width; ?>to" /> -->
+                  <img src="<?php echo $image['url']; ?>" <?php echo tevkori_get_srcset_string( $image, 'medium' ); ?> />
                 <?php endif; ?>
 
                 </div>
+
+
 
                 <!--END hero image--->
 
@@ -167,9 +170,36 @@
           <div class="prev-post"><?php// previous_post_link('%link') ?></div>
         </section> -->
 
+        <!-- <section class="pagination">
+          <?php // next_post_link('%link') ?>
+          <?php // previous_post_link('%link') ?>
+        </section> -->
+
         <section class="pagination">
-          <?php next_post_link('%link') ?>
-          <?php previous_post_link('%link') ?>
+        <?php
+
+
+        if( get_adjacent_post(false, '', false) ) {
+        	next_post_link('%link');
+        } else {
+        	$last = new WP_Query('posts_per_page=1&order=ASC&post_type=portfolio'); $last->the_post('%link');
+            	echo '<a href="' . get_permalink() . '">';
+                the_title();
+              echo'</a>';
+            wp_reset_query();
+        };
+
+        if( get_adjacent_post(false, '', true) ) {
+          previous_post_link('%link');
+        } else {
+            $first = new WP_Query('posts_per_page=1&order=DESC&post_type=portfolio'); $first->the_post('%link');
+              echo '<a href="' . get_permalink() . '">';
+                the_title();
+              echo'</a>';
+            wp_reset_query();
+        };
+
+        ?>
         </section>
 
           <?php

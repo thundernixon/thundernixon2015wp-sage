@@ -62,7 +62,9 @@ a {
 
 	&:focus {
 		color: $orange;
-  		outline: thin dotted !important;
+		outline: 2px solid !important;
+    outline-offset: 1px;
+    text-decoration: none;
 	}
 }
 
@@ -110,7 +112,7 @@ h1 {
 h2 {
 	font-family: 'Warehouse Gothic', sans-serif;
 	font-weight: normal;
-	padding: 1% 10%;
+	padding: 1% 18%; //1% 10%
 	border-bottom: 2px solid $white;
 
 	@include breakpoint(tablet) {
@@ -203,4 +205,8 @@ picture {
 	img, picture {
 		width: 100%;
 	}
+}
+
+img {
+	height: auto;
 }

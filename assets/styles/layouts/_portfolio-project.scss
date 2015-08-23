@@ -191,8 +191,7 @@
 			//filter: grayscale(1);
 			outline: 0px solid rgba($white, 0);
 			transition: .5s ease-in;
-			margin: 2em 0; //.5em 0
-
+			margin: .5em 0 0; //margin: 2em 0 1em; //.5em 0
 			// &:hover {
 			// 	//filter: grayscale(0);
 			// 	outline: 5px solid rgba($white, 1);
@@ -244,8 +243,12 @@
 
 				.project-hero-image.screenshot{
 					top: -5em;
-					margin-bottom: -2.65em;
+					margin-bottom: -4.65em;
 					border-radius: .25vw;
+
+					@include breakpoint(tablet) {
+						margin-bottom: -2.65em;
+					}
 				}
 				// .one-paragraph-description {
 				// 	//border-left: 4px solid $background-gray;
@@ -263,12 +266,13 @@
 				p.caption {
 					font-size: .8em;
 					color: $body-text; // $white
+					margin-top: 2.5em;
 					//float: left;
 	  			//width: 55%;
 					@include breakpoint(tablet) {
 						// width: 100%;
 						position: relative;
-						max-width: 600px;
+						max-width: 650px; //600px
 				    margin: 0em auto;
 				    margin-top: 0;
 				    float: none;
@@ -343,11 +347,16 @@
 				margin: 2em auto 0;
 			}
 
-			h3 {
-				@extend .serif;
+			h3,h4 {
 				font-weight: bold;
 		    max-width: 600px;
 		    margin: 2em auto -.7em;
+
+			}
+
+			h4{
+				@extend .serif;
+				font-size: 23px;
 			}
 
 			.description, p {
@@ -363,7 +372,13 @@
 			}
 
 			.screenshot {
-				margin: 2em 10%;
+				//margin: 2em 10%;
+				margin: 2.4em auto;
+				width: 80%;
+
+				@include breakpoint(tablet) {
+					width: 100%;
+				}
 
 				@include breakpoint(phone) {
 					border-radius: 3px;
@@ -388,7 +403,7 @@
 			.caption {
 				font-family:'Warehouse Gothic', Helvetica Neue, sans-serif;
 				font-size: .8em;
-				margin-top: 3em;
+				margin: 2.8em auto -2em;  //2em 1.5em
 			}
 
 			// p{
@@ -423,6 +438,7 @@
 		justify-content: space-between;
 		overflow: hidden;
 		margin-bottom: 3em;
+		font-weight: bold;
 
 		div {
 
@@ -457,11 +473,18 @@
 			&:first-child {
 				position: relative;
 				right:.5em;
+				text-align: right;
+
 				&:hover{
 					transform: translateX(-1em);
 
 					@include breakpoint(phone) {
 						transform: translateX(-.25em);
+					}
+
+					&::after {
+						transform: translateX(1em);
+						transition: ease-out .5s;
 					}
 				}
 				&::before{
@@ -472,10 +495,21 @@
 						//top:-1.5em;
 					}
 				}
+				&::after{
+					content: "PREVIOUS";
+					letter-spacing: .25em;
+					font-size: 1em;
+					position: absolute;
+					top: .5em;
+					right: 2.25em;
+					z-index: -1;
+					color: $background-gray;
+					transition: ease-in .25s;
+				}
 			}
 			&:last-child{
 				align-self: flex-end;
-				text-align: right;
+				//text-align: right;
 				position: relative;
 				left:.5em;
 				&:hover{
@@ -483,9 +517,21 @@
 					@include breakpoint(phone) {
 						transform: translateX(.25em);
 					}
+					&::before {
+						transform: translateX(-1em);
+						transition: ease-out .5s;
+					}
 				}
 				&::before{
-					content: "";
+					//content: "";
+					content: "NEXT";
+					letter-spacing: .25em;
+					font-size: 1em;
+					position: absolute;
+					top: .5em;
+					z-index: -1;
+					color: $background-gray;
+					transition: ease-in .25s;
 				}
 				&::after{
 					content: "\2192";
@@ -508,6 +554,8 @@
 		}
 
 		.next-post {
+			text-align: right;
+
 			//float: left;
 
 			// &::before{
@@ -520,7 +568,7 @@
 
 		.prev-post {
 			//float: right;
-			text-align: right;
+			// text-align: right;
 
 			// &::after{
 			// 	content: "\2192";

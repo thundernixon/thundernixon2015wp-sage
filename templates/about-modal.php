@@ -22,7 +22,7 @@
                   I'm a visual designer at <a href="http://www.ibm.com" target="_blank">IBM</a>, which means that I spend most of my time thinking about what makes great user exeperience, and much of the rest of it communicating with developers to make complex web apps usable and beautiful.
                 </p>
                 <p>
-                  I love type design, lettering, and brand identities.
+                  Other than software/web/product design, I also have specialize in type design, lettering, and creating visual identities for brands.
                 </p>
                 <p>
                   I'm obsessed with podcasts. Read about my favorites on my blog.
@@ -45,8 +45,14 @@
               </section>
               <section>
                 <h4 class="small-caps">Site Colophon:</h4>
-                <p>Body text and headers: <a href="http://www.fourthfloorfoundry.com/warehouse.html" target="_blank">Warehouse Gothic</a> (made by me!)</p>
-                <p>Body text in blog: <a href="https://www.google.com/fonts/specimen/PT+Serif" target="_blank">PT Serif</a> (until I can create Warehouse Serif) </p>
+                <p>Sans-serif type: <a href="http://www.fourthfloorfoundry.com/warehouse.html" target="_blank">Warehouse Gothic</a> (designed and built by me!)</p>
+                <p>Serif type: <a href="http://www.maxphillips.net/spinoza.html" target="_blank">Spinoza Pro</a></p>
+                <p>
+                  All content on this site has been designed, created, photographed, coded (or assembled from plugins, etc), and written by me, unless otherwise noted.
+                </p>
+                <p>
+                  This site is built on WordPress, with a custom theme created from the <a href="https://roots.io/sage/" target="_blank">Sage Starter Theme</a>.
+                </p>
               </section>
               <section>
                 <h4 class="small-caps">Want to see my code?</h4>

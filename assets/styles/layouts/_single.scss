@@ -75,7 +75,7 @@
 		// }
 
 		p, li {
-			max-width: 600px;
+			max-width: 650px; //600px
   			margin: 1em auto;
 		}
 
@@ -109,6 +109,20 @@
 				// padding: 2.5% 0;
 			}
 
+		}
+
+		blockquote {
+			font-size: 16px;
+			border-left: none;
+			max-width: 860px;
+			margin: auto;
+			    padding: 0em 1.25em; //0 1.5em
+
+			p:first-child{
+				background-color: transparent;
+				border: 2px solid $white;
+				margin: 0;
+			}
 		}
 
 		p:last-child:after {

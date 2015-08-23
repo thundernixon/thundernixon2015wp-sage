@@ -37,62 +37,77 @@ add_theme_support( 'post-thumbnails' );
 add_post_type_support( 'portfolio', 'thumbnail' );
 
 
+//remove image links
+function wpb_imagelink_setup() {
+    $image_set = get_option( 'image_default_link_type' );
+
+    if ($image_set !== 'none') {
+        update_option('image_default_link_type', 'none');
+    }
+}
+
+add_action('admin_init', 'wpb_imagelink_setup', 10);
+
+
 //responsive images as per https://css-tricks.com/hassle-free-responsive-images-for-wordpress/
 
-function get_picturefill() {
-  wp_enqueue_script('picturefill', plugins_url( '/js/picturefill.js', __FILE__ ));
-}
-add_action('init', 'get_picturefill');
-
-add_image_size('large-img', 1500, 702);
-add_image_size('medium-img', 700, 372);
-add_image_size('small-img', 300, 200);
-
-function tevkori_get_img_alt( $image ) {
-    $img_alt = trim( strip_tags( get_post_meta( $image, '_wp_attachment_image_alt', true ) ) );
-    return $img_alt;
-}
-
-function tevkori_get_picture_srcs( $image, $mappings ) {
-    $arr = array();
-    foreach ( $mappings as $size => $type ) {
-        $image_src = wp_get_attachment_image_src( $image, $type );
-        $arr[] = '<source srcset="'. $image_src[0] . '" media="(min-width: '. $size .'px)">';
-    }
-    return implode( array_reverse ( $arr ) );
-}
-
-function tevkori_responsive_shortcode( $atts ) {
-    extract( shortcode_atts( array(
-        'imageid'    => 1,
-        // You can add more sizes for your shortcodes here
-        'size1' => 0,
-        'size2' => 600,
-        'size3' => 1000,
-    ), $atts ) );
-
-    $mappings = array(
-        $size1 => 'small-img',
-        $size2 => 'medium-img',
-        $size3 => 'large-img'
-    );
-
-   return
-        '<picture>
-            <!--[if IE 9]><video style="display: none;"><![endif]-->'
-            . tevkori_get_picture_srcs( $imageid, $mappings ) .
-            '<!--[if IE 9]></video><![endif]-->
-            <img srcset="' . wp_get_attachment_image_src( $imageid[0] ) . '" alt="' . tevkori_get_img_alt( $imageid ) . '">
-            <noscript>' . wp_get_attachment_image( $imageid, $mappings[0] ) . ' </noscript>
-        </picture>';
-}
-
-add_shortcode( 'responsive', 'tevkori_responsive_shortcode' );
-
-function responsive_insert_image($html, $id, $caption, $title, $align, $url) {
-  return "[responsive imageid='$id' size1='0' size2='600' size3='1000']";
-}
-add_filter('image_send_to_editor', 'responsive_insert_image', 10, 9);
+// function get_picturefill() {
+//   wp_enqueue_script('picturefill', plugins_url( 'scripts/picturefill.min.js', __FILE__ ));
+// }
+// add_action('init', 'get_picturefill');
+//
+// add_image_size('larger-img', 1600, 902);
+// add_image_size('large-img', 1200, 700);
+// add_image_size('medium-img', 700, 500);
+// add_image_size('small-img', 400, 200);
+//
+// function tevkori_get_img_alt( $image ) {
+//     $img_alt = trim( strip_tags( get_post_meta( $image, '_wp_attachment_image_alt', true ) ) );
+//     return $img_alt;
+// }
+//
+// function tevkori_get_picture_srcs( $image, $mappings ) {
+//     $arr = array();
+//     foreach ( $mappings as $size => $type ) {
+//         $image_src = wp_get_attachment_image_src( $image, $type );
+//         $arr[] = '<source srcset="'. $image_src[0] . '" media="(min-width: '. $size .'px)">';
+//     }
+//     return implode( array_reverse ( $arr ) );
+// }
+//
+// function tevkori_responsive_shortcode( $atts ) {
+//     extract( shortcode_atts( array(
+//         'imageid'    => 1,
+//         // You can add more sizes for your shortcodes here
+//         'size1' => 0,
+//         'size2' => 600,
+//         'size3' => 900,
+//         'size4' => 1600,
+//     ), $atts ) );
+//
+//     $mappings = array(
+//         $size1 => 'small-img',
+//         $size2 => 'medium-img',
+//         $size3 => 'large-img',
+//         $size4 => 'larger-img'
+//     );
+//
+//    return
+//         '<picture>
+//             <!--[if IE 9]><video style="display: none;"><![endif]-->'
+//             . tevkori_get_picture_srcs( $imageid, $mappings ) .
+//             '<!--[if IE 9]></video><![endif]-->
+//             <img srcset="' . wp_get_attachment_image_src( $imageid[0] ) . '" alt="' . tevkori_get_img_alt( $imageid ) . '">
+//             <noscript>' . wp_get_attachment_image( $imageid, $mappings[0] ) . ' </noscript>
+//         </picture>';
+// }
+//
+// add_shortcode( 'responsive', 'tevkori_responsive_shortcode' );
+//
+// function responsive_insert_image($html, $id, $caption, $title, $align, $url) {
+//   return "[responsive imageid='$id' size1='0' size2='600' size3='1000' size4='1600']";
+// }
+// add_filter('image_send_to_editor', 'responsive_insert_image', 10, 9);
 
 
 //TRYING TO GET THE POST THUMBNAIL TO WORK AS A BACKGROUND IMAGE, TO ALLOW CSS BLEND MODE

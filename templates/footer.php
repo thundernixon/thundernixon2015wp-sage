@@ -3,7 +3,8 @@
     <?php dynamic_sidebar('sidebar-footer'); ?>
 
 
-      <h1>Create!</h1>
+      <!-- <h1>Create!</h1> -->
+      <img src="<?php bloginfo('template_directory'); ?>/dist/images/create.png">
 
   <div class="contact">
   	<p>
