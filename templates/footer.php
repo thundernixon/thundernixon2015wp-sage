@@ -7,15 +7,16 @@
       <img src="<?php bloginfo('template_directory'); ?>/dist/images/create.png">
 
   <div class="contact">
+    <p>
+      Email: <a href="mailto:stephen@thundernixon.com" target="_top">stephen@thundernixon.com</a>
+    </p>
   	<p>
   		Twitter: <a href="http://www.twitter.com/thundernixon" target="_blank">@thundernixon</a>
   	</p>
   	<p>
   		Instagram: <a href="http://www.instagram.com/thundernixon" target="_blank">@thundernixon</a>
   	</p>
-    <p>
-      Email: <a href="mailto:stephen@thundernixon.com" target="_top">stephen@thundernixon.com</a>
-    </p>
+
 
   </div>
 
