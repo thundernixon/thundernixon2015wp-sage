@@ -5,15 +5,22 @@
 	height: 100%;
 	width:100%;
 	margin-bottom: -80px;
-	background-color: $white; 
+	background-color: $white;
 	align-items: center;
-  	justify-content: center;
-  	flex-direction: column;
-	
+  justify-content: center;
+  flex-direction: column;
+
+	@include breakpoint(tablet) {
+		background-image: url(../images/yo-2.jpg);
+		background-size: auto 65vh;
+		background-repeat: no-repeat;
+		background-position: 50% 40%;
+	}
+
 	.main-hero-message {
 		//height: 80vh;
 		//width: 80vw;
-		margin: auto; 
+		margin: auto;
 		text-align: center;
 		//background-color: $active-orange;
 		//background-image: url(../images/bitmap-thundernixon2015wp-01.svg) repeat;
@@ -37,13 +44,16 @@
 			// max-height: 80vh;
 			width: 100%;
 			height: 100%;
+			@include breakpoint(tablet) {
+				display: none;
+			}
 		}
 	}
 
 	h1 {
 		font-size:400px;
 		font-weight: 600;
-		color: $background-gray; 
+		color: $background-gray;
 		text-rendering: optimizeLegibility;
 	}
 
@@ -66,6 +76,10 @@
 		// left: -10px;
 
 		@include breakpoint(phone) {
+			width: 80%;
+			font-size: 1.563em;
+		}
+		@include breakpoint(tiny-window) {
 			width: 80%;
 			font-size: 1.25em;
 		}

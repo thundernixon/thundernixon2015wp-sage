@@ -62,7 +62,7 @@ a {
 
 	&:focus {
 		color: $orange;
-		outline: 2px solid !important;
+		outline: 2px solid $orange !important;
     outline-offset: 1px;
     text-decoration: none;
 	}
