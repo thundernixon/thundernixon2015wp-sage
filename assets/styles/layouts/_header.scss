@@ -75,13 +75,18 @@ header {
 			transition: .5s ease-out;
 		}
 
+		@include breakpoint(tablet) {
+			position: absolute;
+		}
+
 		@include breakpoint(phone) {
 			font-size: .8em;
 			right: -9.25em;
 		};
 		@include breakpoint(tiny-window) {
 			font-size: .8em;
-			right: -15.25em;
+			//right: -15.25em;
+			right: -8.75em;
 		};
 	}
 

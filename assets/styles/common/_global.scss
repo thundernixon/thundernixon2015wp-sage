@@ -37,6 +37,7 @@ html, body {
 	font-size: 16px; //16px
 	line-height: 1.5em;
 	color: $body-text;
+	width: 100%;
 
 	//@media $laptop{
 		font-family:'Warehouse Gothic', Helvetica Neue, sans-serif;
@@ -119,6 +120,14 @@ h2 {
 		padding: 1% 0%;
 		max-width: 600px;
 	}
+
+	@include breakpoint(phone) {
+		font-size: 25px;
+	};
+}
+
+h3 {
+	font-size: 25px;
 }
 
 ul {

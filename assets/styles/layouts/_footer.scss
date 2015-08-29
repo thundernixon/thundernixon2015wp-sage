@@ -23,6 +23,10 @@ footer {
     opacity: .075;
     position: relative;
     top: -15px;
+
+		@include breakpoint(tablet) {
+			width: 200px;
+		};
 	}
 
 
