@@ -17,7 +17,9 @@
 		font-size: .8em;
 		box-shadow: 0px 0px $orange;
 		transition: .25s ease-in;
-		margin-bottom: 1.5em;
+		//margin-bottom: 1.5em;
+		margin: 0 auto 1.5em;
+
 
 		&:hover {
 			background-color: $white;
@@ -42,6 +44,12 @@
 		&:hover img {
 			filter: grayscale(0);
 			transition: .5s ease-out;
+		}
+
+		p {
+			max-height: 200px;
+			overflow: scroll;
+			margin-bottom: 0;
 		}
 	}
 
