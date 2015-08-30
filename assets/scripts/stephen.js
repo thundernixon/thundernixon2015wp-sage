@@ -52,17 +52,17 @@ function showSection1(){
   //document.getElementById("work").className = "reveal";
   $('#work').fadeIn('slow');
 
-  document.getElementById("typefloundry").className = "conceal";
+  document.getElementById("play").className = "conceal";
   document.getElementById("blog").className = "conceal";
-  //$('#typefloundry').fadeOut('fast');
+  //$('#play').fadeOut('fast');
   //$('#blog').fadeOut('fast');
-  $('#typefloundry').removeAttr( 'style' ).addClass('conceal');
+  $('#play').removeAttr( 'style' ).addClass('conceal');
   $('#blog').removeAttr( 'style' ).addClass('conceal');
 }
 
 function showSection2(){
-  //document.getElementById("typefloundry").className = "reveal";
-  $('#typefloundry').fadeIn('slow');
+  //document.getElementById("play").className = "reveal";
+  $('#play').fadeIn('slow');
   document.getElementById("work").className = "conceal";
   document.getElementById("blog").className = "conceal";
   //$('#work').fadeOut('fast');
@@ -75,11 +75,11 @@ function showSection3(){
   //document.getElementById("blog").className = "reveal";
   $('#blog').fadeIn('slow');
   document.getElementById("work").className = "conceal";
-  document.getElementById("typefloundry").className = "conceal";
+  document.getElementById("play").className = "conceal";
   //$('#work').fadeOut('fast');
-  //$('#typefloundry').fadeOut('fast');
+  //$('#play').fadeOut('fast');
   $('#work').removeAttr( 'style' ).addClass('conceal');
-  $('#typefloundry').removeAttr( 'style' ).addClass('conceal');
+  $('#play').removeAttr( 'style' ).addClass('conceal');
 }
 
 // ============ reveals section according to click
@@ -99,13 +99,13 @@ var preventDefaultOnHome = function() {
     if ( (isUrl.search("#blog") >= 0) || (isUrl.search("#work") >= 0) ) {
       //event.preventDefault();
       //console.log("We're either on ...#blog... or on ...#work...");
-    } 
+    }
     else if ( (isUrl.search("portfolio") >= -1) && (isUrl.search("blog")  >= -1) ) {
       //event.preventDefault();
       console.log("We're not on ...portfolio... and not on ...blog...");
     }
     else {
-      
+
       console.log("try again");
       return false;
     }
@@ -124,13 +124,13 @@ document.getElementById("tab-1").addEventListener("click", function revealSectio
     }, 250);
 });
 
-document.getElementById("tab-2").addEventListener("click", function revealSection2(){  
+document.getElementById("tab-2").addEventListener("click", function revealSection2(){
   //event.preventDefault();
   preventDefaultOnHome();
   showSection2(); //show section
   growTab2(); //make middle tab active
       $('html, body').animate({
-        scrollTop: $("#typefloundry").offset().top
+        scrollTop: $("#play").offset().top
     }, 250);
 });
 
@@ -148,23 +148,23 @@ document.getElementById("tab-3").addEventListener("click", function revealSectio
 
 
 window.addEventListener("load", function scrollToSections() {
-  if (isUrl === getBaseUrl()+"" || isUrl === getBaseUrl()+"#work"){ //&& (isUrl.search("#typefloundry") === -1 && isUrl.search("#blog") === -1)
+  if (isUrl === getBaseUrl()+"" || isUrl === getBaseUrl()+"#work"){ //&& (isUrl.search("#play") === -1 && isUrl.search("#blog") === -1)
     showSection1();
     growTab1();
     console.log("get base url is working");
-  } 
-  
-    
-  else if (isUrl === getBaseUrl()+"#typefloundry"){ // (isUrl.search("#typefloundry") >= 0)
+  }
+
+
+  else if (isUrl === getBaseUrl()+"#play"){ // (isUrl.search("#play") >= 0)
     showSection2();
     growTab2();
-  } 
-  
-    
+  }
+
+
   else if (isUrl === getBaseUrl()+"#blog"){ //(isUrl.search("#blog") >= 0)
     showSection3();
     growTab3();
-  } 
+  }
     else {
     return false;
   }
@@ -174,25 +174,25 @@ window.addEventListener("load", function scrollToSections() {
 
 
 // window.addEventListener("load", function scrollToSections() {
-//   if (isUrl === "http://localhost/thundernixon2015wp/" || isUrl === "http://localhost/thundernixon2015wp/#work"){ //&& (isUrl.search("#typefloundry") === -1 && isUrl.search("#blog") === -1)
+//   if (isUrl === "http://localhost/thundernixon2015wp/" || isUrl === "http://localhost/thundernixon2015wp/#work"){ //&& (isUrl.search("#play") === -1 && isUrl.search("#blog") === -1)
 //     showSection1();
 //     growTab1();
 //     //console.log("get root url is not working for me, right now");
 //     console.log(getRootUrl());
 //     console.log(isUrl === getRootUrl()+"thundernixon2015wp/");
-//   } 
-  
-    
-//   else if (isUrl === "http://localhost/thundernixon2015wp/#typefloundry"){ // (isUrl.search("#typefloundry") >= 0)
+//   }
+
+
+//   else if (isUrl === "http://localhost/thundernixon2015wp/#play"){ // (isUrl.search("#play") >= 0)
 //     showSection2();
 //     growTab2();
-//   } 
-  
-    
+//   }
+
+
 //   else if (isUrl === "http://localhost/thundernixon2015wp/#blog"){ //(isUrl.search("#blog") >= 0)
 //     showSection3();
 //     growTab3();
-//   } 
+//   }
 //     else {
 //     return false;
 //   }
@@ -201,22 +201,22 @@ window.addEventListener("load", function scrollToSections() {
 //Trying to set the tab behavioral via relative paths, rather than absolute
 
 // window.addEventListener("load", function scrollToSections() {
-//   if (isUrl === "http://../../" || isUrl === "http://../../#work"){ //&& (isUrl.search("#typefloundry") === -1 && isUrl.search("#blog") === -1)
+//   if (isUrl === "http://../../" || isUrl === "http://../../#work"){ //&& (isUrl.search("#play") === -1 && isUrl.search("#blog") === -1)
 //     showSection1();
 //     growTab1();
-//   } 
-  
-    
-//   else if (isUrl === "http://../../#typefloundry"){ // (isUrl.search("#typefloundry") >= 0)
+//   }
+
+
+//   else if (isUrl === "http://../../#play"){ // (isUrl.search("#play") >= 0)
 //     showSection2();
 //     growTab2();
-//   } 
-  
-    
+//   }
+
+
 //   else if (isUrl === "http://../../#blog"){ //(isUrl.search("#blog") >= 0)
 //     showSection3();
 //     growTab3();
-//   } 
+//   }
 //     else {
 //     return false;
 //   }
@@ -238,7 +238,7 @@ window.addEventListener("load", function expandCorrectTab() {
 
 //   if (isUrl.search("/portfolio") >= 0){
 //     growTab1();
-//   } 
+//   }
 //   // else if (window.location.href === "http://localhost/thundernixon2015wp/**" && != "http://localhost/thundernixon2015wp/portfolio/**"){
 //   //   growTab3();
 //   // }
@@ -281,13 +281,13 @@ window.addEventListener("load", function expandCorrectTab() {
 // $(document).ready(function() {
 //     $('[data-tab]').on('click', function(e)  {
 //         var currentDataValue = jQuery(this).data('tab');
- 
+
 //         // Show/Hide Tabs
 //         $('[data-content]' + currentDataValue).show().siblings().hide();
- 
+
 //         // Change/remove current tab to active
 //         $(this).parent('section').addClass('reveal').siblings().removeClass('reveal');
- 
+
 //         //e.preventDefault();
 //     });
 // });
@@ -296,13 +296,13 @@ window.addEventListener("load", function expandCorrectTab() {
 // $(document).ready(function() {
 //     $('.main-nav ul a').on('click', function(e)  {
 //         var currentAttrValue = jQuery(this).attr('href');
- 
+
 //         // Show/Hide Tabs
 //         $('.main-nav ul a' + currentAttrValue).show().siblings().hide();
- 
+
 //         // Change/remove current tab to active
 //         $(this).parent('section').addClass('reveal').siblings().removeClass('reveal');
- 
+
 //         //e.preventDefault();
 //     });
 // });
@@ -326,10 +326,10 @@ window.addEventListener("load", function expandCorrectTab() {
 //     accessToken: '209250343.467ede5.17e3f6e6946a4758b7de4d1809135877',
 //     template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /><p>{{caption}}</p></a>',
 //     filter: function(image) {
-//         if (image.tags.indexOf('typefloundry') >= 0 && foundImages < maxImages) {
+//         if (image.tags.indexOf('play') >= 0 && foundImages < maxImages) {
 //             foundImages = foundImages + 1;
 //             return true;
-//         } 
+//         }
 //         return false;
 //     },
 //     // every time we load more, run this function
@@ -362,7 +362,7 @@ var loadButton = document.getElementById('load-more');
         success: function() {
             lastMatchedImages = 0;
         },
-        //tagName: 'typefloundry',
+        //tagName: 'play',
         clientId: 'f1ac464b95de40a9b203a6c8edf827a8',
         userId: 209250343,
         accessToken: '209250343.467ede5.17e3f6e6946a4758b7de4d1809135877',
@@ -370,7 +370,7 @@ var loadButton = document.getElementById('load-more');
         template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /><p>{{caption}}</p></a>',
         filter: function(image)
         {
-            if(image.tags.indexOf('typefloundry') >= 0 && lastMatchedImages < maxImages) {
+            if(image.tags.indexOf('play') >= 0 && lastMatchedImages < maxImages) {
                     lastMatchedImages = lastMatchedImages + 1;
                     return true;
                 }
@@ -430,16 +430,16 @@ var loadButton = document.getElementById('load-more');
 
 
 //==============lazy line painter ===============
- 
- /* 
- * Lazy Line Painter - Path Object 
+
+ /*
+ * Lazy Line Painter - Path Object
  * Generated using 'SVG to Lazy Line Converter'
- * 
- * http://lazylinepainter.info 
- * Copyright 2013, Cam O'Connell  
- *  
- */ 
- 
+ *
+ * http://lazylinepainter.info
+ * Copyright 2013, Cam O'Connell
+ *
+ */
+
 var pathObj = {
     "yo-hero": {
         "strokepath": [
@@ -454,21 +454,21 @@ var pathObj = {
         },
 
     }
-}; 
- 
-/* 
- Setup and Paint your lazyline! 
- */ 
- 
-  $(document).ready(function(){ 
-  $('#yo-hero').lazylinepainter( 
+};
+
+/*
+ Setup and Paint your lazyline!
+ */
+
+  $(document).ready(function(){
+  $('#yo-hero').lazylinepainter(
   {
      "svgData": pathObj,
      "strokeWidth": 4,
      "strokeColor": "#FFF2EC",  //FF7825
      "responsive": true
- }).lazylinepainter('paint'); 
-   
+ }).lazylinepainter('paint');
+
   });
 
 
@@ -479,4 +479,3 @@ window.addEventListener("load", function jsTest() {
 window.addEventListener("load", function updateTest() {
   console.log("Theme has been updated from remote finallllly");
 });
-
