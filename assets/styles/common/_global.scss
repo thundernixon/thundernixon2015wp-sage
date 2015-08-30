@@ -73,6 +73,9 @@ a {
 
 p, li {
 
+	-webkit-font-smoothing: subpixel-antialiased;
+	font-smooth: always;
+
 	a {
 		//text-decoration: underline;
 		text-decoration: none;
