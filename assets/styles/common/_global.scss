@@ -75,6 +75,7 @@ p, li {
 
 	-webkit-font-smoothing: subpixel-antialiased;
 	font-smooth: always;
+	-moz-osx-font-smoothing: grayscale;
 
 	a {
 		//text-decoration: underline;
@@ -202,8 +203,9 @@ picture {
   overflow: hidden;
   float: left;
 	img, picture {
-		width: 100%;
+		//width: 100%;
 	}
+	
 	@include breakpoint(phone) {
 		width: 80%;
 		float: none;
@@ -211,11 +213,18 @@ picture {
 	}
 }
 
+.small-centered {
+	width: 300px;
+	margin: 0 auto;
+}
+
 .text-width {
-	max-width: 600px;
+	max-width: 650px;
 	margin: 1em auto;
+	overflow: auto;
+
 	img, picture {
-		width: 100%;
+		// width: 100%;
 	}
 }
 
