@@ -34,7 +34,7 @@
 						<span>Work</span>
 					</li>
 				</a>
-				<a data-tab="instagram"  href="#typefloundry" class="" id="tab-2">
+				<a data-tab="instagram"  href="#play" class="" id="tab-2">
 					<li>
 					 <span>Play</span> 	<!--#typefloundry -->
 					</li>
