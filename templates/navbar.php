@@ -6,9 +6,9 @@
 						<span>Work</span>
 					</li>
 				</a>
-				<a data-scroll onclick="showSection2();growTab2()" href="<?php bloginfo('url'); ?>/#typefloundry" class="" id="tab-2">
+				<a data-scroll onclick="showSection2();growTab2()" href="<?php bloginfo('url'); ?>/#play" class="" id="tab-2">
 					<li>
-						<span>#typefloundry</span>
+						<span>#play</span>
 					</li>
 				</a>
 				<a data-scroll onclick="showSection3();growTab3()" href="<?php bloginfo('url'); ?>/#blog" class="" id="tab-3">
@@ -34,9 +34,9 @@
 						<span>Work</span>
 					</li>
 				</a>
-				<a data-tab="instagram"  href="#typefloundry" class="" id="tab-2">
+				<a data-tab="instagram"  href="#play" class="" id="tab-2">
 					<li>
-					 <span>Play</span> 	<!--#typefloundry -->
+					 <span>Play</span> 	<!--#play -->
 					</li>
 				</a>
 				<a data-tab="blog"  href="#blog"  class="" id="tab-3">
@@ -56,7 +56,7 @@
 						<span>Work</span>
 					</li>
 				</a>
-				<a data-tab="instagram"  href="<?php bloginfo('url'); ?>/#typefloundry" class="" id="tab-2">
+				<a data-tab="instagram"  href="<?php bloginfo('url'); ?>/#play" class="" id="tab-2">
 					<li>
 						<span>Play</span>
 					</li>
@@ -84,9 +84,9 @@
 						<span>Work</span>
 					</li>
 				</a>
-				<a data-tab="instagram"  href="<?php bloginfo('url'); ?>/#typefloundry" onclick="showSection2();growTab2()" class="" id="tab-2">
+				<a data-tab="instagram"  href="<?php bloginfo('url'); ?>/#play" onclick="showSection2();growTab2()" class="" id="tab-2">
 					<li>
-						<span>#typefloundry</span>
+						<span>#play</span>
 					</li>
 				</a>
 				<a data-tab="blog"  href="<?php bloginfo('url'); ?>/#blog" onclick="showSection3();growTab3()" class="" id="tab-3">
@@ -108,9 +108,9 @@
 						<span>Work</span>
 					</li>
 				</a>
-				<a   href="<?php bloginfo('url'); ?>/#typefloundry" onclick="showSection2();growTab2()" class="" id="tab-2">
+				<a   href="<?php bloginfo('url'); ?>/#play" onclick="showSection2();growTab2()" class="" id="tab-2">
 					<li>
-						<span>#typefloundry</span>
+						<span>#play</span>
 					</li>
 				</a>
 				<a   href="<?php bloginfo('url'); ?>/#blog" onclick="showSection3();growTab3()" class="" id="tab-3">

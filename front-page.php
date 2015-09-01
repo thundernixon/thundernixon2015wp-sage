@@ -65,7 +65,7 @@
 
 		<!-- Instafeed Section -->
 
-		<section data-content="instagram" id="typefloundry" class=""><!--  class="conceal" -->
+		<section data-content="instagram" id="play" class=""><!--  class="conceal" -->
 
 			<h1>
 				<!-- Play  -->
