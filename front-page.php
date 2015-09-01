@@ -74,7 +74,7 @@
 				The following are lettering posts from <a href="http://www.instagram.com/thundernixon" target="_blank">my Instagram feed</a>:
 			</p>
 
-		    <div id="instafeed">
+		    <div id="typefloundry">
 
 
 		    </div>

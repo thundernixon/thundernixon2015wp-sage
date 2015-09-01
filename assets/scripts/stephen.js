@@ -367,6 +367,7 @@ var loadButton = document.getElementById('load-more');
         userId: 209250343,
         accessToken: '209250343.467ede5.17e3f6e6946a4758b7de4d1809135877',
         resolution: 'standard_resolution',
+        target: 'typefloundry',
         template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /><p>{{caption}}</p></a>',
         filter: function(image)
         {
