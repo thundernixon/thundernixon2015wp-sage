@@ -362,7 +362,7 @@ var loadButton = document.getElementById('load-more');
         success: function() {
             lastMatchedImages = 0;
         },
-        //tagName: 'play',
+        //tagName: 'typefloundry',
         clientId: 'f1ac464b95de40a9b203a6c8edf827a8',
         userId: 209250343,
         accessToken: '209250343.467ede5.17e3f6e6946a4758b7de4d1809135877',
