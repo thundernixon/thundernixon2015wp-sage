@@ -1,29 +1,3 @@
-<!-- <nav class="main-nav">
-
-			<ul class="container">
-				<a data-scroll onclick="showSection1();growTab1()" href="<?php //echo esc_url( home_url( '/' ) ); ?>#work" class="" id="tab-1">
-					<li>
-						<span>Work</span>
-					</li>
-				</a>
-<<<<<<< HEAD
-				<a data-scroll onclick="showSection2();growTab2()" href="<?php //bloginfo('url'); ?>/#typefloundry" class="" id="tab-2">
-=======
-				<a data-scroll onclick="showSection2();growTab2()" href="<?php bloginfo('url'); ?>/#play" class="" id="tab-2">
->>>>>>> making_play_work_in_url
-					<li>
-						<span>#play</span>
-					</li>
-				</a>
-				<a data-scroll onclick="showSection3();growTab3()" href="<?php //bloginfo('url'); ?>/#blog" class="" id="tab-3">
-					<li>
-						<span>Blog</span>
-					</li>
-				</a>
-			</ul>
-
-	</nav>
- -->
 
 
   <?php
@@ -76,65 +50,6 @@
 
 
 <?php endif; ?>
-
-
-<!--=====the following is pre-jQuery tabbing code from http://toddmotto.com/simple-html5-data-attribute-jquery-tabs-markup-free-and-relative-to-their-container-for-ultimate-reuse/
-
-		<nav class="main-nav">
-
-			<ul class="container">
-				<a data-tab="work"   href="<?php // bloginfo('url'); ?>#work" onclick="showSection1();growTab1()" class="" id="tab-1">
-					<li>
-						<span>Work</span>
-					</li>
-				</a>
-<<<<<<< HEAD
-				<a data-tab="instagram"  href="<?php // bloginfo('url'); ?>/#typefloundry" onclick="showSection2();growTab2()" class="" id="tab-2">
-=======
-				<a data-tab="instagram"  href="<?php bloginfo('url'); ?>/#play" onclick="showSection2();growTab2()" class="" id="tab-2">
->>>>>>> making_play_work_in_url
-					<li>
-						<span>#play</span>
-					</li>
-				</a>
-				<a data-tab="blog"  href="<?php // bloginfo('url'); ?>/#blog" onclick="showSection3();growTab3()" class="" id="tab-3">
-					<li>
-						<span>Blog</span>
-					</li>
-				</a>
-			</ul>
-
-	</nav> -->
-
-
-
-<!--  	<nav class="main-nav">
-
-			<ul class="container">
-				<a    href="<?php // bloginfo('url'); ?>#work" onclick="showSection1();growTab1()" class="" id="tab-1">
-					<li>
-						<span>Work</span>
-					</li>
-				</a>
-<<<<<<< HEAD
-				<a   href="<?php // bloginfo('url'); ?>/#typefloundry" onclick="showSection2();growTab2()" class="" id="tab-2">
-=======
-				<a   href="<?php bloginfo('url'); ?>/#play" onclick="showSection2();growTab2()" class="" id="tab-2">
->>>>>>> making_play_work_in_url
-					<li>
-						<span>#play</span>
-					</li>
-				</a>
-				<a   href="<?php // bloginfo('url'); ?>/#blog" onclick="showSection3();growTab3()" class="" id="tab-3">
-					<li>
-						<span>Blog</span>
-					</li>
-				</a>
-			</ul>
-
-	</nav> -->
-
-	<!--<?php bloginfo('url'); ?>- <?php echo esc_url( home_url( '/' ) ); ?>--->
 
 
 	<!--You should clean up the js here, and move the onclicks to event listeners and data attributes in the actual javascript documents-->
