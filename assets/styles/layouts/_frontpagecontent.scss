@@ -15,6 +15,7 @@
 	width: 100%;
 	// height: 1000px;
 	flex-wrap: nowrap;
+  min-height: 80vh; //makes blog take up full height even on pretty large viewports
 
 	section {
 		width: 100%;
