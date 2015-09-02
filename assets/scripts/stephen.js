@@ -371,7 +371,7 @@ var loadButton = document.getElementById('load-more');
         template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /><p>{{caption}}</p></a>',
         filter: function(image)
         {
-            if(image.tags.indexOf('play') >= 0 && lastMatchedImages < maxImages) {
+            if(image.tags.indexOf('typefloundry') >= 0 && lastMatchedImages < maxImages) {
                     lastMatchedImages = lastMatchedImages + 1;
                     return true;
                 }
