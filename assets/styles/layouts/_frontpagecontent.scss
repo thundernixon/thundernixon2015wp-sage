@@ -57,6 +57,11 @@
 		font-family: $serif;
 		font-size: 1.25em;
 		transform: translateY(-3.5em);
+    @include breakpoint(phone) {
+      transform: translateY(-3em);
+      font-size: 1em;
+    };
+
 		// color: $orange;
 	}
 

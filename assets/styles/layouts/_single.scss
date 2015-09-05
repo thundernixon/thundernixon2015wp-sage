@@ -99,7 +99,8 @@
 			@include breakpoint(phone) {
 				//margin-top: 4em;
 				box-shadow: 8px 0 $white, -8px 0 $white;
-				padding: 2.5% 0;
+				padding: 2.5% 2.5%;
+				font-size: 1.25em;
 			}
 
 			@include breakpoint(tiny-window) {
@@ -122,6 +123,9 @@
 				background-color: transparent;
 				border: 2px solid $white;
 				margin: 0;
+			}
+			p:last-child:after {
+				content: "";
 			}
 		}
 

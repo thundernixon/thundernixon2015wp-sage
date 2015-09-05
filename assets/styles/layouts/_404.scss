@@ -1,15 +1,30 @@
 .fourohfour-wrap{
   text-align: center;
   padding-bottom: 10vh;
-  color: $orange;
-  text-decoration: underline;
+  //text-decoration: underline;
 
-  #fourohfour {
+  a {
+    font-size: 1.25em;
+    font-weight: bold;
+    color: $orange;
+    transition: .25s ease-in;
+
+    &::before{
+      content: "\2190";
+    }
+
+    &:hover {
+      color: $body-text;
+      transition: .35s ease-out;
+    }
+  }
+
+  img {
     margin: 0 auto;
-      img{
+      // img{
         width: 100%;
         max-width: 800px;
-        margin: 10vh auto 0;
-      }
+        margin: 10vh auto 12px;
+  //    }
   }
 }
