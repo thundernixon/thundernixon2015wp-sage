@@ -32,6 +32,10 @@
     outline: 15px solid $white;
     outline-offset: -15px;
     transition: .25s ease-in;
+
+    @include breakpoint(phone) {
+      outline: none;
+    };
   }
 
   &:hover{
@@ -74,6 +78,10 @@
   .portfolio-list {
     margin-bottom: 5em;
     padding: 0px;
+
+    @include breakpoint(phone) {
+      margin-bottom: 2em;
+    };
 
       &:nth-child(even) {
         padding-right:15px;
@@ -121,6 +129,9 @@
 
       @include breakpoint(tablet) {
         filter: grayscale(0);
+      };
+      @include breakpoint(phone) {
+        height: 140px;
       };
 
       img.attachment-post-thumbnail.wp-post-image {

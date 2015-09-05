@@ -41,6 +41,9 @@
 		  margin: -100px 0 2em;
 		  height: 100px;
 		  visibility: hidden;
+      @include breakpoint(phone) {
+        margin-bottom: 1em;
+      };
 		}
 	}
 
