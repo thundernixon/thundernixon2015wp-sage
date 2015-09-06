@@ -144,11 +144,10 @@ function modify_jquery() {
 add_action('init', 'modify_jquery');
 
 //Google Analytics add
-
 add_action('wp_footer', 'add_googleanalytics');
 function add_googleanalytics() {
 UA-37669234-1
-} 
+};
 
 
 ?>
