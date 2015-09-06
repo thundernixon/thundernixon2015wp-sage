@@ -125,10 +125,21 @@
 
                 <?php
                 $image = get_field('project_hero_image');
-                if( !empty($image) ): ?>
+                $size = 'medium';
+
+                if( $image ) {
+
+                	echo wp_get_attachment_image( $image, $size );
+
+                }
+                // if( !empty($image) ):
+                //   $url = $image['url'];
+                //   $size = 'medium';
+                  ?>
+
                   <!-- <img  src="<?php // echo $image['url']; ?>" alt="<?php // echo $image['alt']; ?>" height="<?php // echo $height; ?>" width="au<?php // echo $width; ?>to" /> -->
-                  <img src="<?php echo $image['url']; ?>" <?php echo tevkori_get_srcset_string( $image, 'medium' ); ?> />
-                <?php endif; ?>
+                  <!-- <img src="<?php // echo $image['url']; ?>" <?php// echo tevkori_get_srcset_string( $image, 'medium' ); ?> /> -->
+                <?php // endif; ?>
 
                 </div>
 
