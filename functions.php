@@ -125,4 +125,7 @@ add_action('admin_init', 'wpb_imagelink_setup', 10);
 //     echo $thumb['0'];
 // }
 
+//remove admin bar for users who are logged into other wordpress accounts
+add_filter('show_admin_bar', '__return_false');
+
 ?>

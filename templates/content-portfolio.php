@@ -1,22 +1,12 @@
 <article class="container wrap col-md-6 portfolio-list" <?php post_class(); ?>> <!-- Added "container" class to make a central column -->
-  
+
   <a href="<?php the_permalink(); ?>">
-    <div class="portfolio-list-img-container" style="
-
-      background-image: url('
-        <?php
-          // if ( ('portfolio' == get_post_type()) && has_post_thumbnail() ) {
-          // the_post_thumbnail();
-          // } 
-          ?>
-          ');
-
-    ">
+    <div class="portfolio-list-img-container">
       <div>
-<?php
+        <?php
         	if ( ('portfolio' == get_post_type()) && has_post_thumbnail() ) {
-      	the_post_thumbnail();
-      	} 
+        	the_post_thumbnail( 'medium' );
+        	}
         ?>
       </div>
     </div>
@@ -25,7 +15,7 @@
       <hr/>
       <hr/>
     </div> -->
-    
+
     <header>
       <h2 class="entry-title"><?php the_title(); ?></h2>
       <!-- <p><?php //the_field('project_type'); ?></p> -->

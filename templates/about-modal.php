@@ -19,7 +19,7 @@
                 </p>
 
                 <p>
-                  I'm a visual designer at <a href="http://www.ibm.com" target="_blank">IBM</a>, which means that I spend most of my time thinking about what makes great user exeperience, and much of the rest of it communicating with developers to make complex web apps usable and beautiful.
+                  I'm <a href="https://www.ibm.com/design/careers.shtml" target="_blank">a visual designer at IBM</a>, which means that I spend most of my time working with product users and stakeholders to discover what will make a great user exeperience, and much of the rest of it communicating with developers to make these great user experiences beautiful.
                 </p>
                 <p>
                   Other than software/web/product design, I also have specialize in type design, lettering, and creating visual identities for brands.
