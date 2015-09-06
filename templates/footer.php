@@ -4,7 +4,7 @@
 
 
       <!-- <h1>Create!</h1> -->
-      <img src="<?php bloginfo('template_directory'); ?>/dist/images/create.png">
+      <img src="<?php bloginfo('template_directory'); ?>/dist/images/create2.png">
 
   <div class="contact">
     <p>

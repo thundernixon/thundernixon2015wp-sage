@@ -128,4 +128,7 @@ add_action('admin_init', 'wpb_imagelink_setup', 10);
 //remove admin bar for users who are logged into other wordpress accounts
 add_filter('show_admin_bar', '__return_false');
 
+//add new image size and crop
+add_image_size ( 'thumbnail--frontpage', 750, 250, array( 'center', 'top' ) );
+
 ?>
