@@ -132,31 +132,7 @@ add_filter('show_admin_bar', '__return_false');
 add_image_size ( 'thumbnail--frontpage', 900, 350, array( 'center', 'top' ) );
 
 
-//Making jQuery Google API
-function modify_jquery() {
-	if (!is_admin()) {
-		// comment out the next two lines to load the local copy of jQuery
-		wp_deregister_script('jquery');
-		wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js', false, '1.8.1');
-		wp_enqueue_script('jquery');
-	}
-}
-add_action('init', 'modify_jquery');
 
-//Google Analytics add
-add_action('wp_footer', 'add_googleanalytics');
-function add_googleanalytics() {
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-37669234-1', 'auto');
-    ga('send', 'pageview');
-
-  </script>
-};
 
 
 ?>

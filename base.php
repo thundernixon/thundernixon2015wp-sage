@@ -9,7 +9,7 @@ use Roots\Sage\Wrapper;
 <html class="no-js" <?php language_attributes(); ?>>
 
   <?php get_template_part('templates/head');  ?>
-  
+
 
 
 
@@ -25,7 +25,7 @@ use Roots\Sage\Wrapper;
 
 
 
-  <?php 
+  <?php
       if (is_front_page()){
          get_template_part('templates/hero', 'hero');
         }
@@ -67,36 +67,18 @@ use Roots\Sage\Wrapper;
       ?>
     </footer>
 
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-37669234-1', 'auto');
+    ga('send', 'pageview');
+
+    </script>
 
   </body>
-
-      <script type="text/javascript">
-                // var feed = new Instafeed({
-                //   // get: 'user',
-                //   // clientId: 'f1ac464b95de40a9b203a6c8edf827a8',
-                //   // resolution: 'standard_resolution',
-                //   //limit: '60',
-                //   // userId: 209250343,
-                //   // accessToken: '209250343.467ede5.17e3f6e6946a4758b7de4d1809135877',
-                //   // template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /><p>{{caption}}</p></a>',
-                //   // filter: function(image) {
-                //   //   return image.tags.indexOf('typefloundry') >= 0;
-                //   // }
-
-
-                // });
-                // feed.run();
-    </script>
-
-    <script>
-      // smoothScroll.init({
-      //   speed: 250, // Integer. How fast to complete the scroll in milliseconds
-      //   easing: 'easeInOutCubic', // Easing pattern to use
-      // });
-    </script>
-<!--
-     <script src="<?php bloginfo('template_directory'); ?>/stephen-js/jquery.lazylinepainter-1.5.1.min.js"></script>
--->
 
 
 
