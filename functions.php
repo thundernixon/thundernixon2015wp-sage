@@ -129,6 +129,6 @@ add_action('admin_init', 'wpb_imagelink_setup', 10);
 add_filter('show_admin_bar', '__return_false');
 
 //add new image size and crop
-add_image_size ( 'thumbnail--frontpage', 1100, 300, array( 'center', 'top' ) );
+add_image_size ( 'thumbnail--frontpage', 900, 350, array( 'center', 'top' ) );
 
 ?>

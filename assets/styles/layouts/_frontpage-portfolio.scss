@@ -134,7 +134,7 @@
         height: 140px;
       };
 
-      img.attachment-post-thumbnail.wp-post-image {
+      img { //formerly with .attachment-post-thumbnail.wp-post-image
         width: 100%;
         height: auto;
       }
