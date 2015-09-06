@@ -22,7 +22,7 @@
                   I'm <a href="https://www.ibm.com/design/careers.shtml" target="_blank">a visual designer at IBM</a>, which means that I spend most of my time working with product users and stakeholders to discover what will make a great user exeperience, and much of the rest of it communicating with developers to make these great user experiences beautiful.
                 </p>
                 <p>
-                  Other than software/web/product design, I also have specialize in type design, lettering, and creating visual identities for brands.
+                  Other than software/web/product design, I also engage in type design, lettering, and creating visual identities for brands.
                 </p>
                 <p>
                   I'm obsessed with podcasts. Read about my favorites on my blog.
@@ -40,7 +40,7 @@
                 <h4 class="small-caps">FAQ</h4>
                 <p>“Is your middle name really ‘Thunder’?”</p>
                 <p>
-                  Nope. Back in high school, at one of the many points in life I decided to double-down on being weird, I decided that my nick name would be "Thunder," because it was the first melodramatic, funny thing that came to mind. Shortly thereafter, I was signing up for Twitter, Email, domain names, and more, so it became an easy way to be found online. Really, try Googling "Stephen Thunder Nixon." It works too well to drop!
+                  Nope. Back in high school, at one of the many points in life I decided to double-down on being weird, I decided that my nickname would be "Thunder," because it was the first dramatic, funny thing that came to mind. Shortly thereafter, I was signing up for Twitter, Email, domain names, and more, so it became an easy way to be found online. Really, try Googling "Stephen Thunder Nixon." It's too magic to drop!
                 </p>
               </section>
               <section>
@@ -48,7 +48,7 @@
                 <p>Sans-serif type: <a href="http://www.fourthfloorfoundry.com/warehouse.html" target="_blank">Warehouse Gothic</a> (designed and built by me!)</p>
                 <p>Serif type: <a href="http://www.maxphillips.net/spinoza.html" target="_blank">Spinoza Pro</a></p>
                 <p>
-                  All content on this site has been designed, created, photographed, coded (or assembled from plugins, etc), and written by me, unless otherwise noted.
+                  All content on this site has been designed, created, photographed, written, and coded (or assembled from existing code, libraries, plugins, etc) by me, unless otherwise noted.
                 </p>
                 <p>
                   This site is built on WordPress, with a custom theme created from the <a href="https://roots.io/sage/" target="_blank">Sage Starter Theme</a>.

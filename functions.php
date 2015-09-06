@@ -131,4 +131,16 @@ add_filter('show_admin_bar', '__return_false');
 //add new image size and crop
 add_image_size ( 'thumbnail--frontpage', 900, 350, array( 'center', 'top' ) );
 
+
+//Making jQuery Google API
+function modify_jquery() {
+	if (!is_admin()) {
+		// comment out the next two lines to load the local copy of jQuery
+		wp_deregister_script('jquery');
+		wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js', false, '1.8.1');
+		wp_enqueue_script('jquery');
+	}
+}
+add_action('init', 'modify_jquery');
+
 ?>
