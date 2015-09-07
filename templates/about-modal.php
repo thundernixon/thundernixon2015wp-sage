@@ -25,14 +25,13 @@
                   Other than software/web/product design, I also engage in type design, lettering, and creating visual identities for brands.
                 </p>
                 <p>
-                  I'm obsessed with podcasts. Read about my favorites on my blog.
-                </p>
-                <p>
                   Connect with me on <a href="http://www.twitter.com/thundernixon" target="_blank">Twitter</a> and <a href="http://www.instagram.com/thundernixon" target="_blank">Instagram</a>.
                 </p>
-
                 <p>
                   Feel free to Email me at <a href="mailto:stephen@thundernixon.com" target="_top">stephen@thundernixon.com</a>.
+                </p>
+                <p>
+                  Also, I happen to be obsessed with podcasts. <a href="<?= esc_url(home_url('/i-love-podcasts/')); ?>">Read about my favorites on my blog</a>.
                 </p>
               </section>
               <section>
