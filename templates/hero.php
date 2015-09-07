@@ -6,7 +6,10 @@
     <div id="yo-hero" class="lazy-line">
 
     </div>
-            	    <p>I&rsquo;m a designer who loves to collaborate, draw letters, code, explore, and learn.</p>
+            	    <p>
+                    I&rsquo;m a visual designer at IBM.
+                  </p>
+                  <p>I love to collaborate, draw letters, code, explore, and learn.</p>
 
 
 <!--   </div>
