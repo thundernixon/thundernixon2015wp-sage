@@ -94,7 +94,7 @@
 						}
 
 						@include breakpoint(tablet) {
-              top: -5px;
+              top: -11px;
               right: -6px;
 							//border: 2px solid $white;
 							color: $white;
@@ -153,7 +153,10 @@
 			@include breakpoint(phone) {
 				.modal-content {
 					font-size: 1em;
-					width: 98vw;
+
+          .modal-body {
+            width: 94vw;
+          }
 				}
 			}
 

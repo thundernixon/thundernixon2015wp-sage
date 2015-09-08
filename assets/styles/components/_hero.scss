@@ -33,7 +33,8 @@
 
 	#yo-hero {
 		position: relative;
-		top: 3vh;
+		top: 11vh;
+		left: 1vw;
 		width: 100% !important; //this is to override the lazyline painter without getting into too much javascript
 		height: 100% !important; //this is to override the lazyline painter without getting into too much javascript
 		max-width: 90vw;
@@ -57,31 +58,57 @@
 		text-rendering: optimizeLegibility;
 	}
 
+	.about__main-hero {
+    margin: auto;
+		width: 347px;
+    position: relative;
+		top: -41vh; //-43em
+		left: 1vw;
+		transition: ease .25s;
+		@include breakpoint(tablet) {
+			top: -38vh;
+		}
+		@include breakpoint(phone) {
+			width: 75%;
+			top: -42vh;
+			left: 0vw;
+		}
+		@include breakpoint(tiny-window) {
+			width: 68%;
+			top: -40vh;
+		}
+	}
+
 	p {
 		color: $body-text; //was $navy //$orange
 		//text-shadow: 2px 2px 0 $white;
 
 
 		//put the text over top of the "Yo"
-		width: 300px;
+		//width: 347px; //300px
 		margin: 0 auto;
 		text-align: left;
 		font-weight: 600;
 		font-size: 2em;
-		line-height: 1em;
-		position: relative;
-  		top: -45vh;
+		line-height: 1.25em;
+		// position: relative;
+		// top: -43vh;
+		// left: 1vw;
+
 		// position: relative;
 		// top: -9em;
 		// left: -10px;
 
 		@include breakpoint(phone) {
-			width: 80%;
-			font-size: 1.953em;
+			// width: 80%;
+			font-size: 1.25em; //1.563em
+			// top: -37.75vh;
+			// left: 0vw;
 		}
 		@include breakpoint(tiny-window) {
-			width: 80%;
-			font-size: 1.563em;
+			// width: 86%;
+			font-size: 1.25em;
+			// top: -40vh;
 		}
 	}
 }
