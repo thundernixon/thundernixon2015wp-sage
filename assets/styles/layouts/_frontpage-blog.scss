@@ -33,8 +33,8 @@
         // }
 
         h2 {
-          margin-left: 0;
-          transition: 0.35s ease-out; //.5s
+          //margin-left: 0;
+          transition: 0.25s ease-out; //.5s
           color: $orange;
         }
       }
@@ -72,7 +72,7 @@
        &:last-child {
 
          width: 100%;
-         transition: .35s ease-out; //.5s
+         transition: .25s ease-out; //.5s
        }
      }
 

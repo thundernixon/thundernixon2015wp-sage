@@ -47,19 +47,19 @@
 
       outline: 0px solid #fff;
       outline-offset: 0px;
-      transition: .35s ease-out; //.5s
+      transition: .25s ease-out; //.5s
       //box-shadow: 2px 2px $background-gray, 4px 4px $orange;
 
       //div img {
         filter: grayscale(0); //brightness(1)
-        transition: .35s ease-out; //.5s
+        transition: .25s ease-out; //.5s
       //}
     }
 
     header {
-      margin-left: -15px;
+    //  margin-left: -15px;
       color: $orange;
-      transition: 0.35s ease-out; //0.5s
+      transition: 0.25s ease-out; //0.5s
     }
 
     .entry-summary {

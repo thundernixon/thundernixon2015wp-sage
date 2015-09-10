@@ -2,11 +2,12 @@
 	//background-color: $orange; //more minimalist approach
 	//background-color: $white; //more minimalist approach
 	//border-top: 2px solid $navy; //more minimalist approach
-	border-top: 2px solid $orange; //slightly more orange approach
-	background-color: $medium-gray; //$background-gray $white //slightly more orange approach
+//	border-top: 2px solid $orange; //slightly more orange approach
+	background-color: $orange; //$medium-gray $background-gray $white //slightly more orange approach
 	height: 40px;
 	display: flex;
 	align-items: center;
+	border-bottom: 3px solid $background-gray;
 
 	ul {
 		list-style: none;
@@ -22,7 +23,7 @@
   		a {
 			//color: $white; //more minimalist approach
 			//color: $navy; //more minimalist approach
-			color: $orange; //slightly more orange approach
+			color: $medium-gray;//$orange //slightly more orange approach
 			font-weight: 600;
 			height: 100%;
 			flex-grow:1;
@@ -30,11 +31,12 @@
 			// margin: auto;
 			//background-color: $orange; //more minimalist approach
 			//background-color: $white; //more minimalist approach
-			background-color: $medium-gray; //$background-gray
+			background-color: $orange; //$medium-gray $background-gray
 			transition: 0.25s ease;
 			text-decoration: none;
-			border-top: solid 0px $background-gray;
+			//border-top: solid 0px $background-gray;
 			//padding:0 15px;
+			letter-spacing: .02em;
 
 
 			//the following three styles make the tab "inactive" by default
@@ -51,7 +53,7 @@
 				color: $navy; //slightly more orange approach
 				// background-color: #ff5000;
 				//border-bottom: solid 2px $orange;
-				border-top: solid 2px $orange;//slightly more orange approach
+				//border-top: solid 2px $orange;//slightly more orange approach
 				transition: 0.25s ease;
 			}
 
@@ -81,9 +83,10 @@
 			transition: 0.25s ease;
 			//background-color: $active-orange !important; //more minimalist approach
 			//background-color: $background-gray !important; //more minimalist approach
-			background-color: $orange !important; //slightly more orange approach
+			//background-color: $orange !important; //slightly more orange approach
 			color: $white; //slightly more orange approach
 			padding: 0 15px;
+			border-bottom: 5px solid $background-gray;
 
 			&:hover {
 				border-top: 0;
