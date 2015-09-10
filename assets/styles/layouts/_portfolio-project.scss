@@ -53,7 +53,7 @@
 						color: $body-text;
 						text-transform: uppercase;
 						letter-spacing: .3em;
-						text-shadow: 2px 2px $white, 4px 4px $background-gray ;  //$medium-gray $background-gray
+						text-shadow: 2px 2px $white, 4px 4px $medium-gray ;  //$medium-gray $background-gray
 
 						@include breakpoint(phone) {
 							font-size: 1.953em;
@@ -62,7 +62,7 @@
 						&:after {
 						  content: " ";
 						  display: block;
-						  background-color: $background-gray; //$medium-gray $white
+						  background-color: $medium-gray ; //$background-gray $white
 						  height: 5px;
 						  width: 60px;
 						  margin: 1em 0;
@@ -84,7 +84,7 @@
 
 				.project-meta-info {
 				  display: flex;
-				  border: 2px solid $background-gray ; //$medium-gray $white
+				  border: 2px solid $medium-gray  ; //$background-gray $medium-gray $white
 				  justify-content: start;
 				  margin: 1em 0;
 				  flex-basis: 400px;
@@ -107,7 +107,7 @@
 						margin-bottom: .5em;
 
 						&:first-child {
-							border-bottom: 2px solid $background-gray; //$medium-gray #fff
+							border-bottom: 2px solid $medium-gray ; //$background-gray #fff
 							color: rgb(61, 61, 61);
 							/* background-color: white; */
 							width: 100%;
@@ -142,7 +142,7 @@
 
 						flex-basis: 300px;
 						text-decoration: none;
-						border: 2px solid $background-gray; //$medium-gray $white
+						border: 2px solid $medium-gray ; //$background-gray $white
 						box-shadow: none;
 						background-color: $white; //$background-gray
 						padding: .25em .6em .45em;
@@ -181,7 +181,7 @@
 							color: $orange; //$body-text
 							background-color: $white;
 							transition: .35s ease;
-							box-shadow: 2px 2px $background-gray, 4px 4px $orange;
+							box-shadow: 2px 2px $medium-gray, 4px 4px $orange;
 						}
 					}
 
