@@ -30,7 +30,7 @@
 
 html, body {
 	height: 100%;
-	background-color: $background-gray;
+	background-color: $white; //$background-gray
 	// background-image: url("../images/bitmap-thundernixon2015wp.svg");
 	// background-size: 15px 15px;
 	// background-repeat: repeat;
@@ -84,9 +84,10 @@ p, li {
 	a {
 		//text-decoration: underline;
 		text-decoration: none;
-		border-bottom: 2px solid $white;
-		box-shadow: inset 0 -4px 0 $white;
-		transition: .5s ease;
+		//border-bottom: 2px solid $white;
+		//box-shadow: inset 0 -4px 0 $white;
+		box-shadow: inset 0 -11px 0 $light-gray;
+		transition: .35s ease; //0.5s
 		background-color: transparent;
 		padding: 0 .15em;
 		margin: 0 -.15em;
@@ -121,8 +122,10 @@ h1 {
 h2 {
 	font-family: 'Warehouse Gothic', sans-serif;
 	font-weight: normal;
-	padding: 1% 18%; //1% 10%
-	border-bottom: 2px solid $white;
+//	padding: 1% 18%; //1% 10%
+	padding: 1% 0;
+	max-width: 650px;
+	border-bottom: 2px solid $medium-gray; //$background-gray $white
 
 	@include breakpoint(tablet) {
 		padding: 1% 0%;

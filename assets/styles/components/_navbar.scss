@@ -3,7 +3,7 @@
 	//background-color: $white; //more minimalist approach
 	//border-top: 2px solid $navy; //more minimalist approach
 	border-top: 2px solid $orange; //slightly more orange approach
-	background-color: $background-gray; //slightly more orange approach
+	background-color: $medium-gray; //$background-gray $white //slightly more orange approach
 	height: 40px;
 	display: flex;
 	align-items: center;
@@ -30,7 +30,7 @@
 			// margin: auto;
 			//background-color: $orange; //more minimalist approach
 			//background-color: $white; //more minimalist approach
-			background-color: $background-gray; //slightly more orange approach
+			background-color: $medium-gray; //$background-gray
 			transition: 0.25s ease;
 			text-decoration: none;
 			border-top: solid 0px $background-gray;

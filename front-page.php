@@ -8,7 +8,7 @@
 	<div class="content container wrap">
 
 		<!-- Portfolio Section -->
-			<section data-content="work" id="work" class="reveal"> <!-- show -->
+			<section data-content="work" id="projects" class="reveal"> <!-- show -->
 
 			<h1>
 				<!-- Work -->
@@ -65,7 +65,7 @@
 
 		<!-- Instafeed Section -->
 
-		<section data-content="instagram" id="play" class=""><!--  class="conceal" -->
+		<section data-content="instagram" id="lettering" class=""><!--  class="conceal" -->
 
 			<h1>
 				<!-- Play  -->
@@ -74,7 +74,7 @@
 				The following are lettering posts from <a href="http://www.instagram.com/thundernixon" target="_blank">my Instagram feed</a>:
 			</p>
 
-		    <div id="typefloundry">
+		    <div id="typefloundry"> <!--#typefloundry-->
 
 
 		    </div>
@@ -84,7 +84,7 @@
 
 		<!-- Blog Section -->
 
-		<section data-content="blog" id="blog" class=""> <!-- class="conceal" -->
+		<section data-content="blog" id="weblog" class=""> <!-- class="conceal" -->
 
 			<h1>
 				<!-- Blog -->

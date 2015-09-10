@@ -3,6 +3,8 @@
  --><!--     <h1>
       Yo.
     </h1> -->
+
+    <!-- <canvas id="starfield"></canvas> -->
     <div id="yo-hero" class="lazy-line">
 
     </div>
@@ -15,7 +17,7 @@
                   </p>
                 </br>
                   <p>
-                    I&rsquo;m a visual designer at IBM in New York, NY.
+                    I&rsquo;m a visual designer at IBM in NYC.
                   </p>
     </div>
 

@@ -1,4 +1,4 @@
-#work a {
+#projects a {
   color: $body-text;
 
   .entry-title {
@@ -47,32 +47,32 @@
 
       outline: 0px solid #fff;
       outline-offset: 0px;
-      transition: .5s ease-out;
+      transition: .35s ease-out; //.5s
       //box-shadow: 2px 2px $background-gray, 4px 4px $orange;
 
       //div img {
         filter: grayscale(0); //brightness(1)
-        transition: .5s ease-out;
+        transition: .35s ease-out; //.5s
       //}
     }
 
     header {
       margin-left: -15px;
       color: $orange;
-      transition: 0.5s ease-out;
+      transition: 0.35s ease-out; //0.5s
     }
 
     .entry-summary {
 
       p {
         margin: 10px 10px;
-        transition: .5s ease-out;
+        transition: .35s ease-out;//.5s
       }
     }
   }
 }
 
-#work {
+#projects {
     //padding: 4em 0;
 
   .portfolio-list {

@@ -26,7 +26,7 @@
 			margin-top: 53px;
 			line-height: 1.03em;
 			padding: 20px;
-			color: $background-gray;
+			color: $medium-gray; // $background-gray $light-gray
 
 			@include breakpoint(tablet) {
 				margin-top: 42px;
@@ -89,7 +89,7 @@
 			/* margin: 0; */
 			padding: 5% 10%;
 			//border: 2px solid #3D3D3D;
-			background-color: $white;
+			background-color: $white; //
 
 			@include breakpoint(tablet) {
 				width: 100%;
@@ -121,7 +121,7 @@
 
 			p:first-child{
 				background-color: transparent;
-				border: 2px solid $white;
+				border: 2px solid $medium-gray; //$background-gray $white
 				margin: 0;
 			}
 			p:last-child:after {

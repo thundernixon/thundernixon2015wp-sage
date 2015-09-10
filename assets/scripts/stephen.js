@@ -49,60 +49,60 @@ function growTab3() {
 }
 
 function showSection1(){
-  //document.getElementById("work").className = "reveal";
-  $('#work').fadeIn('slow');
+  //document.getElementById("projects").className = "reveal";
+  $('#projects').fadeIn('slow');
 
-  document.getElementById("play").className = "conceal";
-  document.getElementById("blog").className = "conceal";
-  //$('#play').fadeOut('fast');
-  //$('#blog').fadeOut('fast');
-  $('#play').removeAttr( 'style' ).addClass('conceal');
-  $('#blog').removeAttr( 'style' ).addClass('conceal');
+  document.getElementById("lettering").className = "conceal";
+  document.getElementById("weblog").className = "conceal";
+  //$('#lettering').fadeOut('fast');
+  //$('#weblog').fadeOut('fast');
+  $('#lettering').removeAttr( 'style' ).addClass('conceal');
+  $('#weblog').removeAttr( 'style' ).addClass('conceal');
 }
 
 function showSection2(){
-  //document.getElementById("play").className = "reveal";
-  $('#play').fadeIn('slow');
-  document.getElementById("work").className = "conceal";
-  document.getElementById("blog").className = "conceal";
-  //$('#work').fadeOut('fast');
-  //$('#blog').fadeOut('fast');
-  $('#work').removeAttr( 'style' ).addClass('conceal');
-  $('#blog').removeAttr( 'style' ).addClass('conceal');
+  //document.getElementById("lettering").className = "reveal";
+  $('#lettering').fadeIn('slow');
+  document.getElementById("projects").className = "conceal";
+  document.getElementById("weblog").className = "conceal";
+  //$('#projects').fadeOut('fast');
+  //$('#weblog').fadeOut('fast');
+  $('#projects').removeAttr( 'style' ).addClass('conceal');
+  $('#weblog').removeAttr( 'style' ).addClass('conceal');
 }
 
 function showSection3(){
-  //document.getElementById("blog").className = "reveal";
-  $('#blog').fadeIn('slow');
-  document.getElementById("work").className = "conceal";
-  document.getElementById("play").className = "conceal";
-  //$('#work').fadeOut('fast');
-  //$('#play').fadeOut('fast');
-  $('#work').removeAttr( 'style' ).addClass('conceal');
-  $('#play').removeAttr( 'style' ).addClass('conceal');
+  //document.getElementById("weblog").className = "reveal";
+  $('#weblog').fadeIn('slow');
+  document.getElementById("projects").className = "conceal";
+  document.getElementById("lettering").className = "conceal";
+  //$('#projects').fadeOut('fast');
+  //$('#lettering').fadeOut('fast');
+  $('#projects').removeAttr( 'style' ).addClass('conceal');
+  $('#lettering').removeAttr( 'style' ).addClass('conceal');
 }
 
 // ============ reveals section according to click
 
 // var preventDefaultOnHome = function(){
-//   if ((isUrl.search("portfolio") >= -1) || ((isUrl.search("blog") >= -1) || (isUrl.search("#blog") >= 0)) ) {
+//   if ((isUrl.search("portfolio") >= -1) || ((isUrl.search("weblog") >= -1) || (isUrl.search("#weblog") >= 0)) ) {
 //     event.preventDefault();
 //   } else  {
 //     return false;
 //   }
-// }; //actually, you should go back and change the custom post type to "work," to match language with URLs, and then figure this out
+// }; //actually, you should go back and change the custom post type to "projects," to match language with URLs, and then figure this out
 
 
 //Damn. Currently not preventing the flash jank of the tabs with scrolling
 var preventDefaultOnHome = function() {
     //window.addEventListener("load", function ifOnHome() {
-    if ( (isUrl.search("#blog") >= 0) || (isUrl.search("#work") >= 0) ) {
+    if ( (isUrl.search("#weblog") >= 0) || (isUrl.search("#projects") >= 0) ) {
       //event.preventDefault();
-      //console.log("We're either on ...#blog... or on ...#work...");
+      //console.log("We're either on ...#weblog... or on ...#projects...");
     }
-    else if ( (isUrl.search("portfolio") >= -1) && (isUrl.search("blog")  >= -1) ) {
+    else if ( (isUrl.search("portfolio") >= -1) && (isUrl.search("weblog")  >= -1) ) {
       //event.preventDefault();
-      console.log("We're not on ...portfolio... and not on ...blog...");
+      console.log("We're not on ...portfolio... and not on ...weblog...");
     }
     else {
 
@@ -120,7 +120,7 @@ document.getElementById("tab-1").addEventListener("click", function revealSectio
   growTab1();//make front tab active
 
     $('html, body').animate({
-        scrollTop: $("#work").offset().top
+        scrollTop: $("#projects").offset().top
     }, 250);
 });
 
@@ -130,7 +130,7 @@ document.getElementById("tab-2").addEventListener("click", function revealSectio
   showSection2(); //show section
   growTab2(); //make middle tab active
       $('html, body').animate({
-        scrollTop: $("#play").offset().top
+        scrollTop: $("#lettering").offset().top
     }, 250);
 });
 
@@ -140,7 +140,7 @@ document.getElementById("tab-3").addEventListener("click", function revealSectio
   showSection3(); //show section
   growTab3(); //make third tab active
       $('html, body').animate({
-        scrollTop: $("#blog").offset().top
+        scrollTop: $("#weblog").offset().top
     }, 250);
 });
 
@@ -148,20 +148,20 @@ document.getElementById("tab-3").addEventListener("click", function revealSectio
 
 
 window.addEventListener("load", function scrollToSections() {
-  if (isUrl === getBaseUrl()+"" || isUrl === getBaseUrl()+"#work"){ //&& (isUrl.search("#play") === -1 && isUrl.search("#blog") === -1)
+  if (isUrl === getBaseUrl()+"" || isUrl === getBaseUrl()+"#projects"){ //&& (isUrl.search("#lettering") === -1 && isUrl.search("#weblog") === -1)
     showSection1();
     growTab1();
-    console.log("get base url is working");
+    console.log("get base url is projectsing");
   }
 
 
-  else if (isUrl === getBaseUrl()+"#play"){ // (isUrl.search("#play") >= 0)
+  else if (isUrl === getBaseUrl()+"#lettering"){ // (isUrl.search("#lettering") >= 0)
     showSection2();
     growTab2();
   }
 
 
-  else if (isUrl === getBaseUrl()+"#blog"){ //(isUrl.search("#blog") >= 0)
+  else if (isUrl === getBaseUrl()+"#weblog"){ //(isUrl.search("#weblog") >= 0)
     showSection3();
     growTab3();
   }
@@ -174,22 +174,22 @@ window.addEventListener("load", function scrollToSections() {
 
 
 // window.addEventListener("load", function scrollToSections() {
-//   if (isUrl === "http://localhost/thundernixon2015wp/" || isUrl === "http://localhost/thundernixon2015wp/#work"){ //&& (isUrl.search("#play") === -1 && isUrl.search("#blog") === -1)
+//   if (isUrl === "http://localhost/thundernixon2015wp/" || isUrl === "http://localhost/thundernixon2015wp/#projects"){ //&& (isUrl.search("#lettering") === -1 && isUrl.search("#weblog") === -1)
 //     showSection1();
 //     growTab1();
-//     //console.log("get root url is not working for me, right now");
+//     //console.log("get root url is not projectsing for me, right now");
 //     console.log(getRootUrl());
 //     console.log(isUrl === getRootUrl()+"thundernixon2015wp/");
 //   }
 
 
-//   else if (isUrl === "http://localhost/thundernixon2015wp/#play"){ // (isUrl.search("#play") >= 0)
+//   else if (isUrl === "http://localhost/thundernixon2015wp/#lettering"){ // (isUrl.search("#lettering") >= 0)
 //     showSection2();
 //     growTab2();
 //   }
 
 
-//   else if (isUrl === "http://localhost/thundernixon2015wp/#blog"){ //(isUrl.search("#blog") >= 0)
+//   else if (isUrl === "http://localhost/thundernixon2015wp/#weblog"){ //(isUrl.search("#weblog") >= 0)
 //     showSection3();
 //     growTab3();
 //   }
@@ -201,19 +201,19 @@ window.addEventListener("load", function scrollToSections() {
 //Trying to set the tab behavioral via relative paths, rather than absolute
 
 // window.addEventListener("load", function scrollToSections() {
-//   if (isUrl === "http://../../" || isUrl === "http://../../#work"){ //&& (isUrl.search("#play") === -1 && isUrl.search("#blog") === -1)
+//   if (isUrl === "http://../../" || isUrl === "http://../../#projects"){ //&& (isUrl.search("#lettering") === -1 && isUrl.search("#weblog") === -1)
 //     showSection1();
 //     growTab1();
 //   }
 
 
-//   else if (isUrl === "http://../../#play"){ // (isUrl.search("#play") >= 0)
+//   else if (isUrl === "http://../../#lettering"){ // (isUrl.search("#lettering") >= 0)
 //     showSection2();
 //     growTab2();
 //   }
 
 
-//   else if (isUrl === "http://../../#blog"){ //(isUrl.search("#blog") >= 0)
+//   else if (isUrl === "http://../../#weblog"){ //(isUrl.search("#weblog") >= 0)
 //     showSection3();
 //     growTab3();
 //   }
@@ -223,11 +223,11 @@ window.addEventListener("load", function scrollToSections() {
 // });
 
 
-//Expands correct tab in deeper pages of portfolio and blog
+//Expands correct tab in deeper pages of portfolio and weblog
 window.addEventListener("load", function expandCorrectTab() {
   if (isUrl.search("portfolio") >= 0) {
     growTab1();
-  } else if (isUrl.search("blog") >= 0) {
+  } else if (isUrl.search("weblog") >= 0) {
     growTab3();
   } else {
     return false;
@@ -253,9 +253,9 @@ window.addEventListener("load", function expandCorrectTab() {
 
 //attemp to use data attr
 // window.addEventListener("load", function hideSections() {
-//     document.querySelectorAll("[data-content='work']").className = "reveal";
+//     document.querySelectorAll("[data-content='projects']").className = "reveal";
 //     document.querySelectorAll("[data-content='instagram']").className = "conceal";
-//     document.querySelectorAll("[data-content='blog']").className = "conceal";
+//     document.querySelectorAll("[data-content='weblog']").className = "conceal";
 //     });
 
 
@@ -326,7 +326,7 @@ window.addEventListener("load", function expandCorrectTab() {
 //     accessToken: '209250343.467ede5.17e3f6e6946a4758b7de4d1809135877',
 //     template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /><p>{{caption}}</p></a>',
 //     filter: function(image) {
-//         if (image.tags.indexOf('play') >= 0 && foundImages < maxImages) {
+//         if (image.tags.indexOf('lettering') >= 0 && foundImages < maxImages) {
 //             foundImages = foundImages + 1;
 //             return true;
 //         }
@@ -367,8 +367,8 @@ var loadButton = document.getElementById('load-more');
         userId: 209250343,
         accessToken: '209250343.467ede5.17e3f6e6946a4758b7de4d1809135877',
         resolution: 'standard_resolution',
-        target: 'typefloundry',
-        template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /><p>{{caption}}</p></a>',
+        target: 'typefloundry', //
+        template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /></a>', //<p>{{caption}}</p>
         filter: function(image)
         {
             if(image.tags.indexOf('typefloundry') >= 0 && lastMatchedImages < maxImages) {
@@ -377,7 +377,7 @@ var loadButton = document.getElementById('load-more');
                 }
                 else{
                     image.className = "fidden";
-                    image.style = "display:none;";
+                    image.style = "dislettering:none;";
                 }
                 //return true;
             //}
@@ -473,10 +473,81 @@ var pathObj = {
   });
 
 
-window.addEventListener("load", function jsTest() {
-  console.log("JS seems to be working.");
-});
+// window.addEventListener("load", function jsTest() {
+//   console.log("JS seems to be projectsing.");
+// });
+//
+// window.addEventListener("load", function updateTest() {
+//   console.log("Theme has been updated from remote finallllly");
+// });
 
-window.addEventListener("load", function updateTest() {
-  console.log("Theme has been updated from remote finallllly");
-});
+
+//==============START starfield for canvas==============//
+// function $i(t) {
+//     return document.getElementById(t)
+// }
+// function $r(t, r) {
+//     document.getElementById(t).removeChild(document.getElementById(r))
+// }
+// function $t(t) {
+//     return document.getElementsByTagName(t)
+// }
+// function $c(t) {
+//     return String.fromCharCode(t)
+// }
+// function $h(t) {
+//     return ("0" + Math.max(0, Math.min(255, Math.round(t))).toString(16)).slice(-2)
+// }
+// function _i(t, r) {
+//     $t("div")[t].innerHTML += r
+// }
+// function _h(t) {
+//     return hires ? Math.round(t / 2) : t
+// }
+// function get_screen_size() {
+//     var t = document.documentElement.clientWidth,
+//         r = document.documentElement.clientHeight;
+//     return Array(t, r)
+// }
+// function init() {
+//     for (var t = 0; n > t; t++) star[t] = new Array(5), star[t][0] = Math.random() * w * 2 - 2 * x, star[t][1] = Math.random() * h * 2 - 2 * y, star[t][2] = Math.round(Math.random() * z), star[t][3] = 0, star[t][4] = 0;
+//     var r = $i("starfield");
+//     r.style.position = "absolute", r.width = w, r.height = h, context = r.getContext("2d"), context.fillStyle = "rgb(255,255,255)", context.strokeStyle = "rgb(255,98,0)"
+// }
+// function anim() {
+//     mouse_x = cursor_x - x, mouse_y = cursor_y - y, context.fillRect(0, 0, w, h);
+//     for (var t = 0; n > t; t++) test = !0, star_x_save = star[t][3], star_y_save = star[t][4], star[t][0] += mouse_x >> 4, star[t][0] > x << 1 && (star[t][0] -= w << 1, test = !1), star[t][0] < -x << 1 && (star[t][0] += w << 1, test = !1), star[t][1] += mouse_y >> 4, star[t][1] > y << 1 && (star[t][1] -= h << 1, test = !1), star[t][1] < -y << 1 && (star[t][1] += h << 1, test = !1), star[t][2] -= star_speed, star[t][2] > z && (star[t][2] -= z, test = !1), star[t][2] < 0 && (star[t][2] += z, test = !1), star[t][3] = x + star[t][0] / star[t][2] * star_ratio, star[t][4] = y + star[t][1] / star[t][2] * star_ratio, star_x_save > 0 && w > star_x_save && star_y_save > 0 && h > star_y_save && test && (context.lineWidth = 2 * (1 - star_color_ratio * star[t][2]), context.beginPath(), context.moveTo(star_x_save, star_y_save), context.lineTo(star[t][3], star[t][4]), context.stroke(), context.closePath());
+//     timeout = setTimeout("anim()", fps)
+// }
+// function start() {
+//     resize(), anim()
+// }
+// function resize() {
+//     w = parseInt(-1 != url.indexOf("w=") ? url.substring(url.indexOf("w=") + 2, -1 != url.substring(url.indexOf("w=") + 2, url.length).indexOf("&") ? url.indexOf("w=") + 2 + url.substring(url.indexOf("w=") + 2, url.length).indexOf("&") : url.length) : get_screen_size()[0]), h = parseInt(-1 != url.indexOf("h=") ? url.substring(url.indexOf("h=") + 2, -1 != url.substring(url.indexOf("h=") + 2, url.length).indexOf("&") ? url.indexOf("h=") + 2 + url.substring(url.indexOf("h=") + 2, url.length).indexOf("&") : url.length) : get_screen_size()[1]), x = Math.round(w / 2), y = Math.round(h / 2), z = (w + h) / 2, star_color_ratio = 1 / z, cursor_x = x, cursor_y = y, init()
+// }
+// var url = document.location.href,
+//     flag = !0,
+//     test = !0,
+//     n = parseInt(-1 != url.indexOf("n=") ? url.substring(url.indexOf("n=") + 2, -1 != url.substring(url.indexOf("n=") + 2, url.length).indexOf("&") ? url.indexOf("n=") + 2 + url.substring(url.indexOf("n=") + 2, url.length).indexOf("&") : url.length) : 812),
+//     w = 0,
+//     h = 0,
+//     x = 1,
+//     y = 1,
+//     z = 1,
+//     star_color_ratio = 0,
+//     star_x_save, star_y_save, star_ratio = 115,
+//     star_speed = 2,
+//     star_speed_save = 0,
+//     star = new Array(n),
+//     color, opacity = .1,
+//     cursor_x = 0,
+//     cursor_y = 0,
+//     mouse_x = 0,
+//     mouse_y = 0,
+//     canvas_x = 0,
+//     canvas_y = 0,
+//     canvas_w = 0,
+//     canvas_h = 0,
+//     context, key, ctrl, timeout, fps = 0;
+// start();
+//==============END starfield for canvas==============//
