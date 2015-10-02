@@ -5,7 +5,7 @@
 </div> -->
 <div class="container wrap">
   <div class="fourohfour-wrap">
-    <img src="<?php bloginfo('template_directory'); ?>/dist/images/not_all_who_wander-2.jpg">
+    <img src="<?php bloginfo('template_directory'); ?>/dist/images/not_all_who_wander.png">
   </br>
     <a href="<?= esc_url(home_url('/')); ?>">Return to Home</a>
   </div>
