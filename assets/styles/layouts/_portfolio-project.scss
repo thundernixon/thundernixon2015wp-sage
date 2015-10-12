@@ -206,7 +206,7 @@
 		}
 
 		.opening-description {
-			background-color: $background-gray ; //previously $white $body-text
+			background-color: rgba($medium-gray, 0.54); //$background-gray ; //previously $white $body-text
 
 			p {
 				color: $body-text; // $white $background-gray
@@ -410,7 +410,7 @@
 			.caption {
 				font-family:'Warehouse Gothic', Helvetica Neue, sans-serif;
 				font-size: .8em;
-				margin: 2.8em auto -2em;  //2em 1.5em
+				margin: 2.8em auto 1em; //2.8em auto -2em;  //2em 1.5em
 			}
 
 			// p{

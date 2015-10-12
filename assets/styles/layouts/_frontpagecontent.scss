@@ -1,6 +1,6 @@
 .container[role="document"] {
   min-height: 82%;
-  background-color:$background-gray;
+  background-color:rgba($medium-gray, 0.54); //$background-gray;
 
   	.content{
 		margin-bottom: 3em;
@@ -8,7 +8,7 @@
 }
 
 #front-page-tabs {
-	background-color: $background-gray;
+	background-color: rgba($medium-gray, 0.54); //$background-gray;
 	display: flex;
 	flex-direction: column;
 	overflow: hidden;

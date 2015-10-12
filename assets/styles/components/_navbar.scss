@@ -7,7 +7,7 @@
 	height: 40px;
 	display: flex;
 	align-items: center;
-	border-bottom: 3px solid $background-gray;
+	border-bottom: 3px solid $medium-gray;//$background-gray;
 
 	ul {
 		list-style: none;
@@ -86,7 +86,7 @@
 			//background-color: $orange !important; //slightly more orange approach
 			color: $white; //slightly more orange approach
 			padding: 0 15px;
-			border-bottom: 5px solid $background-gray;
+			border-bottom: 5px solid $medium-gray;//$background-gray;
 
 			&:hover {
 				border-top: 0;
