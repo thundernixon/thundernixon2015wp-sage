@@ -466,7 +466,7 @@ var pathObj = {
   {
      "svgData": pathObj,
      "strokeWidth": 4,
-     "strokeColor": "#FFF2EC",  //FF7825
+     "strokeColor": "#EFFAFF",  //FFF2EC FF7825
      "responsive": true
  }).lazylinepainter('paint');
 
