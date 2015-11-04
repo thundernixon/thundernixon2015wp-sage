@@ -206,7 +206,7 @@
 		}
 
 		.opening-description {
-			background-color: rgba($medium-gray, 0.54); //$background-gray ; //previously $white $body-text
+			background-color: $medium-gray; //rgba($medium-gray, 0.54); //$background-gray ; //previously $white $body-text
 
 			p {
 				color: $body-text; // $white $background-gray
