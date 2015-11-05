@@ -39,7 +39,7 @@
                 <h4 class="small-caps">FAQ</h4>
                 <p>“Is your middle name really ‘Thunder’?”</p>
                 <p>
-                  Nope. Back in high school, at one of the many points in life I decided to double-down on being weird, I decided that my nickname would be "Thunder," because it was the first dramatic, funny thing that came to mind. Shortly thereafter, I was signing up for Twitter, Email, domain names, and more, so it became an easy way to be found online. Really, try Googling "Stephen Thunder Nixon." It's too magic to drop!
+                  Nope. Back in high school, in a small class with two "Stephen"s, I decided that my nickname could be "Thunder." It was simply the first dramatic, funny thing that came to mind. Shortly thereafter, I was signing up for Twitter, Email, domain names, and more, and I found that "thundernixon" was usually available. It became an easy way to be consistent in my naming and to be found online. Really, try Googling "Stephen Thunder Nixon." Chances are, you'll find me pretty easily.
                 </p>
               </section>
               <section>
