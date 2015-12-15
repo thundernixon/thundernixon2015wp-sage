@@ -11,7 +11,7 @@
     <div class="about__main-hero">
 
         <p>
-          Hi, I&rsquo;m Stephen, a visual designer at IBM in NYC.
+          Hi, I&rsquo;m a visual designer at IBM in NYC.
         </p>
         </br>
         <p>
