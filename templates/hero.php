@@ -10,15 +10,18 @@
     </div>
     <div class="about__main-hero">
 
+        <p>
+          Hi, I&rsquo;m Stephen, a visual designer at IBM in NYC.
+        </p>
+        </br>
+        <p>
+          I love learning, coding, drawing letters, and collaborating to create beautiful experiences.
+        </p>
+        </br>
+        <p>
+          Please see my work below!
+        </p>
 
-
-                  <p>
-                    I love learning, coding, drawing letters, and collaborating to create beautiful experiences.
-                  </p>
-                </br>
-                  <p>
-                    I&rsquo;m a visual designer at IBM in NYC.
-                  </p>
     </div>
 
 <!--   </div>
