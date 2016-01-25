@@ -434,8 +434,8 @@
 				@extend .description;
 			}
 
-			.instagram-media {
-				margin: 0 auto;
+			iframe .instagram-media {
+				margin: 0 auto !important;
 			}
 
 		}
@@ -595,4 +595,8 @@
 
 .xl-img {
 	margin-top: 1.5em;
+}
+
+.drop-shadow{
+	box-shadow: 0 2px 3px 0 rgba(0,0,0,.35);
 }
