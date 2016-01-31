@@ -40,7 +40,7 @@ html, body {
 	width: 100%;
 
 	//@media $laptop{
-		font-family:'Warehouse Gothic', Franklin Gothic Medium, Helvetica Neue, sans-serif;
+		font-family:$sans;
 		text-rendering: optimizeLegibility;
 	//}
 }
@@ -51,10 +51,14 @@ html, body {
 
 //Typography
 
-$serif: "ff-spinoza-web-pro", Palatino Linotype, serif;
+
 
 .serif {
 	font-family: $serif;
+}
+
+.warehouse {
+	font-family: $sans;
 }
 
 a, button {
