@@ -443,12 +443,13 @@
 		.img--half-width {
 			img {
 		    width: 49%;
-		    float: left;
-		    padding: 0 1% 2% 0;
+		    //float: left;
+		    //padding: 0 1% 2% 0;
+				margin-top: 1em;
 			}
 			img:nth-child(even) {
 				float: right;
-				padding: 0 0 1% 2%;
+				//padding: 0 0 1% 2%;
 			}
 }
 
