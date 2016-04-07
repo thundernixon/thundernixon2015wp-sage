@@ -205,6 +205,8 @@
 			// }
 		}
 
+
+
 		.opening-description {
 			background-color: $background-gray; //rgba($medium-gray, 0.35); $medium-gray; rgba($medium-gray, 0.54); //$background-gray ; //previously $white $body-text
 
@@ -438,6 +440,17 @@
 
 		}
 
+		.img--half-width {
+			img {
+		    width: 46%;
+		    float: left;
+		    margin: 0 2% 2% 0;
+			}
+			img:nth-child(even) {
+				float: right;
+				margin: 0 0 2% 2%;
+			}
+}
 
 	}
 
