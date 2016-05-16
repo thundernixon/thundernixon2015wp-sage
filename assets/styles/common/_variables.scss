@@ -49,6 +49,9 @@ $sans: 'Warehouse Gothic', Franklin Gothic Medium, Helvetica Neue, sans-serif;
   @else if $point == tablet {
     @media (max-width: 1000px) { @content; }
   }
+  @else if $point == medium_tablet {
+    @media (max-width: 860px) { @content; }
+  }
   @else if $point == phone {
     @media (max-width: 650px)  { @content; }
   }

@@ -5,11 +5,12 @@ header {
   align-items: center;
 
 	#logo{
-		width: 135px; //114.75px
+		width: 26px; // 135px; animated in pieces //114.75px
 	 	overflow: hidden;
 	 	display: block;
 	 	position: relative;
-	 	top: 12px;
+	 	top: 11px; //12px;
+		left: -1.75em;
 
 		img {
 			// width: 247px;
@@ -20,12 +21,26 @@ header {
 			right: 274px; // 232.9px
 			animation: lightning 1s 5.25s steps(10) 2;
 
+			//
+			// &:hover {
+			// 	animation: lightning 1s steps(10) infinite;
+			// }
+		}
 
-			&:hover {
+		@include breakpoint(medium_tablet) {
+			display: none;
+		}
+
+	}
+
+	#brand_container:hover{
+			#logo img {
 				animation: lightning 1s steps(10) infinite;
 			}
-
-		}
+			.brand {
+				color: $orange; //$body-text;
+				transition: .25s ease-out;
+			}
 	}
 
   	#site-logo {
@@ -60,33 +75,39 @@ header {
 		@extend .small-caps;
 		//text-transform: uppercase;
 		//font-size: .8em;
-		font-weight: normal;
+		//font-weight: normal; //with "thunder"
+		font-weight: bold;
 		position: fixed;
-		letter-spacing: 0.4em;
-		top: 43.5%;;
-		right: -9em;
-		color: $orange;
+		letter-spacing: .08em; // 0.4em; side
+		// top: 43.5%;; //with "thunder"
+		// right: -9em; //with "thunder"
+		// top: 48.3%; //side
+		// right: -5.21em; //side
+		top: 1%;
+		// left: 5.4em;
+		float: left;
+		color: $body-text; //$medium-gray; //$orange;
 		z-index: 100;
-		transform: rotate(90deg);
-		transition: .5s ease-in;
+		// transform: rotate(90deg);
+		transition: .15s ease-in;
 
-		&:hover {
-			color: $body-text;
-			transition: .5s ease-out;
-		}
+		// &:hover {
+		// 	color: $orange; //$body-text;
+		// 	transition: .25s ease-out;
+		// }
 
 		@include breakpoint(tablet) {
 			position: absolute;
 		}
 
 		@include breakpoint(phone) {
-			font-size: .8em;
-			right: -9.25em;
+			// font-size: .8em;
+			// right: -9.25em;
 		};
 		@include breakpoint(tiny-window) {
-			font-size: .8em;
+			// font-size: .8em;
 			//right: -15.25em;
-			right: -8.75em;
+			// right: -8.75em;
 			display: none;
 		};
 	}
@@ -99,6 +120,10 @@ header {
 		// text-transform: uppercase;
 		// font-size: .8em;
 		// letter-spacing: .08em;
+
+		@include breakpoint(medium_tablet) {
+			top: 0px;
+		}
 	}
 }
 

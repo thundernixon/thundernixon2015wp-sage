@@ -37,9 +37,9 @@
               <section>
 
                 <h4 class="small-caps">FAQ</h4>
-                <p>“Is your middle name really ‘Thunder’?”</p>
+                <p>“What's with the name ‘Thunder’?”</p>
                 <p>
-                  Nope. Back in high school, in a small class with two "Stephen"s, I decided that my nickname could be "Thunder." It was simply the first dramatic, funny thing that came to mind. Shortly thereafter, I was signing up for Twitter, Email, domain names, and more, and I found that "thundernixon" was usually available. It became an easy way to be consistent in my naming and to be found online. Really, try Googling "Stephen Thunder Nixon." Chances are, you'll find me pretty easily.
+                  It's a weird joke I've kept up. Back in high school, in a small class with two "Stephen"s, my teacher asked me if I had a nickname to help avoid confusion. Instead of going with something boring like "Steve," I said the first dramatic, funny thing that came to mind: Thunder. Shortly thereafter, I was signing up for Twitter, Email, domain names, and more, and I found that "thundernixon" was usually available. It became an easy way to be consistent in my naming and to be found online.
                 </p>
               </section>
               <section>
