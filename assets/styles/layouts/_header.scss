@@ -83,7 +83,7 @@ header {
 		// right: -9em; //with "thunder"
 		// top: 48.3%; //side
 		// right: -5.21em; //side
-		top: 1%;
+		top: -15px; //1%;
 		// left: 5.4em;
 		float: left;
 		color: $body-text; //$medium-gray; //$orange;
@@ -96,20 +96,13 @@ header {
 		// 	transition: .25s ease-out;
 		// }
 
-		@include breakpoint(tablet) {
-			position: absolute;
-		}
+		// @include breakpoint(tablet) {
+		// 	position: absolute;
+		// }
 
-		@include breakpoint(phone) {
-			// font-size: .8em;
-			// right: -9.25em;
-		};
-		@include breakpoint(tiny-window) {
-			// font-size: .8em;
-			//right: -15.25em;
-			// right: -8.75em;
-			display: none;
-		};
+		@include breakpoint(medium_tablet) {
+			top: 0px;
+		}
 	}
 
 	.about-modal-link {
