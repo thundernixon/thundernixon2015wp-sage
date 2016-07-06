@@ -367,32 +367,32 @@ var loadButton = document.getElementById('load-more');
         userId: 209250343,
         accessToken:  '209250343.f1ac464.64509a441ef641c7921ed8fbe63ad1e7', //'209250343.1677ed0.ae3941adad6d4bb18119e016d2517e55',
         resolution: 'standard_resolution',
-        //target: 'typefloundry', //
+        target: 'typefloundry', //
         template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /></a>', //<p>{{caption}}</p>
-        filter: function(image)
-        {
-            if(image.tags.indexOf('typefloundry') >= 0 && lastMatchedImages < maxImages) {
-                    lastMatchedImages = lastMatchedImages + 1;
-                    return true;
-                }
-                else{
-                    image.className = "fidden";
-                    image.style = "dislettering:none;";
-                }
-                //return true;
-            //}
-            return false;
-        },
-          after: function() {
-            if(this.hasNext()) {
-                if(lastMatchedImages < minImages) {
-                    feed.next();
-                }
-            } else {
-              loadButton.setAttribute('disabled', 'disabled');
-              $('#load-more').hide();
-            }
-          },
+        // filter: function(image)
+        // {
+        //     if(image.tags.indexOf('typefloundry') >= 0 && lastMatchedImages < maxImages) {
+        //             lastMatchedImages = lastMatchedImages + 1;
+        //             return true;
+        //         }
+        //         else{
+        //             image.className = "fidden";
+        //             image.style = "dislettering:none;";
+        //         }
+        //         //return true;
+        //     //}
+        //     return false;
+        // },
+        //   after: function() {
+        //     if(this.hasNext()) {
+        //         if(lastMatchedImages < minImages) {
+        //             feed.next();
+        //         }
+        //     } else {
+        //       loadButton.setAttribute('disabled', 'disabled');
+        //       $('#load-more').hide();
+        //     }
+        //   },
     });
 
     // bind the load more button
