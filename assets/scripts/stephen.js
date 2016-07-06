@@ -365,7 +365,7 @@ var loadButton = document.getElementById('load-more');
         //tagName: 'typefloundry',
         clientId: 'f1ac464b95de40a9b203a6c8edf827a8',
         userId: 209250343,
-        accessToken: '209250343.f1ac464.64509a441ef641c7921ed8fbe63ad1e7',
+        accessToken: '209250343.1677ed0.ae3941adad6d4bb18119e016d2517e55', //'209250343.f1ac464.64509a441ef641c7921ed8fbe63ad1e7',
         resolution: 'standard_resolution',
         target: 'typefloundry', //
         template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /></a>', //<p>{{caption}}</p>
