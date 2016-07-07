@@ -78,7 +78,7 @@
 
 
 		    </div>
-		    <button id="load-more" class="">load more</button>
+		    <a id="load-more" class="button" href="http://www.instagram.com/thundernixon" target="_blank">View More on Instagram</a>
 		</section>
 
 

@@ -227,12 +227,12 @@ var loadButton = document.getElementById('load-more');
     });
 
     // bind the load more button
-    loadButton.addEventListener('click', function() {
-        numItems = $('.fidden').length;
-        $('.fidden').show().removeClass( "fidden" );
-        lastMatchedImages = numItems;
-        feed.next();
-    });
+    // loadButton.addEventListener('click', function() {
+    //     numItems = $('.fidden').length;
+    //     $('.fidden').show().removeClass( "fidden" );
+    //     lastMatchedImages = numItems;
+    //     feed.next();
+    // });
 
     // run our feed!
     feed.run();

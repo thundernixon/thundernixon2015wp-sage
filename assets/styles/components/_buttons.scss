@@ -1,4 +1,4 @@
-	button {
+button, .button {
 		text-transform: uppercase;
 	//	@extend .small-caps;
 		width: 300px;
@@ -12,6 +12,8 @@
 		border: 2px solid $orange;
 		display: block;
 		transition: 0.5s ease;
+		padding: 6px; //for new instagram button link, jul 6 2016
+		letter-spacing: .5px; //for new instagram button link, jul 6 2016
 
 
 		&:hover {
